@@ -1,0 +1,41 @@
+---
+// Aurora Curtain (SmoothUI, Eduardo Calvo, MIT), ported to Astro. See ../scripts/aurora.ts.
+interface Props {
+  bands?: number
+  blur?: number
+  /** Any CSS colour string. */
+  colors: string[]
+  direction?: 'up' | 'down'
+  intensity?: number
+  noise?: number
+  speed?: number
+  class?: string
+}
+const { bands = 4, blur = 0.5, colors, direction = 'up', intensity = 1, noise = 0, speed = 1, class: className } = Astro.props
+
+// Static look for no-WebGL, and while the shader boots.
+const fallback = colors
+  .map((c, i) => `radial-gradient(58% 96% at ${14 + i * (72 / colors.length)}% ${direction === 'up' ? 108 : -8}%, ${c} 0%, transparent 68%)`)
+  .join(', ')
+---
+
+<div
+  class:list={['pointer-events-none absolute inset-0 overflow-hidden', className]}
+  aria-hidden="true"
+  data-aurora
+  data-bands={bands}
+  data-blur={blur}
+  data-colors={JSON.stringify(colors)}
+  data-direction={direction}
+  data-intensity={intensity}
+  data-noise={noise}
+  data-speed={speed}
+>
+  <div class="absolute inset-0 opacity-70 blur-2xl" style={`background-image:${fallback}`}></div>
+  <canvas class="relative size-full opacity-0 transition-opacity duration-700 data-ready:opacity-100"></canvas>
+</div>
+
+<script>
+  import { mountAurora } from '../scripts/aurora'
+  document.querySelectorAll<HTMLElement>('[data-aurora]').forEach((el) => mountAurora(el))
+</script>

@@ -1,0 +1,41 @@
+---
+import { copy } from '../data/copy'
+import type { Lang } from '../data/site'
+
+interface Props {
+  lang: Lang
+}
+const { formats } = copy[Astro.props.lang]
+---
+
+<section class="pt-section" id="formats" aria-labelledby="formats-title">
+  <div class="wrap">
+    <div class="reveal mb-[clamp(40px,6vw,72px)]">
+      <h2 id="formats-title">{formats.title}</h2>
+      <p class="lead mt-4">{formats.lead}</p>
+    </div>
+    <div class="grid gap-6 lg:grid-cols-3">
+      {formats.items.map((f, i) => (
+        <article class="reveal" style={`--i:${i}`}>
+          <div class="grid h-full content-between gap-6 rounded-[20px] bg-surface p-[clamp(24px,3vw,36px)] transition-transform duration-[400ms] ease-snap hover:-translate-y-1">
+            <div>
+              <h3>{f.name}</h3>
+              <p class="mt-1.5 font-mono text-[0.8125rem] tracking-[0.06em] text-muted uppercase">{f.kind}</p>
+            </div>
+            <dl class="grid gap-4">
+              <div>
+                <dt class="font-mono text-[0.8125rem] font-semibold tracking-[0.06em] uppercase">{formats.what}</dt>
+                <dd class="mt-0.5 text-muted">{f.text}</dd>
+              </div>
+            </dl>
+            <ul class="grid gap-2 border-t border-line pt-5 font-mono text-sm">
+              {f.points.map((pt) => (
+                <li class="flex items-baseline gap-2.5 before:size-1.5 before:flex-none before:-translate-y-0.5 before:rounded-full before:bg-accent before:content-['']">{pt}</li>
+              ))}
+            </ul>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+---
+import { copy } from '../data/copy'
+import type { Lang } from '../data/site'
+
+interface Props {
+  lang: Lang
+}
+const { process: p } = copy[Astro.props.lang]
+---
+
+<section class="pt-section" id="process" aria-labelledby="process-title">
+  <div class="wrap">
+    <div class="reveal mb-[clamp(40px,6vw,72px)]">
+      <h2 id="process-title">{p.title}</h2>
+    </div>
+    <ol class="grid gap-y-10 lg:grid-cols-4 lg:gap-x-6">
+      {p.steps.map(([name, text], i) => (
+        <li class="group reveal relative grid content-start gap-3 pl-16 lg:pt-16 lg:pl-0" style={`--i:${i}`}>
+          <span class="absolute top-5 left-[19px] -bottom-10 w-0.5 bg-ink group-last:hidden lg:right-[-24px] lg:bottom-auto lg:left-5 lg:h-0.5 lg:w-auto" aria-hidden="true"></span>
+          <span class="absolute top-0 left-0 z-10 grid size-10 place-items-center rounded-full border-2 border-ink bg-white font-mono text-[0.9375rem] leading-none font-medium tabular-nums text-accent-fill">{i + 1}</span>
+          <h3>{name}</h3>
+          <p class="text-muted">{text}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

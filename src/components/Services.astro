@@ -1,0 +1,30 @@
+---
+import { copy } from '../data/copy'
+import { serviceIcons, type Lang } from '../data/site'
+
+interface Props {
+  lang: Lang
+}
+const { benefits } = copy[Astro.props.lang]
+---
+
+<section class="pt-section" id="services" aria-labelledby="services-title">
+  <div class="wrap">
+    <div class="reveal mb-[clamp(40px,6vw,72px)]">
+      <h2 id="services-title">{benefits.title}</h2>
+    </div>
+    <ul class="grid gap-3.5 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
+      {benefits.items.map(([name, text], i) => (
+        <li class="reveal" style={`--i:${i}`}>
+          <div class="grid h-full content-start gap-3.5 rounded-[20px] bg-surface p-[clamp(24px,3vw,36px)] transition-transform duration-[400ms] ease-snap hover:-translate-y-1">
+            <span class="mb-[18px] size-11 text-accent" aria-hidden="true">
+              <svg class="size-full fill-none stroke-current stroke-[1.6]" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" set:html={serviceIcons[i]}></svg>
+            </span>
+            <h3>{name}</h3>
+            <p class="text-muted">{text}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,66 @@
+---
+import { locales, navHrefs, pathFor, site, type Lang } from '../data/site'
+import { copy } from '../data/copy'
+import Logo from './Logo.astro'
+
+interface Props {
+  lang: Lang
+}
+const { lang } = Astro.props
+const c = copy[lang]
+---
+
+<a class="absolute -top-[60px] left-4 z-[100] rounded-lg bg-ink px-4 py-2.5 text-white focus:top-3" href="#main">{c.ui.skip}</a>
+
+<header class="group sticky top-0 z-50 border-b border-transparent bg-white/90 backdrop-blur-md transition-colors duration-300 data-scrolled:border-line" id="top">
+  <div class="wrap flex min-h-[72px] items-center justify-between gap-4">
+    <Logo label={`${site.name} ${c.ui.home}`} />
+    <nav class="absolute inset-x-0 top-full hidden flex-col border-b border-line bg-white px-gutter pt-2 pb-5 font-mono text-[0.9375rem] tracking-[-0.01em] group-data-open:flex lg:static lg:flex lg:flex-row lg:items-center lg:gap-6 xl:gap-9 lg:border-0 lg:bg-transparent lg:p-0" id="menu" aria-label={c.ui.main}>
+      {navHrefs.map((href, i) => <a href={href} class="relative lg:whitespace-nowrap border-b border-line py-4 text-xl lg:border-0 lg:py-1.5 lg:text-[0.9375rem] lg:after:absolute lg:after:inset-x-0 lg:after:bottom-0 lg:after:h-0.5 lg:after:origin-left lg:after:scale-x-0 lg:after:bg-ink lg:after:transition-transform lg:after:duration-300 lg:after:ease-snap lg:hover:after:scale-x-100">{c.nav[i]}</a>)}
+    </nav>
+    <div class="flex items-center gap-2.5">
+      <div class="inline-flex rounded-full border-2 border-line p-[3px] font-mono text-sm font-medium tracking-[0.02em]" role="group" aria-label={c.ui.langLabel}>
+        {locales.map((l) => (
+          <a
+            href={pathFor(l)}
+            hreflang={l}
+            lang={l}
+            data-lang-link
+            class="grid min-h-[34px] min-w-10 place-items-center rounded-full px-2.5 text-muted transition-colors duration-200 hover:text-ink aria-[current=true]:bg-ink aria-[current=true]:text-white aria-[current=true]:hover:text-white"
+            aria-current={l === lang ? 'true' : undefined}
+          >{l.toUpperCase()}</a>
+        ))}
+      </div>
+      <a href="#contact" class="btn btn-primary min-h-11 px-5 py-2.5 text-base max-[540px]:hidden lg:max-xl:hidden">{c.navCta}</a>
+      <button class="grid size-11 cursor-pointer place-items-center rounded-xl border-2 border-line bg-transparent text-ink lg:hidden" type="button" aria-expanded="false" aria-controls="menu" aria-label={c.ui.menu}>
+        <svg class="size-[22px] group-data-open:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+        <svg class="hidden size-[22px] group-data-open:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<script>
+  const header = document.querySelector<HTMLElement>('#top')!
+  const btn = header.querySelector<HTMLButtonElement>('button[aria-controls="menu"]')!
+  const setOpen = (open: boolean) => {
+    header.toggleAttribute('data-open', open)
+    btn.setAttribute('aria-expanded', String(open))
+  }
+  btn.addEventListener('click', () => setOpen(!header.hasAttribute('data-open')))
+  header.querySelectorAll('#menu a').forEach((a) => a.addEventListener('click', () => setOpen(false)))
+  document.addEventListener('keydown', (e) => e.key === 'Escape' && setOpen(false))
+  // Keep the visitor on the same section when they switch language.
+  const sections = [...document.querySelectorAll<HTMLElement>('main section[id]')]
+  header.querySelectorAll<HTMLAnchorElement>('[data-lang-link]').forEach((a) => {
+    a.addEventListener('click', () => {
+      const line = innerHeight * 0.35
+      const here = sections.filter((s) => s.getBoundingClientRect().top <= line).pop()
+      const base = a.getAttribute('href')!.split('#')[0]
+      a.href = here && scrollY > 8 ? `${base}#${here.id}` : base
+    })
+  })
+  const onScroll = () => header.toggleAttribute('data-scrolled', scrollY > 8)
+  onScroll()
+  addEventListener('scroll', onScroll, { passive: true })
+</script>

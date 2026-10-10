@@ -1,19 +1,20 @@
 ---
 import '../styles/global.css'
+import { copy } from '../data/copy'
+import { locales, pathFor, type Lang } from '../data/site'
 
 interface Props {
-  title?: string
-  description?: string
+  lang: Lang
 }
 
-const {
-  title = 'Optflow — Websites people find, and choose',
-  description = 'Optflow is a design-led studio that builds fast, search-ready websites and brands that bring in customers.',
-} = Astro.props
+const { lang } = Astro.props
+const { title, description } = copy[lang].meta
+// hreflang and canonical need absolute URLs: set `site` in astro.config.mjs.
+const abs = (path: string) => (Astro.site ? new URL(path, Astro.site).href : path)
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,6 +24,10 @@ const {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content={lang === 'fr' ? 'fr_MA' : 'en_US'} />
+    <link rel="canonical" href={abs(pathFor(lang))} />
+    {locales.map((l) => <link rel="alternate" hreflang={l} href={abs(pathFor(l))} />)}
+    <link rel="alternate" hreflang="x-default" href={abs(pathFor('fr'))} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,5 +41,8 @@ const {
   </head>
   <body>
     <slot />
+    <script>
+      import '../scripts/smooth-scroll'
+    </script>
   </body>
 </html>

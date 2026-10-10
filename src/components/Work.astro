@@ -1,0 +1,89 @@
+---
+import { Image } from "astro:assets";
+import { copy } from "../data/copy";
+import { work, type Lang } from "../data/site";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const c = copy[lang].work;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/work/*.{png,jpg,jpeg,webp,avif}",
+  {
+    eager: true,
+  },
+);
+const imageFor = (file?: string) =>
+  file ? images[`../assets/work/${file}`]?.default : undefined;
+---
+
+<section class="pt-section" id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="reveal mb-[clamp(40px,6vw,72px)]">
+      <h2 id="work-title">{c.title}</h2>
+      <p class="lead mt-4">{c.lead}</p>
+    </div>
+    <ul class="grid gap-x-6 gap-y-10 md:grid-cols-2">
+      {work.map((w, i) => {
+        const img = imageFor(w.file);
+        const Tag = w.href ? "a" : "div";
+        return (
+          <li class="reveal" style={`--i:${i % 2}`}>
+            <Tag
+              class="group/work block"
+              {...(w.href
+                ? {
+                    href: w.href,
+                    target: "_blank",
+                    rel: "noopener",
+                    "aria-label": `${w.name}, ${c.visit}`,
+                  }
+                : {})}
+            >
+              <div class="relative aspect-[21/10] overflow-hidden rounded-sm bg-surface ring-1 ring-line ring-inset">
+                {img ? (
+                  <Image
+                    src={img}
+                    alt={`${w.name}, ${w.kind[lang]}`}
+                    widths={[480, 720, 1080]}
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    class="size-full object-cover object-top transition-transform duration-700 ease-snap group-hover/work:scale-[1.03]"
+                  />
+                ) : (
+                  <div class="grid size-full place-items-center font-mono text-[0.8125rem] tracking-[0.06em] text-muted uppercase">
+                    {c.soon}
+                  </div>
+                )}
+                {w.href && (
+                  <span class="absolute right-3 bottom-3 inline-flex items-center gap-2 rounded-full bg-white/90 px-3.5 py-2 font-mono text-[0.8125rem] leading-none font-medium text-ink backdrop-blur-sm">
+                    {c.visit}
+                    <svg
+                      class="size-4 transition-transform duration-300 ease-snap group-hover/work:translate-x-0.5 group-hover/work:-translate-y-0.5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 17 17 7M8 7h9v9"></path>
+                    </svg>
+                  </span>
+                )}
+              </div>
+              <div class="mt-4 flex items-baseline justify-between gap-4">
+                <h3>{w.name}</h3>
+                <p class="font-mono text-[0.8125rem] tracking-[0.06em] text-muted uppercase">
+                  {w.kind[lang]}
+                </p>
+              </div>
+            </Tag>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+</section>
