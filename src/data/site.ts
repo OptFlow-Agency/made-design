@@ -73,4 +73,22 @@ export const work: {
     kind: { fr: "Page d’atterrissage", en: "Landing page" },
     href: "https://teressa-website.vercel.app/",
   },
+  {
+    name: "Strata",
+    file: "strata.png",
+    kind: { fr: "Site de réservation", en: "Booking site" },
+    href: "https://strata-pi-ten.vercel.app/",
+  },
+  {
+    name: "VPG",
+    file: "vpg.png",
+    kind: { fr: "Site immobilier", en: "Real estate site" },
+    href: "https://vpg-nu.vercel.app/",
+  },
+  {
+    name: "AZ Global Activities",
+    file: "az-global-activities.png",
+    kind: { fr: "Site vitrine", en: "Business site" },
+    href: "https://azglobalactivities.com/",
+  },
 ];
