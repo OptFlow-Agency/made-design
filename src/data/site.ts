@@ -91,4 +91,9 @@ export const work: {
     kind: { fr: "Site vitrine", en: "Business site" },
     href: "https://azglobalactivities.com/",
   },
+  {
+    name: "Olivia",
+    file: "olivia.png",
+    kind: { fr: "Site de restaurant", en: "Restaurant site" },
+  },
 ];
