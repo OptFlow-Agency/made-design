@@ -7,8 +7,8 @@ export const site = {
   email: "oussamachahidi20@gmail.com",
   // phone: "",
   // address: "Your street, Your city",
-  // Point this at your form service (Formspree, Netlify, Resend...). Empty = demo mode.
-  formEndpoint: "",
+  // Contact form endpoint (sends via Gmail SMTP, see src/pages/api/contact.ts). Empty = demo mode.
+  formEndpoint: "/api/contact",
 };
 
 export const locales = ["fr", "en"] as const;

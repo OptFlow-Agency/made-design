@@ -1,0 +1,1 @@
+import{t as e}from"./motion.B1zt9E-m.js";var t=document.querySelectorAll(`.reveal`);if(e||!(`IntersectionObserver`in window))t.forEach(e=>e.classList.add(`in`));else{let e=new IntersectionObserver(t=>{t.forEach(t=>{t.isIntersecting&&(t.target.classList.add(`in`),e.unobserve(t.target))})},{threshold:.12,rootMargin:`0px 0px -6% 0px`});t.forEach(t=>e.observe(t))}
