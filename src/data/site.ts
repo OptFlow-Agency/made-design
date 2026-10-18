@@ -3,7 +3,7 @@
    Copy for both languages lives in ./copy.ts.
 ------------------------------------------------------------------- */
 export const site = {
-  name: "optflow",
+  name: "Made Design",
   email: "hello@optflow.studio",
   phone: "+00 000 000 000",
   address: "Your street, Your city",

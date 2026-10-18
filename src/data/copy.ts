@@ -5,9 +5,9 @@ export const copy = {
   fr: {
     htmlLang: 'fr',
     meta: {
-      title: 'Optflow — Des sites web qu’on trouve, et auxquels on fait confiance',
+      title: 'Made Design — Des sites web qu’on trouve, et auxquels on fait confiance',
       description:
-        'Optflow est un studio qui conçoit des sites web rapides et optimisés pour la recherche, au Maroc et à l’international.',
+        'Made Design est un studio qui conçoit des sites web rapides et optimisés pour la recherche, au Maroc et à l’international.',
     },
     ui: { skip: 'Aller au contenu', menu: 'Menu', main: 'Navigation principale', home: 'accueil', langLabel: 'Choisir la langue du site' },
     nav: ['Pourquoi un site', 'Atouts', 'Formats', 'Réalisations', 'Démarche', 'Contact'],
@@ -86,15 +86,15 @@ export const copy = {
       explore: 'Explorer',
       contact: 'Contact',
       follow: 'Suivre',
-      legal: '© 2026 Optflow. Tous droits réservés.',
+      legal: '© 2026 Made Design. Tous droits réservés.',
     },
   },
   en: {
     htmlLang: 'en',
     meta: {
-      title: 'Optflow — Websites people find, and trust',
+      title: 'Made Design — Websites people find, and trust',
       description:
-        'Optflow is a studio that designs fast, search-ready websites for businesses in Morocco and abroad.',
+        'Made Design is a studio that designs fast, search-ready websites for businesses in Morocco and abroad.',
     },
     ui: { skip: 'Skip to content', menu: 'Menu', main: 'Main', home: 'home', langLabel: 'Choose site language' },
     nav: ['Why a site', 'Benefits', 'Formats', 'Work', 'Process', 'Contact'],
@@ -173,7 +173,7 @@ export const copy = {
       explore: 'Explore',
       contact: 'Contact',
       follow: 'Follow',
-      legal: '© 2026 Optflow. All rights reserved.',
+      legal: '© 2026 Made Design. All rights reserved.',
     },
   },
 } satisfies Record<Lang, unknown>
