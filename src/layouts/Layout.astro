@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import Analytics from '@vercel/analytics/astro'
 import { copy } from '../data/copy'
 import { locales, pathFor, type Lang } from '../data/site'
 
@@ -38,6 +39,7 @@ const abs = (path: string) => (Astro.site ? new URL(path, Astro.site).href : pat
     <script is:inline>
       document.documentElement.classList.add('js')
     </script>
+    <Analytics />
   </head>
   <body>
     <slot />
