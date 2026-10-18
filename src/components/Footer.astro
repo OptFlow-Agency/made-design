@@ -1,13 +1,13 @@
 ---
-import { navHrefs, site, type Lang } from '../data/site'
-import { copy } from '../data/copy'
-import Logo from './Logo.astro'
+import { navHrefs, site, type Lang } from "../data/site";
+import { copy } from "../data/copy";
+import Logo from "./Logo.astro";
 
 interface Props {
-  lang: Lang
+  lang: Lang;
 }
-const { lang } = Astro.props
-const c = copy[lang]
+const { lang } = Astro.props;
+const c = copy[lang];
 ---
 
 <footer class="pt-[clamp(48px,7vw,80px)] pb-10">
@@ -18,26 +18,94 @@ const c = copy[lang]
         <p>{c.footer.tagline}</p>
       </div>
       <div>
-        <h3 class="mb-[18px] font-mono text-[0.8125rem] leading-none font-semibold tracking-[0.06em] text-muted uppercase">{c.footer.explore}</h3>
-        <ul class="grid gap-3 font-mono text-[0.9375rem]">{navHrefs.map((href, i) => <li><a class="underline-offset-4 hover:underline" href={href}>{c.nav[i]}</a></li>)}</ul>
-      </div>
-      <div>
-        <h3 class="mb-[18px] font-mono text-[0.8125rem] leading-none font-semibold tracking-[0.06em] text-muted uppercase">{c.footer.contact}</h3>
+        <h3 class="mb-[18px] font-mono text-[0.8125rem] leading-none font-semibold tracking-[0.06em] text-muted uppercase">
+          {c.footer.explore}
+        </h3>
         <ul class="grid gap-3 font-mono text-[0.9375rem]">
-          <li><a class="underline-offset-4 hover:underline" href={`mailto:${site.email}`}>{site.email}</a></li>
-          <li><a class="underline-offset-4 hover:underline" href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a></li>
-          <li>{site.address}</li>
+          {navHrefs.map((href, i) => (
+            <li>
+              <a class="underline-offset-4 hover:underline" href={href}>
+                {c.nav[i]}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
       <div>
-        <h3 class="mb-[18px] font-mono text-[0.8125rem] leading-none font-semibold tracking-[0.06em] text-muted uppercase">{c.footer.follow}</h3>
+        <h3 class="mb-[18px] font-mono text-[0.8125rem] leading-none font-semibold tracking-[0.06em] text-muted uppercase">
+          {c.footer.contact}
+        </h3>
+        <ul class="grid gap-3 font-mono text-[0.9375rem]">
+          <li>
+            <a
+              class="underline-offset-4 hover:underline"
+              href={`mailto:${site.email}`}
+            >
+              {site.email}
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="mb-[18px] font-mono text-[0.8125rem] leading-none font-semibold tracking-[0.06em] text-muted uppercase">
+          {c.footer.follow}
+        </h3>
         <div class="flex gap-2.5">
-          <a class="grid size-11 place-items-center rounded-full border-[1.5px] border-line transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-white" href="#" aria-label="LinkedIn"><svg class="size-5 fill-none stroke-current stroke-[1.8]" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-          <a class="grid size-11 place-items-center rounded-full border-[1.5px] border-line transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-white" href="#" aria-label="X"><svg class="size-5 fill-none stroke-current stroke-[1.8]" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l11.7 16H20L8.3 4z"></path><path d="M4 20l6.8-6.8m2.5-2.5L20 4"></path></svg></a>
-          <a class="grid size-11 place-items-center rounded-full border-[1.5px] border-line transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-white" href="#" aria-label="Instagram"><svg class="size-5 fill-none stroke-current stroke-[1.8]" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"></rect><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"></path><path d="M17.5 6.5h.01"></path></svg></a>
+          <a
+            class="grid size-11 place-items-center rounded-full border-[1.5px] border-line transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-white"
+            href="#"
+            aria-label="LinkedIn"
+          >
+            <svg
+              class="size-5 fill-none stroke-current stroke-[1.8]"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect width="4" height="12" x="2" y="9"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a
+            class="grid size-11 place-items-center rounded-full border-[1.5px] border-line transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-white"
+            href="#"
+            aria-label="X"
+          >
+            <svg
+              class="size-5 fill-none stroke-current stroke-[1.8]"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 4l11.7 16H20L8.3 4z"></path>
+              <path d="M4 20l6.8-6.8m2.5-2.5L20 4"></path>
+            </svg>
+          </a>
+          <a
+            class="grid size-11 place-items-center rounded-full border-[1.5px] border-line transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-white"
+            href="#"
+            aria-label="Instagram"
+          >
+            <svg
+              class="size-5 fill-none stroke-current stroke-[1.8]"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5"></rect>
+              <path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"></path>
+              <path d="M17.5 6.5h.01"></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
-    <p class="mt-14 border-t border-line pt-6 font-mono text-[0.8125rem] tracking-[0.01em] text-muted">{c.footer.legal}</p>
+    <p class="mt-14 border-t border-line pt-6 font-mono text-[0.8125rem] tracking-[0.01em] text-muted">
+      {c.footer.legal}
+    </p>
   </div>
 </footer>
