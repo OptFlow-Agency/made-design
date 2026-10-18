@@ -4,9 +4,9 @@
 ------------------------------------------------------------------- */
 export const site = {
   name: "Made Design",
-  email: "hello@optflow.studio",
-  phone: "+00 000 000 000",
-  address: "Your street, Your city",
+  email: "oussamachahidi20@gmail.com",
+  // phone: "",
+  // address: "Your street, Your city",
   // Point this at your form service (Formspree, Netlify, Resend...). Empty = demo mode.
   formEndpoint: "",
 };
