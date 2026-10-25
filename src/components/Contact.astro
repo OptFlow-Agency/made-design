@@ -6,104 +6,60 @@ interface Props {
   lang: Lang
 }
 const c = copy[Astro.props.lang].contact
-
-const control =
-  'min-h-[52px] w-full rounded-xl border-[1.5px] border-dark-line bg-[#1f1e1a] px-4 py-3.5 text-[1.0625rem] leading-[1.4] text-white transition-colors duration-200 placeholder:text-[#9a9993] hover:border-[#6b6a64] focus-visible:border-transparent focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-accent aria-[invalid=true]:border-[#ff8a65]'
-const label = 'font-mono text-[0.8125rem] font-semibold tracking-[0.06em] uppercase'
-const err = 'min-h-[1.2em] text-[0.9375rem] text-[#ffa98f]'
 ---
 
 <section class="mt-section bg-dark py-section text-white" id="contact" aria-labelledby="contact-title">
-  <div class="wrap grid items-start gap-[clamp(40px,7vw,112px)] lg:grid-cols-[1fr_1.05fr]">
+  <div class="wrap grid items-start gap-[clamp(40px,7vw,112px)] lg:grid-cols-[1fr_1.4fr]">
     <div class="reveal">
       <h2 id="contact-title" class="max-w-[12ch] text-[clamp(2.5rem,7vw,5rem)] lg:max-w-[8ch]">{c.title}</h2>
       <p class="lead mt-6 text-dark-muted">{c.lead}</p>
-      <a class="mt-8 inline-block border-b-2 border-accent pb-1.5 font-mono text-xl leading-none font-semibold" href={`mailto:${site.email}`}>{site.email}</a>
+      <p class="mt-8 text-dark-muted">{c.fallback}</p>
+      <a class="mt-2 inline-block border-b-2 border-accent pb-1.5 font-mono text-xl leading-none font-semibold" href={`mailto:${site.email}`}>{site.email}</a>
     </div>
-    <form class="reveal grid gap-5 md:grid-cols-2" id="contact-form" novalidate data-endpoint={site.formEndpoint} data-sending={c.sending} data-ok={c.ok} data-bad={c.bad} data-err-name={c.errName} data-err-email={c.errEmail} data-err-msg={c.errMsg} style="--i:1">
-      <div class="grid gap-2">
-        <label class={label} for="f-name">{c.name}</label>
-        <input class={control} id="f-name" name="name" type="text" autocomplete="name" required placeholder={c.namePh} aria-describedby="e-name" />
-        <span class={err} id="e-name" aria-live="polite"></span>
+    {site.calLink && (
+      <div class="reveal min-h-[600px] overflow-hidden rounded-[20px] bg-white" style="--i:1">
+        <div id="cal-embed" class="h-full w-full" data-cal-link={site.calLink}></div>
       </div>
-      <div class="grid gap-2">
-        <label class={label} for="f-email">{c.email}</label>
-        <input class={control} id="f-email" name="email" type="email" autocomplete="email" required placeholder={c.emailPh} aria-describedby="e-email" />
-        <span class={err} id="e-email" aria-live="polite"></span>
-      </div>
-      <div class="col-span-full grid gap-2">
-        <label class={label} for="f-msg">{c.msg}</label>
-        <textarea class:list={[control, 'min-h-[140px] resize-y']} id="f-msg" name="message" required placeholder={c.msgPh} aria-describedby="e-msg"></textarea>
-        <span class={err} id="e-msg" aria-live="polite"></span>
-      </div>
-      <input class="absolute -left-[9999px]" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
-      <div class="col-span-full flex flex-wrap items-center gap-x-6 gap-y-4">
-        <button class="btn btn-primary max-md:w-full" type="submit" id="submit">
-          {c.submit}
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-        </button>
-        <p class="font-medium data-[state=ok]:text-[#b9f0c8] data-[state=bad]:text-[#ffa98f]" id="status" role="status"></p>
-      </div>
-    </form>
+    )}
   </div>
 </section>
 
-<script>
-  const form = document.querySelector<HTMLFormElement>('#contact-form')!
-  const submit = document.querySelector<HTMLButtonElement>('#submit')!
-  const status = document.querySelector<HTMLElement>('#status')!
-  const rules: Record<string, (v: string) => string> = {
-    name: (v) => (v.trim() ? '' : form.dataset.errName!),
-    email: (v) =>
-      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? '' : form.dataset.errEmail!,
-    message: (v) => (v.trim().length >= 10 ? '' : form.dataset.errMsg!),
-  }
-  const idFor: Record<string, string> = { name: 'e-name', email: 'e-email', message: 'e-msg' }
-  const check = (name: string) => {
-    const field = form.elements.namedItem(name) as HTMLInputElement
-    const msg = rules[name](field.value)
-    document.getElementById(idFor[name])!.textContent = msg
-    field.setAttribute('aria-invalid', String(Boolean(msg)))
-    return !msg
-  }
-  Object.keys(rules).forEach((n) => {
-    const f = form.elements.namedItem(n) as HTMLInputElement
-    f.addEventListener('blur', () => check(n))
-    f.addEventListener('input', () => f.getAttribute('aria-invalid') === 'true' && check(n))
-  })
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault()
-    delete status.dataset.state
-    status.textContent = ''
-    const bad = Object.keys(rules).filter((n) => !check(n))
-    if (bad.length) {
-      ;(form.elements.namedItem(bad[0]) as HTMLElement).focus()
-      return
-    }
-    const data = new FormData(form)
-    if (data.get('company')) return // honeypot
-    submit.disabled = true
-    status.textContent = form.dataset.sending!
-    try {
-      const endpoint = form.dataset.endpoint
-      if (endpoint) {
-        const res = await fetch(endpoint, {
-          method: 'POST',
-          body: data,
-          headers: { Accept: 'application/json' },
-        })
-        if (!res.ok) throw new Error('bad response')
-      } else {
-        await new Promise((r) => setTimeout(r, 700)) // demo mode
+{site.calLink && (
+  <script is:inline>
+    ;(function (C, A, L) {
+      let p = function (a, ar) { a.q.push(ar) }
+      let d = C.document
+      C.Cal = C.Cal || function () {
+        let cal = C.Cal
+        let ar = arguments
+        if (!cal.loaded) {
+          cal.ns = {}
+          cal.q = cal.q || []
+          d.head.appendChild(d.createElement('script')).src = A
+          cal.loaded = true
+        }
+        if (ar[0] === L) {
+          const api = function () { p(api, arguments) }
+          const namespace = ar[1]
+          api.q = api.q || []
+          if (typeof namespace === 'string') {
+            cal.ns[namespace] = cal.ns[namespace] || api
+            p(cal.ns[namespace], ar)
+            p(cal, ['initNamespace', namespace])
+          } else p(cal, ar)
+          return
+        }
+        p(cal, ar)
       }
-      form.reset()
-      status.dataset.state = 'ok'
-      status.textContent = form.dataset.ok!
-    } catch {
-      status.dataset.state = 'bad'
-      status.textContent = form.dataset.bad!
-    } finally {
-      submit.disabled = false
-    }
-  })
-</script>
+    })(window, 'https://app.cal.com/embed/embed.js', 'init')
+    Cal('init', { origin: 'https://app.cal.com' })
+    var el = document.getElementById('cal-embed')
+    Cal('inline', {
+      elementOrSelector: el,
+      calLink: el.dataset.calLink,
+      layout: 'month_view',
+      config: { layout: 'month_view', theme: 'light' },
+    })
+    Cal('ui', { theme: 'light', hideEventTypeDetails: false, layout: 'month_view' })
+  </script>
+)}

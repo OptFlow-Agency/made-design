@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 var site = {
 	name: "Made Design",
 	email: "oussamachahidi20@gmail.com",
-	formEndpoint: "/api/contact"
+	calLink: "made-design"
 };
 //#endregion
 //#region src/pages/api/contact.ts

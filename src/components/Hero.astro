@@ -14,15 +14,15 @@ const { hero: c } = copy[Astro.props.lang]
 <section class="relative isolate overflow-hidden bg-surface pt-[clamp(40px,7vw,96px)] pb-[clamp(56px,8vw,112px)]" aria-labelledby="hero-title">
   <div class="wrap grid items-center gap-[clamp(32px,5vw,72px)] md:grid-cols-[1.1fr_0.9fr]">
     <div>
-      <h1 id="hero-title" class="max-w-[16ch] text-[clamp(2.5rem,6.6vw,4.75rem)]">{c.before}<em class="text-accent not-italic">{c.em}</em>{c.after}</h1>
+      <h1 id="hero-title" class="max-w-[18ch] text-[clamp(2.5rem,6.6vw,4.75rem)]">{c.before}<em class="text-accent not-italic">{c.em}</em>{c.after}</h1>
       <p class="lead mt-7 font-mono text-[clamp(0.9375rem,1.4vw,1.0625rem)]">{c.lead}</p>
       <div class="mt-10 flex flex-wrap items-center gap-3.5">
         <a href="#contact" class="btn btn-primary max-md:flex-[1_1_100%]">
           {c.cta}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
         </a>
-        <a href="#formats" class="btn btn-ghost max-md:flex-[1_1_100%]">{c.ghost}</a>
       </div>
+      <p class="mt-5 font-mono text-[0.8125rem] tracking-[0.02em] text-muted">{c.trust}</p>
     </div>
     <Image src={heroImage} alt="" loading="eager" class="mx-auto h-auto w-full max-w-[500px] md:justify-self-end" />
   </div>

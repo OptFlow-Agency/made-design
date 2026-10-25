@@ -14,11 +14,12 @@ const { process: p } = copy[Astro.props.lang]
       <h2 id="process-title">{p.title}</h2>
     </div>
     <ol class="grid gap-y-10 lg:grid-cols-4 lg:gap-x-6">
-      {p.steps.map(([name, text], i) => (
+      {p.steps.map(([name, text, duration], i) => (
         <li class="group reveal relative grid content-start gap-3 pl-16 lg:pt-16 lg:pl-0" style={`--i:${i}`}>
           <span class="absolute top-5 left-[19px] -bottom-10 w-0.5 bg-ink group-last:hidden lg:right-[-24px] lg:bottom-auto lg:left-5 lg:h-0.5 lg:w-auto" aria-hidden="true"></span>
           <span class="absolute top-0 left-0 z-10 grid size-10 place-items-center rounded-full border-2 border-ink bg-white font-mono text-[0.9375rem] leading-none font-medium tabular-nums text-accent-fill">{i + 1}</span>
           <h3>{name}</h3>
+          {duration && <p class="font-mono text-[0.8125rem] tracking-[0.06em] text-accent-fill uppercase">{duration}</p>}
           <p class="text-muted">{text}</p>
         </li>
       ))}

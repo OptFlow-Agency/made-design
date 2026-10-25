@@ -1,0 +1,32 @@
+---
+import { copy } from '../data/copy'
+import type { Lang } from '../data/site'
+
+interface Props {
+  lang: Lang
+}
+const { whyUs: c } = copy[Astro.props.lang]
+---
+
+<section class="pt-section" id="why-us" aria-labelledby="why-us-title">
+  <div class="wrap">
+    <div class="reveal mb-[clamp(40px,6vw,72px)]">
+      <h2 id="why-us-title">{c.title}</h2>
+    </div>
+    <ul class="grid border-t border-line">
+      {c.items.map(([name, text], i) => (
+        <li class="reveal grid gap-1.5 border-b border-line py-6 md:grid-cols-[3.5rem_1fr_1.4fr] md:items-baseline md:gap-6" style={`--i:${i}`}>
+          <span class="font-mono text-[0.9375rem] tabular-nums text-accent-fill" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+          <h3>{name}</h3>
+          <p class="text-muted">{text}</p>
+        </li>
+      ))}
+    </ul>
+    <div class="reveal mt-10">
+      <a href="#contact" class="btn btn-primary max-md:w-full">
+        {c.cta}
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+      </a>
+    </div>
+  </div>
+</section>

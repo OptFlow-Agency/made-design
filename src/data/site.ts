@@ -7,8 +7,9 @@ export const site = {
   email: "oussamachahidi20@gmail.com",
   // phone: "",
   // address: "Your street, Your city",
-  // Contact form endpoint (sends via Gmail SMTP, see src/pages/api/contact.ts). Empty = demo mode.
-  formEndpoint: "/api/contact",
+  // Cal.com booking link, as "username/event-slug" (e.g. "made-design/30min"); a bare username shows all event types.
+  // TODO: set it. Empty = the calendar is hidden and only the email shows.
+  calLink: "made-design",
 };
 
 export const locales = ["fr", "en"] as const;
@@ -20,14 +21,7 @@ export const pathFor = (lang: Lang) =>
   lang === defaultLang ? "/" : `/${lang}/`;
 
 // Section anchors, in page order. Shared by every language.
-export const navHrefs = [
-  "#why",
-  "#services",
-  "#formats",
-  "#work",
-  "#process",
-  "#contact",
-];
+export const navHrefs = ["#formats", "#work", "#process"];
 
 // One icon per benefit, in the same order as the copy.
 export const serviceIcons = [
@@ -56,24 +50,6 @@ export const work: {
     href: "https://lumina-studio-vert.vercel.app/",
   },
   {
-    name: "Thockcraft",
-    file: "thockcraft.png",
-    kind: { fr: "Site e-commerce", en: "E-commerce site" },
-    href: "https://thockcraft.vercel.app/",
-  },
-  {
-    name: "Inkwell",
-    file: "inkwell.png",
-    kind: { fr: "Page d’atterrissage", en: "Landing page" },
-    href: "https://inkwell-website-five.vercel.app/",
-  },
-  {
-    name: "Teressa",
-    file: "teressa.png",
-    kind: { fr: "Page d’atterrissage", en: "Landing page" },
-    href: "https://teressa-website.vercel.app/",
-  },
-  {
     name: "Strata",
     file: "strata.png",
     kind: { fr: "Site de réservation", en: "Booking site" },
@@ -95,5 +71,17 @@ export const work: {
     name: "Olivia",
     file: "olivia.png",
     kind: { fr: "Site de restaurant", en: "Restaurant site" },
+  },
+  {
+    name: "Thockcraft",
+    file: "thockcraft.png",
+    kind: { fr: "Site e-commerce", en: "E-commerce site" },
+    href: "https://thockcraft.vercel.app/",
+  },
+  {
+    name: "Teressa",
+    file: "teressa.png",
+    kind: { fr: "Page d’atterrissage", en: "Landing page" },
+    href: "https://teressa-website.vercel.app/",
   },
 ];

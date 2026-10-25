@@ -6,6 +6,8 @@ interface Props {
   lang: Lang
 }
 const { formats } = copy[Astro.props.lang]
+const l = formats.labels
+const dt = 'font-mono text-[0.8125rem] font-semibold tracking-[0.06em] uppercase'
 ---
 
 <section class="pt-section" id="formats" aria-labelledby="formats-title">
@@ -17,22 +19,39 @@ const { formats } = copy[Astro.props.lang]
     <div class="grid gap-6 lg:grid-cols-3">
       {formats.items.map((f, i) => (
         <article class="reveal" style={`--i:${i}`}>
-          <div class="grid h-full content-between gap-6 rounded-[20px] bg-surface p-[clamp(24px,3vw,36px)] transition-transform duration-[400ms] ease-snap hover:-translate-y-1">
-            <div>
-              <h3>{f.name}</h3>
-              <p class="mt-1.5 font-mono text-[0.8125rem] tracking-[0.06em] text-muted uppercase">{f.kind}</p>
-            </div>
+          <div class="grid h-full content-start gap-6 rounded-[20px] bg-surface p-[clamp(24px,3vw,36px)] transition-transform duration-[400ms] ease-snap hover:-translate-y-1">
+            <h3>{f.name}</h3>
             <dl class="grid gap-4">
               <div>
-                <dt class="font-mono text-[0.8125rem] font-semibold tracking-[0.06em] uppercase">{formats.what}</dt>
-                <dd class="mt-0.5 text-muted">{f.text}</dd>
+                <dt class={dt}>{l.whom}</dt>
+                <dd class="mt-0.5 text-muted">{f.kind}</dd>
               </div>
+              <div>
+                <dt class={dt}>{l.outcome}</dt>
+                <dd class="mt-0.5 text-muted">{f.outcome}</dd>
+              </div>
+              {f.timeline && (
+                <div>
+                  <dt class={dt}>{l.timeline}</dt>
+                  <dd class="mt-0.5 text-muted">{f.timeline}</dd>
+                </div>
+              )}
+              {f.price && (
+                <div>
+                  <dt class={dt}>{l.price}</dt>
+                  <dd class="mt-0.5 text-muted">{f.price}</dd>
+                </div>
+              )}
             </dl>
-            <ul class="grid gap-2 border-t border-line pt-5 font-mono text-sm">
-              {f.points.map((pt) => (
-                <li class="flex items-baseline gap-2.5 before:size-1.5 before:flex-none before:-translate-y-0.5 before:rounded-full before:bg-accent before:content-['']">{pt}</li>
-              ))}
-            </ul>
+            <div class="border-t border-line pt-5">
+              <p class={dt}>{l.get}</p>
+              <ul class="mt-3 grid gap-2 font-mono text-sm">
+                {f.points.map((pt) => (
+                  <li class="flex items-baseline gap-2.5 before:size-1.5 before:flex-none before:-translate-y-0.5 before:rounded-full before:bg-accent before:content-['']">{pt}</li>
+                ))}
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-ghost mt-auto">{formats.cta}</a>
           </div>
         </article>
       ))}
