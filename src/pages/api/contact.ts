@@ -38,7 +38,7 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     await transporter.sendMail({
       from: `"${site.name}" <${user}>`,
-      to: site.email,
+      to: user,
       replyTo: `"${name.replace(/["\r\n]/g, '')}" <${email}>`,
       subject: `New message from ${name.replace(/[\r\n]/g, ' ')}`,
       text: `From: ${name} <${email}>\n\n${message}`,

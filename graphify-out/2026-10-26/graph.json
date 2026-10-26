@@ -1,0 +1,4063 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "astro.config.mjs",
+      "file_type": "code",
+      "source_file": "astro.config.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "astro_config",
+      "community": 54,
+      "norm_label": "astro.config.mjs"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "package",
+      "community": 25,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "package_name",
+      "community": 25,
+      "norm_label": "name"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "package_type",
+      "community": 25,
+      "norm_label": "type"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "package_version",
+      "community": 25,
+      "norm_label": "version"
+    },
+    {
+      "label": "engines",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "package_engines",
+      "community": 25,
+      "norm_label": "engines"
+    },
+    {
+      "label": "node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "package_engines_node",
+      "community": 25,
+      "norm_label": "node"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "package_scripts",
+      "community": 25,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "package_scripts_dev",
+      "community": 25,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "package_scripts_build",
+      "community": 25,
+      "norm_label": "build"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "package_scripts_preview",
+      "community": 25,
+      "norm_label": "preview"
+    },
+    {
+      "label": "astro",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "package_scripts_astro",
+      "community": 25,
+      "norm_label": "astro"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "package_dependencies",
+      "community": 1,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "@astrojs/vercel",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "package_dependencies_astrojs_vercel",
+      "community": 1,
+      "norm_label": "@astrojs/vercel"
+    },
+    {
+      "label": "@tailwindcss/vite",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "package_dependencies_tailwindcss_vite",
+      "community": 1,
+      "norm_label": "@tailwindcss/vite"
+    },
+    {
+      "label": "@vercel/analytics",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "package_dependencies_vercel_analytics",
+      "community": 1,
+      "norm_label": "@vercel/analytics"
+    },
+    {
+      "label": "astro",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "package_dependencies_astro",
+      "community": 1,
+      "norm_label": "astro"
+    },
+    {
+      "label": "framer-motion",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "package_dependencies_framer_motion",
+      "community": 1,
+      "norm_label": "framer-motion"
+    },
+    {
+      "label": "lenis",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "package_dependencies_lenis",
+      "community": 1,
+      "norm_label": "lenis"
+    },
+    {
+      "label": "lucide-react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "package_dependencies_lucide_react",
+      "community": 1,
+      "norm_label": "lucide-react"
+    },
+    {
+      "label": "nodemailer",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "package_dependencies_nodemailer",
+      "community": 1,
+      "norm_label": "nodemailer"
+    },
+    {
+      "label": "sharp",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "package_dependencies_sharp",
+      "community": 1,
+      "norm_label": "sharp"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "package_dependencies_tailwindcss",
+      "community": 1,
+      "norm_label": "tailwindcss"
+    },
+    {
+      "label": "three",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "package_dependencies_three",
+      "community": 1,
+      "norm_label": "three"
+    },
+    {
+      "label": "allowScripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "package_allowscripts",
+      "community": 25,
+      "norm_label": "allowscripts"
+    },
+    {
+      "label": "esbuild",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "package_allowscripts_esbuild",
+      "community": 25,
+      "norm_label": "esbuild"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "package_devdependencies",
+      "community": 25,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@types/nodemailer",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "package_devdependencies_types_nodemailer",
+      "community": 25,
+      "norm_label": "@types/nodemailer"
+    },
+    {
+      "label": "../components/About.astro",
+      "file_type": "code",
+      "source_file": "src/components/About.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_about",
+      "community": 13,
+      "norm_label": "../components/about.astro"
+    },
+    {
+      "label": "../data/copy",
+      "file_type": "code",
+      "source_file": "src/data/copy",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "community": 13,
+      "norm_label": "../data/copy"
+    },
+    {
+      "label": "../data/site",
+      "file_type": "code",
+      "source_file": "src/data/site",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "community": 13,
+      "norm_label": "../data/site"
+    },
+    {
+      "label": "AuroraCurtain.astro",
+      "file_type": "code",
+      "source_file": "src/components/AuroraCurtain.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_auroracurtain",
+      "community": 52,
+      "norm_label": "auroracurtain.astro"
+    },
+    {
+      "label": "../scripts/aurora",
+      "file_type": "code",
+      "source_file": "src/scripts/aurora",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_oussama_alya222_documents_side_optflow_src_scripts_aurora",
+      "community": 52,
+      "norm_label": "../scripts/aurora"
+    },
+    {
+      "label": "../components/Blog.astro",
+      "file_type": "code",
+      "source_file": "src/components/Blog.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_blog",
+      "community": 13,
+      "norm_label": "../components/blog.astro"
+    },
+    {
+      "label": "../../../data/blog",
+      "file_type": "code",
+      "source_file": "src/data/blog",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_oussama_alya222_documents_side_optflow_src_data_blog",
+      "community": 0,
+      "norm_label": "../../../data/blog"
+    },
+    {
+      "label": "../components/PostCard.astro",
+      "file_type": "code",
+      "source_file": "src/components/PostCard.astro",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "source_location": "L1",
+      "id": "src_components_postcard",
+      "community": 0,
+      "norm_label": "../components/postcard.astro"
+    },
+    {
+      "label": "../components/Contact.astro",
+      "file_type": "code",
+      "source_file": "src/components/Contact.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_contact",
+      "community": 13,
+      "norm_label": "../components/contact.astro"
+    },
+    {
+      "label": "../components/Faq.astro",
+      "file_type": "code",
+      "source_file": "src/components/Faq.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_faq",
+      "community": 13,
+      "norm_label": "../components/faq.astro"
+    },
+    {
+      "label": "../components/Footer.astro",
+      "file_type": "code",
+      "source_file": "src/components/Footer.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_footer",
+      "community": 0,
+      "norm_label": "../components/footer.astro"
+    },
+    {
+      "label": "Logo.astro",
+      "file_type": "code",
+      "source_file": "src/components/Logo.astro",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "source_location": "L1",
+      "id": "src_components_logo",
+      "community": 0,
+      "norm_label": "logo.astro"
+    },
+    {
+      "label": "../components/Formats.astro",
+      "file_type": "code",
+      "source_file": "src/components/Formats.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_formats",
+      "community": 13,
+      "norm_label": "../components/formats.astro"
+    },
+    {
+      "label": "../components/Header.astro",
+      "file_type": "code",
+      "source_file": "src/components/Header.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_header",
+      "community": 0,
+      "norm_label": "../components/header.astro"
+    },
+    {
+      "label": "sections",
+      "file_type": "code",
+      "source_file": "src/components/Header.astro",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "src_components_header_sections",
+      "community": 0,
+      "norm_label": "sections"
+    },
+    {
+      "label": "onScroll()",
+      "file_type": "code",
+      "source_file": "src/components/Header.astro",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "src_components_header_onscroll",
+      "community": 0,
+      "norm_label": "onscroll()"
+    },
+    {
+      "label": "../components/Hero.astro",
+      "file_type": "code",
+      "source_file": "src/components/Hero.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_hero",
+      "community": 13,
+      "norm_label": "../components/hero.astro"
+    },
+    {
+      "label": "astro:assets",
+      "file_type": "code",
+      "source_file": "astro:assets",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "astro_assets",
+      "community": 13,
+      "norm_label": "astro:assets"
+    },
+    {
+      "label": "../assets/hero-image.svg",
+      "file_type": "code",
+      "source_file": "src/assets/hero-image.svg",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_oussama_alya222_documents_side_optflow_src_assets_hero_image_svg",
+      "community": 13,
+      "norm_label": "../assets/hero-image.svg"
+    },
+    {
+      "label": "../components/Process.astro",
+      "file_type": "code",
+      "source_file": "src/components/Process.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_process",
+      "community": 13,
+      "norm_label": "../components/process.astro"
+    },
+    {
+      "label": "../components/Reveal.astro",
+      "file_type": "code",
+      "source_file": "src/components/Reveal.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_reveal",
+      "community": 0,
+      "norm_label": "../components/reveal.astro"
+    },
+    {
+      "label": "../scripts/motion",
+      "file_type": "code",
+      "source_file": "src/scripts/motion",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_oussama_alya222_documents_side_optflow_src_scripts_motion",
+      "community": 0,
+      "norm_label": "../scripts/motion"
+    },
+    {
+      "label": "../components/Services.astro",
+      "file_type": "code",
+      "source_file": "src/components/Services.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_services",
+      "community": 13,
+      "norm_label": "../components/services.astro"
+    },
+    {
+      "label": "../components/WhyUs.astro",
+      "file_type": "code",
+      "source_file": "src/components/WhyUs.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_whyus",
+      "community": 13,
+      "norm_label": "../components/whyus.astro"
+    },
+    {
+      "label": "../components/Work.astro",
+      "file_type": "code",
+      "source_file": "src/components/Work.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_components_work",
+      "community": 13,
+      "norm_label": "../components/work.astro"
+    },
+    {
+      "label": "blog.ts",
+      "file_type": "code",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_data_blog",
+      "community": 0,
+      "norm_label": "blog.ts"
+    },
+    {
+      "label": "Block",
+      "file_type": "code",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_data_blog_block",
+      "community": 0,
+      "norm_label": "block"
+    },
+    {
+      "label": "Post",
+      "file_type": "code",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_data_blog_post",
+      "community": 0,
+      "norm_label": "post"
+    },
+    {
+      "label": "posts",
+      "file_type": "code",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "src_data_blog_posts",
+      "community": 0,
+      "norm_label": "posts"
+    },
+    {
+      "label": "postHref()",
+      "file_type": "code",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L199",
+      "_origin": "ast",
+      "id": "src_data_blog_posthref",
+      "community": 0,
+      "norm_label": "posthref()"
+    },
+    {
+      "label": "blogIndexHref()",
+      "file_type": "code",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L202",
+      "_origin": "ast",
+      "id": "src_data_blog_blogindexhref",
+      "community": 0,
+      "norm_label": "blogindexhref()"
+    },
+    {
+      "label": "dateFmt",
+      "file_type": "code",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L204",
+      "_origin": "ast",
+      "id": "src_data_blog_datefmt",
+      "community": 0,
+      "norm_label": "datefmt"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L205",
+      "_origin": "ast",
+      "id": "src_data_blog_formatdate",
+      "community": 0,
+      "norm_label": "formatdate()"
+    },
+    {
+      "label": "copy.ts",
+      "file_type": "code",
+      "source_file": "src/data/copy.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_data_copy",
+      "community": 0,
+      "norm_label": "copy.ts"
+    },
+    {
+      "label": "site.ts",
+      "file_type": "code",
+      "source_file": "src/data/site.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_data_site",
+      "community": 13,
+      "norm_label": "site.ts"
+    },
+    {
+      "label": "site",
+      "file_type": "code",
+      "source_file": "src/data/site.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "src_data_site_site",
+      "community": 13,
+      "norm_label": "site"
+    },
+    {
+      "label": "locales",
+      "file_type": "code",
+      "source_file": "src/data/site.ts",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "src_data_site_locales",
+      "community": 0,
+      "norm_label": "locales"
+    },
+    {
+      "label": "Lang",
+      "file_type": "code",
+      "source_file": "src/data/site.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_data_site_lang",
+      "community": 13,
+      "norm_label": "lang"
+    },
+    {
+      "label": "pathFor()",
+      "file_type": "code",
+      "source_file": "src/data/site.ts",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "src_data_site_pathfor",
+      "community": 0,
+      "norm_label": "pathfor()"
+    },
+    {
+      "label": "navHrefs",
+      "file_type": "code",
+      "source_file": "src/data/site.ts",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "src_data_site_navhrefs",
+      "community": 13,
+      "norm_label": "navhrefs"
+    },
+    {
+      "label": "serviceIcons",
+      "file_type": "code",
+      "source_file": "src/data/site.ts",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "src_data_site_serviceicons",
+      "community": 13,
+      "norm_label": "serviceicons"
+    },
+    {
+      "label": "work",
+      "file_type": "code",
+      "source_file": "src/data/site.ts",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "src_data_site_work",
+      "community": 13,
+      "norm_label": "work"
+    },
+    {
+      "label": "../../../layouts/BlogIndex.astro",
+      "file_type": "code",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_layouts_blogindex",
+      "community": 0,
+      "norm_label": "../../../layouts/blogindex.astro"
+    },
+    {
+      "label": "paths",
+      "file_type": "code",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "src_layouts_blogindex_paths",
+      "community": 0,
+      "norm_label": "paths"
+    },
+    {
+      "label": "Layout.astro",
+      "file_type": "code",
+      "source_file": "src/layouts/Layout.astro",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "source_location": "L1",
+      "id": "src_layouts_layout",
+      "community": 0,
+      "norm_label": "layout.astro"
+    },
+    {
+      "label": "../../../layouts/BlogPost.astro",
+      "file_type": "code",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_layouts_blogpost",
+      "community": 0,
+      "norm_label": "../../../layouts/blogpost.astro"
+    },
+    {
+      "label": "../layouts/Home.astro",
+      "file_type": "code",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "id": "src_layouts_home",
+      "community": 13,
+      "norm_label": "../layouts/home.astro"
+    },
+    {
+      "label": "abs()",
+      "file_type": "code",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "src_layouts_layout_abs",
+      "community": 0,
+      "norm_label": "abs()"
+    },
+    {
+      "label": "../styles/global.css",
+      "file_type": "code",
+      "source_file": "src/styles/global.css",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_oussama_alya222_documents_side_optflow_src_styles_global_css",
+      "community": 0,
+      "norm_label": "../styles/global.css"
+    },
+    {
+      "label": "@vercel/analytics/astro",
+      "file_type": "code",
+      "source_file": "@vercel/analytics/astro",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "astro",
+      "community": 1,
+      "norm_label": "@vercel/analytics/astro"
+    },
+    {
+      "label": "../scripts/smooth-scroll",
+      "file_type": "code",
+      "source_file": "src/scripts/smooth-scroll",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_oussama_alya222_documents_side_optflow_src_scripts_smooth_scroll",
+      "community": 0,
+      "norm_label": "../scripts/smooth-scroll"
+    },
+    {
+      "label": "contact.ts",
+      "file_type": "code",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_api_contact",
+      "community": 2,
+      "norm_label": "contact.ts"
+    },
+    {
+      "label": "json()",
+      "file_type": "code",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "src_pages_api_contact_json",
+      "community": 2,
+      "norm_label": "json()"
+    },
+    {
+      "label": "escape()",
+      "file_type": "code",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "src_pages_api_contact_escape",
+      "community": 2,
+      "norm_label": "escape()"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "src_pages_api_contact_post",
+      "community": 2,
+      "norm_label": "post()"
+    },
+    {
+      "label": "[slug].astro",
+      "file_type": "code",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_blog_slug",
+      "community": 0,
+      "norm_label": "[slug].astro"
+    },
+    {
+      "label": "getStaticPaths()",
+      "file_type": "code",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "src_pages_blog_slug_getstaticpaths",
+      "community": 0,
+      "norm_label": "getstaticpaths()"
+    },
+    {
+      "label": "index.astro",
+      "file_type": "code",
+      "source_file": "src/pages/blog/index.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_blog_index",
+      "community": 0,
+      "norm_label": "index.astro"
+    },
+    {
+      "label": "[slug].astro",
+      "file_type": "code",
+      "source_file": "src/pages/en/blog/[slug].astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_en_blog_slug",
+      "community": 0,
+      "norm_label": "[slug].astro"
+    },
+    {
+      "label": "getStaticPaths()",
+      "file_type": "code",
+      "source_file": "src/pages/en/blog/[slug].astro",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "src_pages_en_blog_slug_getstaticpaths",
+      "community": 0,
+      "norm_label": "getstaticpaths()"
+    },
+    {
+      "label": "index.astro",
+      "file_type": "code",
+      "source_file": "src/pages/en/blog/index.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_en_blog_index",
+      "community": 0,
+      "norm_label": "index.astro"
+    },
+    {
+      "label": "index.astro",
+      "file_type": "code",
+      "source_file": "src/pages/en/index.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_en_index",
+      "community": 13,
+      "norm_label": "index.astro"
+    },
+    {
+      "label": "index.astro",
+      "file_type": "code",
+      "source_file": "src/pages/index.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_index",
+      "community": 13,
+      "norm_label": "index.astro"
+    },
+    {
+      "label": "aurora.ts",
+      "file_type": "code",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_scripts_aurora",
+      "community": 6,
+      "norm_label": "aurora.ts"
+    },
+    {
+      "label": "Rgb",
+      "file_type": "code",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "src_scripts_aurora_rgb",
+      "community": 6,
+      "norm_label": "rgb"
+    },
+    {
+      "label": "Settings",
+      "file_type": "code",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_scripts_aurora_settings",
+      "community": 6,
+      "norm_label": "settings"
+    },
+    {
+      "label": "FALLBACK_COLORS",
+      "file_type": "code",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "src_scripts_aurora_fallback_colors",
+      "community": 6,
+      "norm_label": "fallback_colors"
+    },
+    {
+      "label": "QUAD",
+      "file_type": "code",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L165",
+      "_origin": "ast",
+      "id": "src_scripts_aurora_quad",
+      "community": 6,
+      "norm_label": "quad"
+    },
+    {
+      "label": "clamp()",
+      "file_type": "code",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "src_scripts_aurora_clamp",
+      "community": 6,
+      "norm_label": "clamp()"
+    },
+    {
+      "label": "resolveColors()",
+      "file_type": "code",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L168",
+      "_origin": "ast",
+      "id": "src_scripts_aurora_resolvecolors",
+      "community": 6,
+      "norm_label": "resolvecolors()"
+    },
+    {
+      "label": "compile()",
+      "file_type": "code",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L193",
+      "_origin": "ast",
+      "id": "src_scripts_aurora_compile",
+      "community": 6,
+      "norm_label": "compile()"
+    },
+    {
+      "label": "mountAurora()",
+      "file_type": "code",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L206",
+      "_origin": "ast",
+      "id": "src_scripts_aurora_mountaurora",
+      "community": 6,
+      "norm_label": "mountaurora()"
+    },
+    {
+      "label": "motion.ts",
+      "file_type": "code",
+      "source_file": "src/scripts/motion.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_scripts_motion",
+      "community": 6,
+      "norm_label": "motion.ts"
+    },
+    {
+      "label": "smooth-scroll.ts",
+      "file_type": "code",
+      "source_file": "src/scripts/smooth-scroll.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_scripts_smooth_scroll",
+      "community": 6,
+      "norm_label": "smooth-scroll.ts"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tsconfig",
+      "community": 49,
+      "norm_label": "tsconfig.json"
+    },
+    {
+      "label": "extends",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "tsconfig_extends",
+      "community": 49,
+      "norm_label": "extends"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "tsconfig_include",
+      "community": 49,
+      "norm_label": "include"
+    },
+    {
+      "label": "exclude",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "tsconfig_exclude",
+      "community": 49,
+      "norm_label": "exclude"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude",
+      "community": 51,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "Development",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_development",
+      "community": 51,
+      "norm_label": "development"
+    },
+    {
+      "label": "Documentation",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "claude_documentation",
+      "community": 51,
+      "norm_label": "documentation"
+    },
+    {
+      "label": "DESIGN.md",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "design",
+      "community": 27,
+      "norm_label": "design.md"
+    },
+    {
+      "label": "Design System: Optflow",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "design_design_system_optflow",
+      "community": 27,
+      "norm_label": "design system: optflow"
+    },
+    {
+      "label": "Overview",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "design_overview",
+      "community": 27,
+      "norm_label": "overview"
+    },
+    {
+      "label": "Colors",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "design_colors",
+      "community": 27,
+      "norm_label": "colors"
+    },
+    {
+      "label": "Primary",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "design_primary",
+      "community": 27,
+      "norm_label": "primary"
+    },
+    {
+      "label": "Secondary",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "design_secondary",
+      "community": 27,
+      "norm_label": "secondary"
+    },
+    {
+      "label": "Neutral",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "design_neutral",
+      "community": 27,
+      "norm_label": "neutral"
+    },
+    {
+      "label": "Named Rules",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "design_named_rules",
+      "community": 27,
+      "norm_label": "named rules"
+    },
+    {
+      "label": "Typography",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L140",
+      "_origin": "ast",
+      "id": "design_typography",
+      "community": 27,
+      "norm_label": "typography"
+    },
+    {
+      "label": "Hierarchy",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "design_hierarchy",
+      "community": 27,
+      "norm_label": "hierarchy"
+    },
+    {
+      "label": "Named Rules",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L155",
+      "_origin": "ast",
+      "id": "design_named_rules_155",
+      "community": 27,
+      "norm_label": "named rules"
+    },
+    {
+      "label": "Layout",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "design_layout",
+      "community": 27,
+      "norm_label": "layout"
+    },
+    {
+      "label": "Elevation & Depth",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L165",
+      "_origin": "ast",
+      "id": "design_elevation_depth",
+      "community": 27,
+      "norm_label": "elevation & depth"
+    },
+    {
+      "label": "Shadow Vocabulary",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L169",
+      "_origin": "ast",
+      "id": "design_shadow_vocabulary",
+      "community": 27,
+      "norm_label": "shadow vocabulary"
+    },
+    {
+      "label": "Named Rules",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L173",
+      "_origin": "ast",
+      "id": "design_named_rules_173",
+      "community": 27,
+      "norm_label": "named rules"
+    },
+    {
+      "label": "Shapes",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L176",
+      "_origin": "ast",
+      "id": "design_shapes",
+      "community": 27,
+      "norm_label": "shapes"
+    },
+    {
+      "label": "Components",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L180",
+      "_origin": "ast",
+      "id": "design_components",
+      "community": 27,
+      "norm_label": "components"
+    },
+    {
+      "label": "Buttons",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L182",
+      "_origin": "ast",
+      "id": "design_buttons",
+      "community": 27,
+      "norm_label": "buttons"
+    },
+    {
+      "label": "Tags",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L188",
+      "_origin": "ast",
+      "id": "design_tags",
+      "community": 27,
+      "norm_label": "tags"
+    },
+    {
+      "label": "Cards / Containers",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L191",
+      "_origin": "ast",
+      "id": "design_cards_containers",
+      "community": 27,
+      "norm_label": "cards / containers"
+    },
+    {
+      "label": "Navigation",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L197",
+      "_origin": "ast",
+      "id": "design_navigation",
+      "community": 27,
+      "norm_label": "navigation"
+    },
+    {
+      "label": "Pricing Plans",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L200",
+      "_origin": "ast",
+      "id": "design_pricing_plans",
+      "community": 27,
+      "norm_label": "pricing plans"
+    },
+    {
+      "label": "FAQ",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L203",
+      "_origin": "ast",
+      "id": "design_faq",
+      "community": 27,
+      "norm_label": "faq"
+    },
+    {
+      "label": "Hero Sky (signature)",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L206",
+      "_origin": "ast",
+      "id": "design_hero_sky_signature",
+      "community": 27,
+      "norm_label": "hero sky (signature)"
+    },
+    {
+      "label": "Do's and Don'ts",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L209",
+      "_origin": "ast",
+      "id": "design_do_s_and_don_ts",
+      "community": 27,
+      "norm_label": "do's and don'ts"
+    },
+    {
+      "label": "Do:",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L211",
+      "_origin": "ast",
+      "id": "design_do",
+      "community": 27,
+      "norm_label": "do:"
+    },
+    {
+      "label": "Don't:",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L218",
+      "_origin": "ast",
+      "id": "design_don_t",
+      "community": 27,
+      "norm_label": "don't:"
+    },
+    {
+      "label": "PRODUCT.md",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "product",
+      "community": 41,
+      "norm_label": "product.md"
+    },
+    {
+      "label": "Product",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "product_product",
+      "community": 41,
+      "norm_label": "product"
+    },
+    {
+      "label": "Platform",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "product_platform",
+      "community": 41,
+      "norm_label": "platform"
+    },
+    {
+      "label": "Users",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "product_users",
+      "community": 41,
+      "norm_label": "users"
+    },
+    {
+      "label": "Product Purpose",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "product_product_purpose",
+      "community": 41,
+      "norm_label": "product purpose"
+    },
+    {
+      "label": "Positioning",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "product_positioning",
+      "community": 41,
+      "norm_label": "positioning"
+    },
+    {
+      "label": "Operating Context",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "product_operating_context",
+      "community": 41,
+      "norm_label": "operating context"
+    },
+    {
+      "label": "Capabilities and Constraints",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "product_capabilities_and_constraints",
+      "community": 41,
+      "norm_label": "capabilities and constraints"
+    },
+    {
+      "label": "Evidence on Hand",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "product_evidence_on_hand",
+      "community": 41,
+      "norm_label": "evidence on hand"
+    },
+    {
+      "label": "Product Principles",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "product_product_principles",
+      "community": 41,
+      "norm_label": "product principles"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 47,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Astro Starter Kit: Minimal",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_astro_starter_kit_minimal",
+      "community": 47,
+      "norm_label": "astro starter kit: minimal"
+    },
+    {
+      "label": "\ud83d\ude80 Project Structure",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "readme_project_structure",
+      "community": 47,
+      "norm_label": "\ud83d\ude80 project structure"
+    },
+    {
+      "label": "\ud83e\uddde Commands",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "readme_commands",
+      "community": 47,
+      "norm_label": "\ud83e\uddde commands"
+    },
+    {
+      "label": "\ud83d\udc40 Want to learn more?",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "readme_want_to_learn_more",
+      "community": 47,
+      "norm_label": "\ud83d\udc40 want to learn more?"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_allowscripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_engines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "package_engines",
+      "target": "package_engines_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_astrojs_vercel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_framer_motion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_lenis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_nodemailer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_sharp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_tailwindcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_tailwindcss_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_three",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_vercel_analytics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "import",
+      "source": "package_dependencies_astro",
+      "target": "astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "package_allowscripts",
+      "target": "package_allowscripts_esbuild",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_nodemailer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/About.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_about",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/About.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_about",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/About.astro",
+      "source": "src_components_about",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/About.astro",
+      "source": "src_components_about",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_about",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Blog.astro",
+      "source": "src_components_blog",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Contact.astro",
+      "source": "src_components_contact",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Faq.astro",
+      "source": "src_components_faq",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.astro",
+      "source": "src_components_footer",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Formats.astro",
+      "source": "src_components_formats",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.astro",
+      "source": "src_components_header",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.astro",
+      "source": "src_components_hero",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PostCard.astro",
+      "source": "src_components_postcard",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Process.astro",
+      "source": "src_components_process",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Services.astro",
+      "source": "src_components_services",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/WhyUs.astro",
+      "source": "src_components_whyus",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Work.astro",
+      "source": "src_components_work",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source": "src_layouts_blogindex",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source": "src_layouts_blogpost",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source": "src_layouts_layout",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Blog.astro",
+      "source": "src_components_blog",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Contact.astro",
+      "source": "src_components_contact",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Faq.astro",
+      "source": "src_components_faq",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.astro",
+      "source": "src_components_footer",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Formats.astro",
+      "source": "src_components_formats",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.astro",
+      "source": "src_components_header",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.astro",
+      "source": "src_components_hero",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Logo.astro",
+      "source": "src_components_logo",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PostCard.astro",
+      "source": "src_components_postcard",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Process.astro",
+      "source": "src_components_process",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Services.astro",
+      "source": "src_components_services",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/WhyUs.astro",
+      "source": "src_components_whyus",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Work.astro",
+      "source": "src_components_work",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source": "src_layouts_blogindex",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source": "src_layouts_blogpost",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source": "src_layouts_home",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source": "src_layouts_layout",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/AuroraCurtain.astro",
+      "source": "src_components_auroracurtain",
+      "target": "users_oussama_alya222_documents_side_optflow_src_scripts_aurora",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Blog.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_blog",
+      "target": "src_components_postcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Blog.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_blog",
+      "target": "src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Blog.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_blog",
+      "target": "src_data_blog_blogindexhref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Blog.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_blog",
+      "target": "src_data_blog_posts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Blog.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_blog",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Blog.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_blog",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Blog.astro",
+      "source": "src_components_blog",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PostCard.astro",
+      "source": "src_components_postcard",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source": "src_layouts_blogindex",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source": "src_layouts_blogpost",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source": "src_pages_blog_slug",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/en/blog/[slug].astro",
+      "source": "src_pages_en_blog_slug",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PostCard.astro",
+      "source": "src_components_postcard",
+      "target": "astro_assets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PostCard.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_postcard",
+      "target": "src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PostCard.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_postcard",
+      "target": "src_data_blog_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PostCard.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_postcard",
+      "target": "src_data_blog_posthref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PostCard.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_postcard",
+      "target": "src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PostCard.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_postcard",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/PostCard.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_postcard",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_components_postcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Contact.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_contact",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Contact.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_contact",
+      "target": "src_data_site_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_contact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Faq.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_faq",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Faq.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_faq",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_faq",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_footer",
+      "target": "src_components_logo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_footer",
+      "target": "src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_components_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_components_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_header",
+      "target": "src_components_logo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Formats.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_formats",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Formats.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_formats",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_formats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "src/components/Header.astro",
+      "source_location": "L70",
+      "weight": 1.0,
+      "context": "argument",
+      "source": "src_components_header",
+      "target": "src_components_header_onscroll",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.astro",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "src_components_header",
+      "target": "src_components_header_sections",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Header.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_header",
+      "target": "src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_components_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_components_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.astro",
+      "source": "src_components_hero",
+      "target": "astro_assets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_hero",
+      "target": "src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_hero",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_hero",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_hero",
+      "target": "users_oussama_alya222_documents_side_optflow_src_assets_hero_image_svg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_hero",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Work.astro",
+      "source": "src_components_work",
+      "target": "astro_assets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source": "src_layouts_blogpost",
+      "target": "astro_assets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Process.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_process",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Process.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_process",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Reveal.astro",
+      "source": "src_components_reveal",
+      "target": "users_oussama_alya222_documents_side_optflow_src_scripts_motion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_components_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_components_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_reveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Services.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_services",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Services.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_services",
+      "target": "src_data_site_serviceicons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_services",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/WhyUs.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_whyus",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/WhyUs.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_whyus",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_whyus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Work.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_components_work",
+      "target": "src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Work.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_work",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Work.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_components_work",
+      "target": "src_data_site_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_components_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_data_blog",
+      "target": "src_data_blog_block",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L202",
+      "weight": 1.0,
+      "source": "src_data_blog",
+      "target": "src_data_blog_blogindexhref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L204",
+      "weight": 1.0,
+      "source": "src_data_blog",
+      "target": "src_data_blog_datefmt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "src_data_blog",
+      "target": "src_data_blog_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_data_blog",
+      "target": "src_data_blog_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "src_data_blog",
+      "target": "src_data_blog_posthref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_data_blog",
+      "target": "src_data_blog_posts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_blog",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_blog",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_blog_slug",
+      "target": "src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/en/blog/[slug].astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_en_blog_slug",
+      "target": "src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/blog.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_data_blog_post",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_data_blog_posts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_blog_slug",
+      "target": "src_data_blog_posts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/en/blog/[slug].astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_en_blog_slug",
+      "target": "src_data_blog_posts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_data_blog_posthref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_data_blog_blogindexhref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_data_blog_blogindexhref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_data_blog_formatdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/copy.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_copy",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/copy.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_copy",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/site.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_data_site",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/site.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_data_site",
+      "target": "src_data_site_locales",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/site.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_data_site",
+      "target": "src_data_site_navhrefs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/site.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "src_data_site",
+      "target": "src_data_site_pathfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/site.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_data_site",
+      "target": "src_data_site_serviceicons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/site.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_data_site",
+      "target": "src_data_site_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/site.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "src_data_site",
+      "target": "src_data_site_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_api_contact",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_api_contact",
+      "target": "src_data_site_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_data_site_locales",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_data_site_pathfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_data_site_pathfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_data_site_pathfor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_layouts_blogindex_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source": "src_layouts_blogindex",
+      "target": "src_layouts_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/index.astro",
+      "source": "src_pages_blog_index",
+      "target": "src_layouts_blogindex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/en/blog/index.astro",
+      "source": "src_pages_en_blog_index",
+      "target": "src_layouts_blogindex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_layouts_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source": "src_layouts_home",
+      "target": "src_layouts_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source": "src_layouts_layout",
+      "target": "astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_layouts_layout_abs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source": "src_layouts_layout",
+      "target": "users_oussama_alya222_documents_side_optflow_src_scripts_smooth_scroll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source": "src_layouts_layout",
+      "target": "users_oussama_alya222_documents_side_optflow_src_styles_global_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source": "src_pages_blog_slug",
+      "target": "src_layouts_blogpost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/en/blog/[slug].astro",
+      "source": "src_pages_en_blog_slug",
+      "target": "src_layouts_blogpost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/en/index.astro",
+      "source": "src_pages_en_index",
+      "target": "src_layouts_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/index.astro",
+      "source": "src_pages_index",
+      "target": "src_layouts_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_pages_api_contact",
+      "target": "src_pages_api_contact_escape",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_pages_api_contact",
+      "target": "src_pages_api_contact_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_pages_api_contact",
+      "target": "src_pages_api_contact_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_pages_api_contact_post",
+      "target": "src_pages_api_contact_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/api/contact.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "src_pages_api_contact_post",
+      "target": "src_pages_api_contact_escape",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/blog/[slug].astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_pages_blog_slug",
+      "target": "src_pages_blog_slug_getstaticpaths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/en/blog/[slug].astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_pages_en_blog_slug",
+      "target": "src_pages_en_blog_slug_getstaticpaths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "src_scripts_aurora",
+      "target": "src_scripts_aurora_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "src_scripts_aurora",
+      "target": "src_scripts_aurora_compile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "src_scripts_aurora",
+      "target": "src_scripts_aurora_fallback_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "src_scripts_aurora",
+      "target": "src_scripts_aurora_mountaurora",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "src_scripts_aurora",
+      "target": "src_scripts_aurora_quad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "src_scripts_aurora",
+      "target": "src_scripts_aurora_resolvecolors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_scripts_aurora",
+      "target": "src_scripts_aurora_rgb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_scripts_aurora",
+      "target": "src_scripts_aurora_settings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_scripts_aurora",
+      "target": "src_scripts_motion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L242",
+      "weight": 1.0,
+      "source": "src_scripts_aurora_mountaurora",
+      "target": "src_scripts_aurora_clamp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L240",
+      "weight": 1.0,
+      "source": "src_scripts_aurora_mountaurora",
+      "target": "src_scripts_aurora_resolvecolors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/aurora.ts",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "src_scripts_aurora_mountaurora",
+      "target": "src_scripts_aurora_compile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/scripts/smooth-scroll.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_scripts_smooth_scroll",
+      "target": "src_scripts_motion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_exclude",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_extends",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "claude",
+      "target": "claude_documentation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "design",
+      "target": "design_design_system_optflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "design_design_system_optflow",
+      "target": "design_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "design_design_system_optflow",
+      "target": "design_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L209",
+      "weight": 1.0,
+      "source": "design_design_system_optflow",
+      "target": "design_do_s_and_don_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "design_design_system_optflow",
+      "target": "design_elevation_depth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "design_design_system_optflow",
+      "target": "design_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "design_design_system_optflow",
+      "target": "design_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "design_design_system_optflow",
+      "target": "design_shapes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "design_design_system_optflow",
+      "target": "design_typography",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "design_colors",
+      "target": "design_named_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "design_colors",
+      "target": "design_neutral",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "design_colors",
+      "target": "design_primary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "design_colors",
+      "target": "design_secondary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "design_typography",
+      "target": "design_hierarchy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "design_typography",
+      "target": "design_named_rules_155",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "design_elevation_depth",
+      "target": "design_named_rules_173",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "design_elevation_depth",
+      "target": "design_shadow_vocabulary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L182",
+      "weight": 1.0,
+      "source": "design_components",
+      "target": "design_buttons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "design_components",
+      "target": "design_cards_containers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "design_components",
+      "target": "design_faq",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "design_components",
+      "target": "design_hero_sky_signature",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L197",
+      "weight": 1.0,
+      "source": "design_components",
+      "target": "design_navigation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "design_components",
+      "target": "design_pricing_plans",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L188",
+      "weight": 1.0,
+      "source": "design_components",
+      "target": "design_tags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L211",
+      "weight": 1.0,
+      "source": "design_do_s_and_don_ts",
+      "target": "design_do",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L218",
+      "weight": 1.0,
+      "source": "design_do_s_and_don_ts",
+      "target": "design_don_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "product",
+      "target": "product_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_capabilities_and_constraints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_evidence_on_hand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_operating_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_platform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_positioning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_product_principles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_product_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_users",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_astro_starter_kit_minimal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "readme_astro_starter_kit_minimal",
+      "target": "readme_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "readme_astro_starter_kit_minimal",
+      "target": "readme_project_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "readme_astro_starter_kit_minimal",
+      "target": "readme_want_to_learn_more",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "9625a4902e7960b040d339420829ca8963f95552"
+}

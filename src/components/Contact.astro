@@ -13,8 +13,6 @@ const c = copy[Astro.props.lang].contact
     <div class="reveal">
       <h2 id="contact-title" class="max-w-[12ch] text-[clamp(2.5rem,7vw,5rem)] lg:max-w-[8ch]">{c.title}</h2>
       <p class="lead mt-6 text-dark-muted">{c.lead}</p>
-      <p class="mt-8 text-dark-muted">{c.fallback}</p>
-      <a class="mt-2 inline-block border-b-2 border-accent pb-1.5 font-mono text-xl leading-none font-semibold" href={`mailto:${site.email}`}>{site.email}</a>
     </div>
     {site.calLink && (
       <div class="reveal min-h-[600px] overflow-hidden rounded-[20px] bg-white" style="--i:1">

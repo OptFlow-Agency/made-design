@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <rect width="1920" height="1080" fill="#f6f5f2"/>
+  <g font-family="Outfit, Helvetica, Arial, sans-serif">
+    <rect x="160" y="180" width="1600" height="720" rx="28" fill="#fff" stroke="#e6e5e0" stroke-width="3"/>
+    <circle cx="330" cy="400" r="110" fill="#e8480c"/>
+    <text x="330" y="440" font-size="120" font-weight="700" text-anchor="middle" fill="#fff">M</text>
+    <text x="520" y="385" font-size="120" font-weight="700" letter-spacing="-4" fill="#14130f">Aa</text>
+    <text x="520" y="460" font-size="34" fill="#5c5b57">Outfit Semibold / Regular</text>
+    <rect x="260" y="600" width="200" height="200" rx="16" fill="#e8480c"/>
+    <rect x="490" y="600" width="200" height="200" rx="16" fill="#14130f"/>
+    <rect x="720" y="600" width="200" height="200" rx="16" fill="#f6f5f2" stroke="#e6e5e0" stroke-width="3"/>
+    <rect x="950" y="600" width="200" height="200" rx="16" fill="#5c5b57"/>
+    <rect x="1130" y="300" width="500" height="26" rx="13" fill="#14130f"/>
+    <rect x="1130" y="352" width="400" height="26" rx="13" fill="#e6e5e0"/>
+    <rect x="1130" y="404" width="440" height="26" rx="13" fill="#e6e5e0"/>
+    <rect x="1330" y="600" width="300" height="84" rx="16" fill="#d4400a"/>
+    <rect x="1370" y="632" width="220" height="20" rx="10" fill="#fff"/>
+  </g>
+</svg>

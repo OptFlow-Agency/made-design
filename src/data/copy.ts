@@ -12,7 +12,7 @@ export const copy = {
         'Made Design est un studio qui conçoit des sites web rapides et optimisés pour la recherche, au Maroc et à l’international.',
     },
     ui: { skip: 'Aller au contenu', menu: 'Menu', main: 'Navigation principale', home: 'accueil', langLabel: 'Choisir la langue du site' },
-    nav: ['Formats', 'Réalisations', 'Démarche'],
+    nav: ['Formats', 'Réalisations', 'Démarche', 'Blog'],
     navCta: 'Réserver un appel gratuit',
     hero: {
       before: 'Vos clients vous cherchent en ligne. Faites-vous ',
@@ -101,6 +101,17 @@ export const copy = {
       ],
     },
     // TODO: add questions on site ownership/hosting and maintenance once the policy is confirmed.
+    blog: {
+      title: 'Le blog.',
+      lead: 'Design, interfaces et bonnes pratiques, pour des sites qui tiennent dans le temps.',
+      all: 'Tous les articles',
+      read: 'Lire l’article',
+      back: 'Retour au blog',
+      minutes: 'min de lecture',
+      source: 'Initialement publié sur',
+      metaTitle: 'Blog — Made Design',
+      metaDescription: 'Articles sur le design web, les design systems et les bonnes pratiques d’interface, par Made Design.',
+    },
     faq: {
       title: 'Questions fréquentes.',
       items: [
@@ -113,12 +124,10 @@ export const copy = {
     contact: {
       title: 'Parlons de votre projet.',
       lead: 'Choisissez un créneau qui vous convient. Nous parlons de votre activité et de vos objectifs.',
-      fallback: 'Le calendrier ne s’affiche pas ? Écrivez-nous :',
     },
     footer: {
       tagline: 'Des sites web conçus pour être trouvés.',
       explore: 'Explorer',
-      contact: 'Contact',
       follow: 'Suivre',
       legal: '© 2026 Made Design. Tous droits réservés.',
     },
@@ -131,7 +140,7 @@ export const copy = {
         'Made Design is a studio that designs fast, search-ready websites for businesses in Morocco and abroad.',
     },
     ui: { skip: 'Skip to content', menu: 'Menu', main: 'Main', home: 'home', langLabel: 'Choose site language' },
-    nav: ['Formats', 'Work', 'Process'],
+    nav: ['Formats', 'Work', 'Process', 'Blog'],
     navCta: 'Book a free call',
     hero: {
       before: 'Your customers are searching. Make sure they ',
@@ -220,6 +229,17 @@ export const copy = {
       ],
     },
     // TODO: add questions on site ownership/hosting and maintenance once the policy is confirmed.
+    blog: {
+      title: 'The blog.',
+      lead: 'Design, interfaces and good practice, for sites that last.',
+      all: 'All articles',
+      read: 'Read the article',
+      back: 'Back to the blog',
+      minutes: 'min read',
+      source: 'Originally published on',
+      metaTitle: 'Blog — Made Design',
+      metaDescription: 'Articles on web design, design systems and interface good practice, by Made Design.',
+    },
     faq: {
       title: 'Frequently asked questions.',
       items: [
@@ -232,12 +252,10 @@ export const copy = {
     contact: {
       title: 'Let’s talk about your project.',
       lead: 'Pick a time that suits you. We talk about your business and your goals.',
-      fallback: 'Calendar not showing? Email us:',
     },
     footer: {
       tagline: 'Websites built to be found.',
       explore: 'Explore',
-      contact: 'Contact',
       follow: 'Follow',
       legal: '© 2026 Made Design. All rights reserved.',
     },

@@ -1,0 +1,10 @@
+---
+import BlogPost from "../../layouts/BlogPost.astro";
+import { posts } from "../../data/blog";
+
+export const prerender = true;
+export const getStaticPaths = () => posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+const { post } = Astro.props;
+---
+
+<BlogPost lang="fr" {post} />

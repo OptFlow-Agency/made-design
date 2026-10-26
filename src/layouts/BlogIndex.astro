@@ -1,0 +1,39 @@
+---
+import Layout from './Layout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import Reveal from '../components/Reveal.astro'
+import PostCard from '../components/PostCard.astro'
+import { copy } from '../data/copy'
+import { blogIndexHref, posts } from '../data/blog'
+import { pathFor, type Lang } from '../data/site'
+
+interface Props {
+  lang: Lang
+}
+const { lang } = Astro.props
+const c = copy[lang].blog
+const paths = { fr: blogIndexHref('fr'), en: blogIndexHref('en') }
+---
+
+<Layout {lang} {paths} title={c.metaTitle} description={c.metaDescription}>
+  <Header {lang} {paths} base={pathFor(lang)} />
+  <main id="main" class="pt-[clamp(48px,8vw,96px)]">
+    <div class="wrap">
+      <div class="reveal mb-[clamp(40px,6vw,72px)]">
+        <h1 class="text-[clamp(2.5rem,7vw,5rem)]">{c.title}</h1>
+        <p class="lead mt-4">{c.lead}</p>
+      </div>
+      <ul class="grid gap-x-6 gap-y-12 md:grid-cols-2">
+        {posts.map((post, i) => (
+          <li class="reveal" style={`--i:${i % 2}`}>
+            <PostCard {lang} {post} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  </main>
+  <div class="mt-section"></div>
+  <Footer {lang} base={pathFor(lang)} />
+  <Reveal />
+</Layout>

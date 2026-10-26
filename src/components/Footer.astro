@@ -1,20 +1,22 @@
 ---
-import { navHrefs, site, type Lang } from "../data/site";
+import { navHrefs, type Lang } from "../data/site";
 import { copy } from "../data/copy";
 import Logo from "./Logo.astro";
 
 interface Props {
   lang: Lang;
+  /** Prefix for in-page anchors, so they work from sub-pages. */
+  base?: string;
 }
-const { lang } = Astro.props;
+const { lang, base = "" } = Astro.props;
 const c = copy[lang];
 ---
 
 <footer class="pt-[clamp(48px,7vw,80px)] pb-10">
   <div class="wrap">
-    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr]">
       <div class="grid max-w-[30ch] content-start gap-4 text-muted">
-        <Logo />
+        <Logo href={`${base}#top`} />
         <p>{c.footer.tagline}</p>
       </div>
       <div>
@@ -24,26 +26,11 @@ const c = copy[lang];
         <ul class="grid gap-3 font-mono text-[0.9375rem]">
           {navHrefs.map((href, i) => (
             <li>
-              <a class="underline-offset-4 hover:underline" href={href}>
+              <a class="underline-offset-4 hover:underline" href={`${base}${href}`}>
                 {c.nav[i]}
               </a>
             </li>
           ))}
-        </ul>
-      </div>
-      <div>
-        <h3 class="mb-[18px] font-mono text-[0.8125rem] leading-none font-semibold tracking-[0.06em] text-muted uppercase">
-          {c.footer.contact}
-        </h3>
-        <ul class="grid gap-3 font-mono text-[0.9375rem]">
-          <li>
-            <a
-              class="underline-offset-4 hover:underline"
-              href={`mailto:${site.email}`}
-            >
-              {site.email}
-            </a>
-          </li>
         </ul>
       </div>
       <div>

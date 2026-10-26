@@ -1,0 +1,80 @@
+---
+import { Image } from 'astro:assets'
+import Layout from './Layout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import Reveal from '../components/Reveal.astro'
+import { copy } from '../data/copy'
+import { blogIndexHref, formatDate, postHref, type Post } from '../data/blog'
+import { pathFor, type Lang } from '../data/site'
+
+interface Props {
+  lang: Lang
+  post: Post
+}
+const { lang, post } = Astro.props
+const c = copy[lang].blog
+const paths = { fr: postHref('fr', post.slug), en: postHref('en', post.slug) }
+
+const images = import.meta.glob<{ default: ImageMetadata }>('../assets/blog/*.{png,jpg,jpeg,webp,avif,svg}', { eager: true })
+const cover = images[`../assets/blog/${post.cover}`]?.default
+---
+
+<Layout {lang} {paths} type="article" title={`${post.title[lang]} — Made Design`} description={post.excerpt[lang]}>
+  <Header {lang} {paths} base={pathFor(lang)} />
+  <main id="main" class="pt-[clamp(40px,6vw,72px)]">
+    <article class="wrap">
+      <a class="inline-flex items-center gap-2 font-mono text-[0.9375rem] font-medium underline-offset-4 hover:underline" href={blogIndexHref(lang)}>
+        <svg class="size-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        {c.back}
+      </a>
+      <header class="mt-8">
+        <p class="font-mono text-[0.8125rem] tracking-[0.06em] text-muted uppercase">
+          <time datetime={post.date}>{formatDate(post.date, lang)}</time> · {post.minutes} {c.minutes}
+        </p>
+        <h1 class="mt-4 max-w-[22ch] text-[clamp(2.25rem,5.5vw,4.25rem)]">{post.title[lang]}</h1>
+      </header>
+      {cover && (
+        <Image
+          src={cover}
+          alt=""
+          widths={[720, 1080, 1440]}
+          sizes="(min-width: 1248px) 1200px, 100vw"
+          loading="eager"
+          class="mt-10 aspect-[21/10] w-full rounded-sm object-cover ring-1 ring-line ring-inset"
+        />
+      )}
+      <div class="mx-auto mt-12 max-w-[68ch]">
+        {post.body[lang].map((b) => {
+          switch (b.t) {
+            case 'h':
+              return <h2 class="mt-12 mb-4 max-w-none text-[clamp(1.5rem,3vw,2rem)] first:mt-0" set:html={b.text} />
+            case 'p':
+              return <p class="mt-5 text-[1.125rem] leading-[1.7]" set:html={b.text} />
+            case 'quote':
+              return <blockquote class="mt-6 border-l-[3px] border-accent pl-5 text-[1.125rem] leading-[1.7] text-muted" set:html={b.text} />
+            case 'ul':
+            case 'ol': {
+              const Tag = b.t
+              return (
+                <Tag class={`mt-5 grid gap-3 pl-6 text-[1.125rem] leading-[1.7] marker:text-accent ${b.t === 'ul' ? 'list-disc' : 'list-decimal'}`}>
+                  {b.items.map((item) => <li set:html={item} />)}
+                </Tag>
+              )
+            }
+            case 'hr':
+              return <hr class="my-10 border-line" />
+          }
+        })}
+        {post.source && (
+          <p class="mt-14 border-t border-line pt-6 font-mono text-[0.875rem] text-muted">
+            {c.source} <a class="underline underline-offset-4 hover:text-ink" href={post.source} target="_blank" rel="noopener">oussamachahidi.me</a>
+          </p>
+        )}
+      </div>
+    </article>
+  </main>
+  <div class="mt-section"></div>
+  <Footer {lang} base={pathFor(lang)} />
+  <Reveal />
+</Layout>

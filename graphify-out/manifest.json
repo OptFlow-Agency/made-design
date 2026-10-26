@@ -19,11 +19,6 @@
     "ast_hash": "ad2fd921707d435b7fd5ba01617f73bd",
     "semantic_hash": ""
   },
-  ".vercel/output/_functions/chunks/contact_B1WspBLg.mjs": {
-    "mtime": 1792968948.757516,
-    "ast_hash": "8ff34e4658f0995b9e58df3c4e6e3b48",
-    "semantic_hash": ""
-  },
   ".vercel/output/_functions/chunks/generic_BVtjWNC_.mjs": {
     "mtime": 1792968948.7567263,
     "ast_hash": "e0c3be5bbeaf9c94e70290c32a81594e",
@@ -82,11 +77,6 @@
   ".vercel/output/functions/_render.func/.vercel/output/server/chunks/console_DzxFduoL.mjs": {
     "mtime": 1792968949.1543906,
     "ast_hash": "ad2fd921707d435b7fd5ba01617f73bd",
-    "semantic_hash": ""
-  },
-  ".vercel/output/functions/_render.func/.vercel/output/server/chunks/contact_B1WspBLg.mjs": {
-    "mtime": 1792968949.1555984,
-    "ast_hash": "8ff34e4658f0995b9e58df3c4e6e3b48",
     "semantic_hash": ""
   },
   ".vercel/output/functions/_render.func/.vercel/output/server/chunks/generic_BVtjWNC_.mjs": {
@@ -175,8 +165,8 @@
     "semantic_hash": ""
   },
   "src/components/Contact.astro": {
-    "mtime": 1791651367.6955569,
-    "ast_hash": "4eb6a58553ea9bbcf5791ffbbc4e7e0d",
+    "mtime": 1793012261.3862176,
+    "ast_hash": "88608b7ffee13c4135d02d08d925e2d2",
     "semantic_hash": ""
   },
   "src/components/Faq.astro": {
@@ -185,8 +175,8 @@
     "semantic_hash": ""
   },
   "src/components/Footer.astro": {
-    "mtime": 1792357331.0778215,
-    "ast_hash": "7241f4afc84507c036a5bdf1667a9e04",
+    "mtime": 1793012540.3414788,
+    "ast_hash": "8e38afffb589356b10f18609bc21fff5",
     "semantic_hash": ""
   },
   "src/components/Formats.astro": {
@@ -195,8 +185,8 @@
     "semantic_hash": ""
   },
   "src/components/Header.astro": {
-    "mtime": 1792968945.847359,
-    "ast_hash": "2528fd4da4567ab910667d7407d86a10",
+    "mtime": 1793012540.3416116,
+    "ast_hash": "d6688bfaafbfa1098625df2aaebd85fd",
     "semantic_hash": ""
   },
   "src/components/Hero.astro": {
@@ -235,28 +225,28 @@
     "semantic_hash": ""
   },
   "src/data/copy.ts": {
-    "mtime": 1792968938.0796862,
-    "ast_hash": "49c2ad8e1c9182c2815794dad1b6414b",
+    "mtime": 1793012483.589685,
+    "ast_hash": "d3a660839cbc1173c6c5107501a1a73b",
     "semantic_hash": ""
   },
   "src/data/site.ts": {
-    "mtime": 1792968938.1750188,
-    "ast_hash": "83574f38f48f6d7af9709725c1a33b32",
+    "mtime": 1793013572.0182927,
+    "ast_hash": "d9a5893c0521a16ddfee52d4b8c240c1",
     "semantic_hash": ""
   },
   "src/layouts/Home.astro": {
-    "mtime": 1792968938.1761942,
-    "ast_hash": "bcc8d4a8492b6fad146596125aa02e93",
+    "mtime": 1793012523.33993,
+    "ast_hash": "3fb361a8c6ec33d0c2b2389f561ded92",
     "semantic_hash": ""
   },
   "src/layouts/Layout.astro": {
-    "mtime": 1792353404.3090515,
-    "ast_hash": "10f4bdaca7a6873719d5092a17798abc",
+    "mtime": 1793012494.0284905,
+    "ast_hash": "d7a7ddaa73f61ef843e0bbf6fb7336c2",
     "semantic_hash": ""
   },
   "src/pages/api/contact.ts": {
-    "mtime": 1792359525.1483319,
-    "ast_hash": "da19696f0173a8475756d69108e443fb",
+    "mtime": 1793012261.386476,
+    "ast_hash": "79871db4cce5be4f573c7aaf6005317e",
     "semantic_hash": ""
   },
   "src/pages/en/index.astro": {
@@ -359,26 +349,6 @@
     "ast_hash": "067ab5c8dbe721269ef31de093376986",
     "semantic_hash": ""
   },
-  ".vercel/output/static/_astro/inkwell.CdOla6Iz_25B1It.webp": {
-    "mtime": 1792968949.20547,
-    "ast_hash": "1e1a65c7877b8a8f6b277c9d8368c1fc",
-    "semantic_hash": ""
-  },
-  ".vercel/output/static/_astro/inkwell.CdOla6Iz_XWwF.webp": {
-    "mtime": 1792968949.2047956,
-    "ast_hash": "ac9f430fc337545c4a0d682fed557ee3",
-    "semantic_hash": ""
-  },
-  ".vercel/output/static/_astro/inkwell.CdOla6Iz_ZJGO8c.webp": {
-    "mtime": 1792968949.2080886,
-    "ast_hash": "730f9e78781604435e42f4cef7032420",
-    "semantic_hash": ""
-  },
-  ".vercel/output/static/_astro/inkwell.CdOla6Iz_oH3O7.webp": {
-    "mtime": 1792968949.2079954,
-    "ast_hash": "f640241eb812485431dea24931e08439",
-    "semantic_hash": ""
-  },
   ".vercel/output/static/_astro/lumina-studio.ctBDdEN4_Z1KXMPs.webp": {
     "mtime": 1792968949.2063472,
     "ast_hash": "3d6f4f6c1c635d9bd3688188c9060719",
@@ -437,46 +407,6 @@
   ".vercel/output/static/_astro/strata.ejOvfl68_ts2gw.webp": {
     "mtime": 1792968949.2087333,
     "ast_hash": "6ec62441302dd2f4931043cfaf87cd88",
-    "semantic_hash": ""
-  },
-  ".vercel/output/static/_astro/teressa.B9Ex1v3o_3xeOt.webp": {
-    "mtime": 1792968949.205086,
-    "ast_hash": "f429b26905dba2b80a3801638ff9507b",
-    "semantic_hash": ""
-  },
-  ".vercel/output/static/_astro/teressa.B9Ex1v3o_Z2bl37M.webp": {
-    "mtime": 1792968949.2099485,
-    "ast_hash": "e8a245c28adaefbc738ac2ad1d22f734",
-    "semantic_hash": ""
-  },
-  ".vercel/output/static/_astro/teressa.B9Ex1v3o_ZLs5Ik.webp": {
-    "mtime": 1792968949.2078483,
-    "ast_hash": "8a5a169adc056a63bd79140beaa902c7",
-    "semantic_hash": ""
-  },
-  ".vercel/output/static/_astro/teressa.B9Ex1v3o_ZnIYqS.webp": {
-    "mtime": 1792968949.2068524,
-    "ast_hash": "2b359eb66fa7d7c8a92edb0e7b1fcada",
-    "semantic_hash": ""
-  },
-  ".vercel/output/static/_astro/thockcraft.CJts-LGn_1uNgfw.webp": {
-    "mtime": 1792968949.208857,
-    "ast_hash": "0758635122c6276b8cacf47c1e13d682",
-    "semantic_hash": ""
-  },
-  ".vercel/output/static/_astro/thockcraft.CJts-LGn_2h4fiH.webp": {
-    "mtime": 1792968949.2096195,
-    "ast_hash": "f86f26b4168bfd67e28f81426066b7f7",
-    "semantic_hash": ""
-  },
-  ".vercel/output/static/_astro/thockcraft.CJts-LGn_CT10M.webp": {
-    "mtime": 1792968949.206531,
-    "ast_hash": "6ae35e2ad003640effacc1231862962b",
-    "semantic_hash": ""
-  },
-  ".vercel/output/static/_astro/thockcraft.CJts-LGn_Z231FSW.webp": {
-    "mtime": 1792968949.2083151,
-    "ast_hash": "1866af9a3643b62f34c5c2a3ea1c7aa4",
     "semantic_hash": ""
   },
   ".vercel/output/static/_astro/vpg.C-xVvaNS_X6AHW.webp": {
@@ -544,19 +474,74 @@
     "ast_hash": "a9ed3b98f5a09d6fd595de2a2d0c5973",
     "semantic_hash": ""
   },
-  "src/assets/work/teressa.png": {
-    "mtime": 1791652997.6557312,
-    "ast_hash": "06405cbad4ca3845bd89ef618d2da066",
-    "semantic_hash": ""
-  },
-  "src/assets/work/thockcraft.png": {
-    "mtime": 1792335645.2935984,
-    "ast_hash": "529328cdae83abb5a769ec4b8ff82608",
-    "semantic_hash": ""
-  },
   "src/assets/work/vpg.png": {
     "mtime": 1792335645.3004618,
     "ast_hash": "815866ed1b2b717fd02a0ca3223710f4",
+    "semantic_hash": ""
+  },
+  "src/components/Blog.astro": {
+    "mtime": 1793012523.3109255,
+    "ast_hash": "09a7aa0944c3ebf5bcaea9b82483049e",
+    "semantic_hash": ""
+  },
+  "src/components/PostCard.astro": {
+    "mtime": 1793013680.111287,
+    "ast_hash": "f3483a4e2475505c8c4f23811b02bd67",
+    "semantic_hash": ""
+  },
+  "src/data/blog.ts": {
+    "mtime": 1793013680.1109986,
+    "ast_hash": "9f26168ea1ccebfe12fb8a8922b9cc6d",
+    "semantic_hash": ""
+  },
+  "src/layouts/BlogIndex.astro": {
+    "mtime": 1793012540.3417747,
+    "ast_hash": "db53f9cae54285a387651bcfc9cea2cb",
+    "semantic_hash": ""
+  },
+  "src/layouts/BlogPost.astro": {
+    "mtime": 1793013680.1115775,
+    "ast_hash": "cb3083392d8fda75881bf06a7bf86e95",
+    "semantic_hash": ""
+  },
+  "src/pages/blog/[slug].astro": {
+    "mtime": 1793012523.319255,
+    "ast_hash": "8e9b32dc142e98abed798696db670ab5",
+    "semantic_hash": ""
+  },
+  "src/pages/blog/index.astro": {
+    "mtime": 1793012523.3172882,
+    "ast_hash": "d7abd290724239ded24aecdef062482e",
+    "semantic_hash": ""
+  },
+  "src/pages/en/blog/[slug].astro": {
+    "mtime": 1793012523.3229744,
+    "ast_hash": "274d80ad5ab8daca4fc191fdda796331",
+    "semantic_hash": ""
+  },
+  "src/pages/en/blog/index.astro": {
+    "mtime": 1793012523.3211665,
+    "ast_hash": "58507e8f21b9c9e381622f0ced534162",
+    "semantic_hash": ""
+  },
+  "src/assets/blog/design-system.jpg": {
+    "mtime": 1793012424.5401678,
+    "ast_hash": "365842b451d77301de08776bad504840",
+    "semantic_hash": ""
+  },
+  "src/assets/blog/naming.png": {
+    "mtime": 1793012424.234418,
+    "ast_hash": "4ff17deb6ee9f89198afab0e7ef21a82",
+    "semantic_hash": ""
+  },
+  "src/assets/blog/brand-identity.svg": {
+    "mtime": 1793013693.3897474,
+    "ast_hash": "549e804f7b710540993aa362a9c5e5c1",
+    "semantic_hash": ""
+  },
+  "src/assets/blog/seo.svg": {
+    "mtime": 1793013693.3920436,
+    "ast_hash": "ad6f8d9c2d6cf98f96640509b5a43a2b",
     "semantic_hash": ""
   }
 }

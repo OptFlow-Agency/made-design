@@ -1,0 +1,31 @@
+---
+import { copy } from "../data/copy";
+import { blogIndexHref, posts } from "../data/blog";
+import type { Lang } from "../data/site";
+import PostCard from "./PostCard.astro";
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const c = copy[lang].blog;
+---
+
+<section class="pt-section" id="blog" aria-labelledby="blog-title">
+  <div class="wrap">
+    <div class="reveal mb-[clamp(40px,6vw,72px)] flex flex-wrap items-end justify-between gap-6">
+      <div>
+        <h2 id="blog-title">{c.title}</h2>
+        <p class="lead mt-4">{c.lead}</p>
+      </div>
+      <a class="btn btn-ghost" href={blogIndexHref(lang)}>{c.all}</a>
+    </div>
+    <ul class="grid gap-x-6 gap-y-12 md:grid-cols-2">
+      {posts.slice(0, 2).map((post, i) => (
+        <li class="reveal" style={`--i:${i}`}>
+          <PostCard {lang} {post} />
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

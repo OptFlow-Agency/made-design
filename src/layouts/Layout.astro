@@ -6,10 +6,17 @@ import { locales, pathFor, type Lang } from '../data/site'
 
 interface Props {
   lang: Lang
+  title?: string
+  description?: string
+  /** Path of this page in each language (defaults to the home page). */
+  paths?: Record<Lang, string>
+  type?: 'website' | 'article'
 }
 
-const { lang } = Astro.props
-const { title, description } = copy[lang].meta
+const { lang, type = 'website' } = Astro.props
+const paths = Astro.props.paths ?? { fr: pathFor('fr'), en: pathFor('en') }
+const title = Astro.props.title ?? copy[lang].meta.title
+const description = Astro.props.description ?? copy[lang].meta.description
 // hreflang and canonical need absolute URLs: set `site` in astro.config.mjs.
 const abs = (path: string) => (Astro.site ? new URL(path, Astro.site).href : path)
 ---
@@ -24,11 +31,11 @@ const abs = (path: string) => (Astro.site ? new URL(path, Astro.site).href : pat
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
     <meta property="og:locale" content={lang === 'fr' ? 'fr_MA' : 'en_US'} />
-    <link rel="canonical" href={abs(pathFor(lang))} />
-    {locales.map((l) => <link rel="alternate" hreflang={l} href={abs(pathFor(l))} />)}
-    <link rel="alternate" hreflang="x-default" href={abs(pathFor('fr'))} />
+    <link rel="canonical" href={abs(paths[lang])} />
+    {locales.map((l) => <link rel="alternate" hreflang={l} href={abs(paths[l])} />)}
+    <link rel="alternate" hreflang="x-default" href={abs(paths.fr)} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
