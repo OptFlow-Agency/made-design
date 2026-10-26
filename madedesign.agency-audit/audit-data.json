@@ -1,0 +1,227 @@
+{
+  "summary": {
+    "health_score": 52,
+    "business_type": "Agency / web studio (Morocco, FR+EN)",
+    "top_findings": [
+      "No XML sitemap",
+      "No structured data on any page",
+      "Relative canonical/hreflang URLs",
+      "No robots.txt",
+      "No og:image / Twitter Card"
+    ],
+    "quick_wins": [
+      "Add @astrojs/sitemap with site URL",
+      "Add robots.txt with Sitemap line",
+      "Add ProfessionalService/WebSite/BlogPosting/FAQPage JSON-LD",
+      "Add default og:image + twitter:card",
+      "Absolute canonical/hreflang"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 55,
+      "what_works": [
+        "HTTPS + HSTS",
+        "Brotli",
+        "Real 404 status",
+        "CDN caching"
+      ],
+      "findings": [
+        {
+          "title": "No sitemap.xml",
+          "severity": "High",
+          "description": "/sitemap.xml returns 404",
+          "recommendation": "Add @astrojs/sitemap with i18n"
+        },
+        {
+          "title": "No robots.txt",
+          "severity": "Medium",
+          "description": "/robots.txt returns 404",
+          "recommendation": "Add robots.txt with Sitemap directive"
+        },
+        {
+          "title": "Relative canonical and hreflang",
+          "severity": "Medium",
+          "description": "href=\"/\" and \"/en/\" on all pages",
+          "recommendation": "Use absolute URLs from Astro.site"
+        },
+        {
+          "title": "Two-hop apex redirect",
+          "severity": "Medium",
+          "description": "http apex -> https apex -> https www",
+          "recommendation": "Redirect straight to https://www"
+        },
+        {
+          "title": "Missing security headers",
+          "severity": "Low",
+          "description": "Only HSTS present",
+          "recommendation": "Add CSP, X-Content-Type-Options, Referrer-Policy via vercel.json"
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 68,
+      "what_works": [
+        "Clear value proposition",
+        "FAQ section",
+        "Bilingual content"
+      ],
+      "findings": [
+        {
+          "title": "Weak E-E-A-T signals",
+          "severity": "Medium",
+          "description": "No authors, team, testimonials or case studies",
+          "recommendation": "Add About page, bylines, case studies with results"
+        },
+        {
+          "title": "Portfolio links to vercel.app demo domains",
+          "severity": "Medium",
+          "description": "3 of 4 external project links are *.vercel.app",
+          "recommendation": "Use real domains or on-site case studies"
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 62,
+      "what_works": [
+        "Unique titles/descriptions",
+        "Single H1 per page",
+        "hreflang FR/EN/x-default"
+      ],
+      "findings": [
+        {
+          "title": "Blog meta description off-topic",
+          "severity": "Medium",
+          "description": "Mentions design systems; posts cover brand identity and SEO",
+          "recommendation": "Rewrite to match content"
+        },
+        {
+          "title": "No dedicated service pages",
+          "severity": "Medium",
+          "description": "Formats are H3s on the homepage",
+          "recommendation": "One page per format"
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 0,
+      "what_works": [],
+      "findings": [
+        {
+          "title": "No JSON-LD",
+          "severity": "High",
+          "description": "0 blocks on 7 pages",
+          "recommendation": "Add ProfessionalService, WebSite, BlogPosting, FAQPage, BreadcrumbList"
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": null,
+      "what_works": [
+        "Server-rendered 47 KB HTML",
+        "Brotli",
+        "CDN cache hit"
+      ],
+      "findings": [
+        {
+          "title": "Not measured",
+          "severity": "Info",
+          "description": "PSI API quota 429; no CrUX credentials",
+          "recommendation": "Run pagespeed.web.dev or supply an API key"
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 35,
+      "what_works": [
+        "Semantic HTML",
+        "FAQ format",
+        "No JS needed to read content"
+      ],
+      "findings": [
+        {
+          "title": "No entity signals",
+          "severity": "High",
+          "description": "No Organization schema or sameAs",
+          "recommendation": "Add schema and profile links"
+        },
+        {
+          "title": "No llms.txt / AI crawler policy",
+          "severity": "Medium",
+          "description": "Both 404",
+          "recommendation": "Add robots.txt rules, optional llms.txt"
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 70,
+      "what_works": [
+        "WebP + srcset",
+        "Dimensions set",
+        "Lazy loading"
+      ],
+      "findings": [
+        {
+          "title": "No og:image",
+          "severity": "Medium",
+          "description": "Absent on all pages",
+          "recommendation": "Add 1200x630 default and per-post images"
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Sitemap",
+          "robots.txt",
+          "JSON-LD",
+          "Absolute canonical/hreflang"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "og:image + Twitter Card",
+          "Fix blog meta description",
+          "Replace vercel.app links"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Service pages",
+          "About/Team page",
+          "Case studies",
+          "Regular blog cadence"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Search Console",
+          "CWV baseline",
+          "Backlinks/citations",
+          "Drift baseline"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

@@ -134,10 +134,20 @@
       "norm_label": "dependencies"
     },
     {
-      "label": "@astrojs/vercel",
+      "label": "@astrojs/sitemap",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L15",
+      "_origin": "ast",
+      "id": "package_dependencies_astrojs_sitemap",
+      "community": 1,
+      "norm_label": "@astrojs/sitemap"
+    },
+    {
+      "label": "@astrojs/vercel",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "package_dependencies_astrojs_vercel",
       "community": 1,
@@ -147,7 +157,7 @@
       "label": "@tailwindcss/vite",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "package_dependencies_tailwindcss_vite",
       "community": 1,
@@ -157,7 +167,7 @@
       "label": "@vercel/analytics",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "package_dependencies_vercel_analytics",
       "community": 1,
@@ -167,7 +177,7 @@
       "label": "astro",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "package_dependencies_astro",
       "community": 1,
@@ -177,7 +187,7 @@
       "label": "framer-motion",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "package_dependencies_framer_motion",
       "community": 1,
@@ -187,7 +197,7 @@
       "label": "lenis",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "package_dependencies_lenis",
       "community": 1,
@@ -197,7 +207,7 @@
       "label": "lucide-react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "package_dependencies_lucide_react",
       "community": 1,
@@ -207,7 +217,7 @@
       "label": "nodemailer",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "package_dependencies_nodemailer",
       "community": 1,
@@ -217,7 +227,7 @@
       "label": "sharp",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "package_dependencies_sharp",
       "community": 1,
@@ -227,7 +237,7 @@
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "package_dependencies_tailwindcss",
       "community": 1,
@@ -237,7 +247,7 @@
       "label": "three",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "package_dependencies_three",
       "community": 1,
@@ -247,7 +257,7 @@
       "label": "allowScripts",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "package_allowscripts",
       "community": 25,
@@ -257,7 +267,7 @@
       "label": "esbuild",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "package_allowscripts_esbuild",
       "community": 25,
@@ -267,7 +277,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "package_devdependencies",
       "community": 25,
@@ -277,7 +287,7 @@
       "label": "@types/nodemailer",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "package_devdependencies_types_nodemailer",
       "community": 25,
@@ -363,7 +373,7 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_components_postcard",
-      "community": 0,
+      "community": 13,
       "norm_label": "../components/postcard.astro"
     },
     {
@@ -396,7 +406,7 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_footer",
-      "community": 0,
+      "community": 13,
       "norm_label": "../components/footer.astro"
     },
     {
@@ -407,7 +417,7 @@
       "_origin": "ast",
       "source_location": "L1",
       "id": "src_components_logo",
-      "community": 0,
+      "community": 13,
       "norm_label": "logo.astro"
     },
     {
@@ -429,7 +439,7 @@
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "id": "src_components_header",
-      "community": 0,
+      "community": 13,
       "norm_label": "../components/header.astro"
     },
     {
@@ -439,7 +449,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "src_components_header_sections",
-      "community": 0,
+      "community": 13,
       "norm_label": "sections"
     },
     {
@@ -449,7 +459,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "src_components_header_onscroll",
-      "community": 0,
+      "community": 13,
       "norm_label": "onscroll()"
     },
     {
@@ -635,8 +645,108 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_data_copy",
-      "community": 0,
+      "community": 13,
       "norm_label": "copy.ts"
+    },
+    {
+      "label": "schema.ts",
+      "file_type": "code",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_data_schema",
+      "community": 0,
+      "norm_label": "schema.ts"
+    },
+    {
+      "label": "Schema",
+      "file_type": "code",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_data_schema_schema",
+      "community": 0,
+      "norm_label": "schema"
+    },
+    {
+      "label": "orgId()",
+      "file_type": "code",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "src_data_schema_orgid",
+      "community": 0,
+      "norm_label": "orgid()"
+    },
+    {
+      "label": "organization()",
+      "file_type": "code",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "src_data_schema_organization",
+      "community": 0,
+      "norm_label": "organization()"
+    },
+    {
+      "label": "website()",
+      "file_type": "code",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "src_data_schema_website",
+      "community": 0,
+      "norm_label": "website()"
+    },
+    {
+      "label": "breadcrumb()",
+      "file_type": "code",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "src_data_schema_breadcrumb",
+      "community": 0,
+      "norm_label": "breadcrumb()"
+    },
+    {
+      "label": "faqPage()",
+      "file_type": "code",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "src_data_schema_faqpage",
+      "community": 0,
+      "norm_label": "faqpage()"
+    },
+    {
+      "label": "blogPosting()",
+      "file_type": "code",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "src_data_schema_blogposting",
+      "community": 0,
+      "norm_label": "blogposting()"
+    },
+    {
+      "label": "postBreadcrumb()",
+      "file_type": "code",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "src_data_schema_postbreadcrumb",
+      "community": 0,
+      "norm_label": "postbreadcrumb()"
+    },
+    {
+      "label": "blogBreadcrumb()",
+      "file_type": "code",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "src_data_schema_blogbreadcrumb",
+      "community": 0,
+      "norm_label": "blogbreadcrumb()"
     },
     {
       "label": "site.ts",
@@ -655,14 +765,14 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_data_site_site",
-      "community": 13,
+      "community": 2,
       "norm_label": "site"
     },
     {
       "label": "locales",
       "file_type": "code",
       "source_file": "src/data/site.ts",
-      "source_location": "L14",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "src_data_site_locales",
       "community": 0,
@@ -672,7 +782,7 @@
       "label": "Lang",
       "file_type": "code",
       "source_file": "src/data/site.ts",
-      "source_location": "L15",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "src_data_site_lang",
       "community": 13,
@@ -682,7 +792,7 @@
       "label": "pathFor()",
       "file_type": "code",
       "source_file": "src/data/site.ts",
-      "source_location": "L19",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "src_data_site_pathfor",
       "community": 0,
@@ -692,7 +802,7 @@
       "label": "navHrefs",
       "file_type": "code",
       "source_file": "src/data/site.ts",
-      "source_location": "L23",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "src_data_site_navhrefs",
       "community": 13,
@@ -702,7 +812,7 @@
       "label": "serviceIcons",
       "file_type": "code",
       "source_file": "src/data/site.ts",
-      "source_location": "L26",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "src_data_site_serviceicons",
       "community": 13,
@@ -712,7 +822,7 @@
       "label": "work",
       "file_type": "code",
       "source_file": "src/data/site.ts",
-      "source_location": "L38",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "src_data_site_work",
       "community": 13,
@@ -733,14 +843,14 @@
       "label": "paths",
       "file_type": "code",
       "source_file": "src/layouts/BlogIndex.astro",
-      "source_location": "L16",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "src_layouts_blogindex_paths",
       "community": 0,
       "norm_label": "paths"
     },
     {
-      "label": "Layout.astro",
+      "label": "../layouts/Layout.astro",
       "file_type": "code",
       "source_file": "src/layouts/Layout.astro",
       "confidence": "EXTRACTED",
@@ -748,7 +858,17 @@
       "source_location": "L1",
       "id": "src_layouts_layout",
       "community": 0,
-      "norm_label": "layout.astro"
+      "norm_label": "../layouts/layout.astro"
+    },
+    {
+      "label": "../data/schema",
+      "file_type": "code",
+      "source_file": "src/data/schema",
+      "confidence": "EXTRACTED",
+      "_origin": "ast",
+      "id": "users_oussama_alya222_documents_side_optflow_src_data_schema",
+      "community": 0,
+      "norm_label": "../data/schema"
     },
     {
       "label": "../../../layouts/BlogPost.astro",
@@ -776,11 +896,21 @@
       "label": "abs()",
       "file_type": "code",
       "source_file": "src/layouts/Layout.astro",
-      "source_location": "L21",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "src_layouts_layout_abs",
       "community": 0,
       "norm_label": "abs()"
+    },
+    {
+      "label": "serialize()",
+      "file_type": "code",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "src_layouts_layout_serialize",
+      "community": 0,
+      "norm_label": "serialize()"
     },
     {
       "label": "../styles/global.css",
@@ -811,6 +941,16 @@
       "id": "users_oussama_alya222_documents_side_optflow_src_scripts_smooth_scroll",
       "community": 0,
       "norm_label": "../scripts/smooth-scroll"
+    },
+    {
+      "label": "404.astro",
+      "file_type": "code",
+      "source_file": "src/pages/404.astro",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_pages_404",
+      "community": 13,
+      "norm_label": "404.astro"
     },
     {
       "label": "contact.ts",
@@ -1081,6 +1221,26 @@
       "id": "tsconfig_exclude",
       "community": 49,
       "norm_label": "exclude"
+    },
+    {
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "vercel",
+      "community": 8,
+      "norm_label": "vercel.json"
+    },
+    {
+      "label": "headers",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "vercel_headers",
+      "community": 8,
+      "norm_label": "headers"
     },
     {
       "label": "AGENTS.md",
@@ -1531,6 +1691,426 @@
       "id": "readme_want_to_learn_more",
       "community": 47,
       "norm_label": "\ud83d\udc40 want to learn more?"
+    },
+    {
+      "label": "ACTION-PLAN.md",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_action_plan",
+      "community": 5,
+      "norm_label": "action-plan.md"
+    },
+    {
+      "label": "Action Plan \u2014 madedesign.agency",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_action_plan_action_plan_madedesign_agency",
+      "community": 5,
+      "norm_label": "action plan \u2014 madedesign.agency"
+    },
+    {
+      "label": "Critical (fix immediately)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_action_plan_critical_fix_immediately",
+      "community": 5,
+      "norm_label": "critical (fix immediately)"
+    },
+    {
+      "label": "High (within 1 week)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_action_plan_high_within_1_week",
+      "community": 5,
+      "norm_label": "high (within 1 week)"
+    },
+    {
+      "label": "Medium (within 1 month)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_action_plan_medium_within_1_month",
+      "community": 5,
+      "norm_label": "medium (within 1 month)"
+    },
+    {
+      "label": "Low (backlog)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_action_plan_low_backlog",
+      "community": 5,
+      "norm_label": "low (backlog)"
+    },
+    {
+      "label": "Ongoing",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_action_plan_ongoing",
+      "community": 5,
+      "norm_label": "ongoing"
+    },
+    {
+      "label": "FLOW-FIND-OPTIMIZE.md",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize",
+      "community": 3,
+      "norm_label": "flow-find-optimize.md"
+    },
+    {
+      "label": "FLOW \u2014 Find + Optimize \u00b7 madedesign.agency",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_flow_find_optimize_madedesign_agency",
+      "community": 3,
+      "norm_label": "flow \u2014 find + optimize \u00b7 madedesign.agency"
+    },
+    {
+      "label": "STAGE 1 \u2014 FIND",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_stage_1_find",
+      "community": 3,
+      "norm_label": "stage 1 \u2014 find"
+    },
+    {
+      "label": "Buyer & intent (from site copy; assumptions flagged)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_buyer_intent_from_site_copy_assumptions_flagged",
+      "community": 3,
+      "norm_label": "buyer & intent (from site copy; assumptions flagged)"
+    },
+    {
+      "label": "Candidate query set (hypotheses \u2014 verify volume/SERP in GSC or Keyword Planner)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_candidate_query_set_hypotheses_verify_volume_serp_in_gsc_or_keyword_planner",
+      "community": 3,
+      "norm_label": "candidate query set (hypotheses \u2014 verify volume/serp in gsc or keyword planner)"
+    },
+    {
+      "label": "Evidence available now vs. gaps",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_evidence_available_now_vs_gaps",
+      "community": 3,
+      "norm_label": "evidence available now vs. gaps"
+    },
+    {
+      "label": "Prioritized content plan (impact \u00d7 proof available \u00d7 effort)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_prioritized_content_plan_impact_proof_available_effort",
+      "community": 3,
+      "norm_label": "prioritized content plan (impact \u00d7 proof available \u00d7 effort)"
+    },
+    {
+      "label": "Measurement (set up before publishing)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_measurement_set_up_before_publishing",
+      "community": 3,
+      "norm_label": "measurement (set up before publishing)"
+    },
+    {
+      "label": "Claims to verify before publishing",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_claims_to_verify_before_publishing",
+      "community": 3,
+      "norm_label": "claims to verify before publishing"
+    },
+    {
+      "label": "STAGE 2 \u2014 OPTIMIZE",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_stage_2_optimize",
+      "community": 3,
+      "norm_label": "stage 2 \u2014 optimize"
+    },
+    {
+      "label": "1) Technical \u2014 priority order",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_1_technical_priority_order",
+      "community": 3,
+      "norm_label": "1) technical \u2014 priority order"
+    },
+    {
+      "label": "2) Schema",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_2_schema",
+      "community": 3,
+      "norm_label": "2) schema"
+    },
+    {
+      "label": "3) CTR audit \u2014 proposed snippets (draft; test, don't treat as final)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_3_ctr_audit_proposed_snippets_draft_test_don_t_treat_as_final",
+      "community": 3,
+      "norm_label": "3) ctr audit \u2014 proposed snippets (draft; test, don't treat as final)"
+    },
+    {
+      "label": "Measurement for Optimize",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_measurement_for_optimize",
+      "community": 3,
+      "norm_label": "measurement for optimize"
+    },
+    {
+      "label": "Verification checklist",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_flow_find_optimize_verification_checklist",
+      "community": 3,
+      "norm_label": "verification checklist"
+    },
+    {
+      "label": "FULL-AUDIT-REPORT.md",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report",
+      "community": 4,
+      "norm_label": "full-audit-report.md"
+    },
+    {
+      "label": "SEO Audit \u2014 madedesign.agency",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_seo_audit_madedesign_agency",
+      "community": 4,
+      "norm_label": "seo audit \u2014 madedesign.agency"
+    },
+    {
+      "label": "Executive summary",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_executive_summary",
+      "community": 4,
+      "norm_label": "executive summary"
+    },
+    {
+      "label": "Top 5 issues",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_top_5_issues",
+      "community": 4,
+      "norm_label": "top 5 issues"
+    },
+    {
+      "label": "Top 5 quick wins",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_top_5_quick_wins",
+      "community": 4,
+      "norm_label": "top 5 quick wins"
+    },
+    {
+      "label": "Technical SEO (55)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_technical_seo_55",
+      "community": 4,
+      "norm_label": "technical seo (55)"
+    },
+    {
+      "label": "On-Page SEO (62)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_on_page_seo_62",
+      "community": 4,
+      "norm_label": "on-page seo (62)"
+    },
+    {
+      "label": "Content Quality (68)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_content_quality_68",
+      "community": 4,
+      "norm_label": "content quality (68)"
+    },
+    {
+      "label": "Schema (0)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_schema_0",
+      "community": 4,
+      "norm_label": "schema (0)"
+    },
+    {
+      "label": "Performance (not measured)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_performance_not_measured",
+      "community": 4,
+      "norm_label": "performance (not measured)"
+    },
+    {
+      "label": "Images (70)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_images_70",
+      "community": 4,
+      "norm_label": "images (70)"
+    },
+    {
+      "label": "AI Search Readiness (35)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_ai_search_readiness_35",
+      "community": 4,
+      "norm_label": "ai search readiness (35)"
+    },
+    {
+      "label": "Limitations",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_full_audit_report_limitations",
+      "community": 4,
+      "norm_label": "limitations"
+    },
+    {
+      "label": "SCHEMA-REPORT.md",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_schema_report",
+      "community": 7,
+      "norm_label": "schema-report.md"
+    },
+    {
+      "label": "Schema Report \u2014 madedesign.agency",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_schema_report_schema_report_madedesign_agency",
+      "community": 7,
+      "norm_label": "schema report \u2014 madedesign.agency"
+    },
+    {
+      "label": "Detection",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_schema_report_detection",
+      "community": 7,
+      "norm_label": "detection"
+    },
+    {
+      "label": "Validation Results",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_schema_report_validation_results",
+      "community": 7,
+      "norm_label": "validation results"
+    },
+    {
+      "label": "Recommendations (priority order)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_schema_report_recommendations_priority_order",
+      "community": 7,
+      "norm_label": "recommendations (priority order)"
+    },
+    {
+      "label": "Gaps in the data I can't fill for you",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_schema_report_gaps_in_the_data_i_can_t_fill_for_you",
+      "community": 7,
+      "norm_label": "gaps in the data i can't fill for you"
+    },
+    {
+      "label": "Implementation (Astro)",
+      "file_type": "document",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "madedesign_agency_audit_schema_report_implementation_astro",
+      "community": 7,
+      "norm_label": "implementation (astro)"
     }
   ],
   "links": [
@@ -1538,7 +2118,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0,
       "source": "package",
       "target": "package_allowscripts",
@@ -1558,7 +2138,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
       "source": "package",
       "target": "package_devdependencies",
@@ -1668,7 +2248,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "source": "package_dependencies",
       "target": "package_dependencies_astro",
@@ -1681,67 +2261,7 @@
       "source_location": "L15",
       "weight": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_astrojs_vercel",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_framer_motion",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_lenis",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_lucide_react",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_nodemailer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_sharp",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_tailwindcss",
+      "target": "package_dependencies_astrojs_sitemap",
       "confidence_score": 1.0
     },
     {
@@ -1751,7 +2271,57 @@
       "source_location": "L16",
       "weight": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_tailwindcss_vite",
+      "target": "package_dependencies_astrojs_vercel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_framer_motion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_lenis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_nodemailer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_sharp",
       "confidence_score": 1.0
     },
     {
@@ -1761,7 +2331,7 @@
       "source_location": "L25",
       "weight": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_three",
+      "target": "package_dependencies_tailwindcss",
       "confidence_score": 1.0
     },
     {
@@ -1771,6 +2341,26 @@
       "source_location": "L17",
       "weight": 1.0,
       "source": "package_dependencies",
+      "target": "package_dependencies_tailwindcss_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_three",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "package_dependencies",
       "target": "package_dependencies_vercel_analytics",
       "confidence_score": 1.0
     },
@@ -1778,7 +2368,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "context": "import",
       "source": "package_dependencies_astro",
@@ -1789,7 +2379,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "weight": 1.0,
       "source": "package_allowscripts",
       "target": "package_allowscripts_esbuild",
@@ -1799,7 +2389,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0,
       "source": "package_devdependencies",
       "target": "package_devdependencies_types_nodemailer",
@@ -2107,6 +2697,14 @@
       "confidence": "EXTRACTED",
       "source_file": "src/layouts/Layout.astro",
       "source": "src_layouts_layout",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/404.astro",
+      "source": "src_pages_404",
       "target": "users_oussama_alya222_documents_side_optflow_src_data_site",
       "confidence_score": 1.0
     },
@@ -2453,6 +3051,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/pages/404.astro",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_pages_404",
+      "target": "src_components_footer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/components/Header.astro",
       "source_location": "L4",
       "weight": 1.0,
@@ -2555,6 +3164,17 @@
       "source_location": "L3",
       "weight": 1.0,
       "source": "src_layouts_home",
+      "target": "src_components_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/404.astro",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_pages_404",
       "target": "src_components_header",
       "confidence_score": 1.0
     },
@@ -2917,6 +3537,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_blog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/layouts/BlogIndex.astro",
       "source_location": "L8",
       "weight": 1.0,
@@ -2972,6 +3603,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_blog_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/layouts/BlogIndex.astro",
       "source_location": "L8",
       "weight": 1.0,
@@ -3005,12 +3647,78 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_blog_posthref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/data/schema.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "src_data_schema_blogposting",
+      "target": "src_data_blog_posthref"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/data/schema.ts",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "src_data_schema_postbreadcrumb",
+      "target": "src_data_blog_posthref"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/layouts/BlogPost.astro",
       "source_location": "L8",
       "weight": 1.0,
       "source": "src_layouts_blogpost",
       "target": "src_data_blog_posthref",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_blog_blogindexhref",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/data/schema.ts",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "src_data_schema_blogbreadcrumb",
+      "target": "src_data_blog_blogindexhref"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/data/schema.ts",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "src_data_schema_postbreadcrumb",
+      "target": "src_data_blog_blogindexhref"
     },
     {
       "relation": "imports",
@@ -3071,6 +3779,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_copy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/layouts/BlogIndex.astro",
       "source_location": "L7",
       "weight": 1.0,
@@ -3103,31 +3822,322 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/data/site.ts",
-      "source_location": "L15",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L88",
       "weight": 1.0,
-      "source": "src_data_site",
+      "source": "src_data_schema",
+      "target": "src_data_schema_blogbreadcrumb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_schema_blogposting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_schema_breadcrumb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_schema_faqpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_schema_organization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_schema_orgid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_schema_postbreadcrumb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_schema_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_schema_website",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_data_schema",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_data_schema",
       "target": "src_data_site_lang",
       "confidence_score": 1.0
     },
     {
-      "relation": "contains",
+      "relation": "imports",
+      "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/data/site.ts",
-      "source_location": "L14",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L3",
       "weight": 1.0,
-      "source": "src_data_site",
-      "target": "src_data_site_locales",
+      "source": "src_data_schema",
+      "target": "src_data_site_pathfor",
       "confidence_score": 1.0
     },
     {
-      "relation": "contains",
+      "relation": "imports",
+      "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/data/site.ts",
-      "source_location": "L23",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L3",
       "weight": 1.0,
-      "source": "src_data_site",
-      "target": "src_data_site_navhrefs",
+      "source": "src_data_schema",
+      "target": "src_data_site_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_data_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_data_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_data_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_data_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "src_data_schema_blogposting",
+      "target": "src_data_schema_orgid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_data_schema_organization",
+      "target": "src_data_schema_orgid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "src_data_schema_website",
+      "target": "src_data_schema_orgid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_data_schema_organization",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_data_schema_website",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "src_data_schema_blogbreadcrumb",
+      "target": "src_data_schema_breadcrumb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/schema.ts",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "src_data_schema_postbreadcrumb",
+      "target": "src_data_schema_breadcrumb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_layouts_home",
+      "target": "src_data_schema_faqpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_data_schema_blogposting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/data/schema.ts",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "src_data_schema_postbreadcrumb",
+      "target": "src_data_site_pathfor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_layouts_blogpost",
+      "target": "src_data_schema_postbreadcrumb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/data/schema.ts",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "src_data_schema_blogbreadcrumb",
+      "target": "src_data_site_pathfor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_layouts_blogindex",
+      "target": "src_data_schema_blogbreadcrumb",
       "confidence_score": 1.0
     },
     {
@@ -3137,6 +4147,36 @@
       "source_location": "L19",
       "weight": 1.0,
       "source": "src_data_site",
+      "target": "src_data_site_lang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/site.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_data_site",
+      "target": "src_data_site_locales",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/site.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "src_data_site",
+      "target": "src_data_site_navhrefs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/data/site.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_data_site",
       "target": "src_data_site_pathfor",
       "confidence_score": 1.0
     },
@@ -3144,7 +4184,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/site.ts",
-      "source_location": "L26",
+      "source_location": "L30",
       "weight": 1.0,
       "source": "src_data_site",
       "target": "src_data_site_serviceicons",
@@ -3164,7 +4204,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/data/site.ts",
-      "source_location": "L38",
+      "source_location": "L42",
       "weight": 1.0,
       "source": "src_data_site",
       "target": "src_data_site_work",
@@ -3175,7 +4215,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/layouts/BlogIndex.astro",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "source": "src_layouts_blogindex",
       "target": "src_data_site",
@@ -3186,7 +4226,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/layouts/BlogPost.astro",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "source": "src_layouts_blogpost",
       "target": "src_data_site",
@@ -3197,7 +4237,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/layouts/Home.astro",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "source": "src_layouts_home",
       "target": "src_data_site",
@@ -3218,11 +4258,33 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/pages/404.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_pages_404",
+      "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/pages/api/contact.ts",
       "source_location": "L3",
       "weight": 1.0,
       "source": "src_pages_api_contact",
       "target": "src_data_site",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_data_site_site",
       "confidence_score": 1.0
     },
     {
@@ -3252,7 +4314,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/layouts/Home.astro",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "source": "src_layouts_home",
       "target": "src_data_site_lang",
@@ -3263,7 +4325,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/layouts/BlogIndex.astro",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "source": "src_layouts_blogindex",
       "target": "src_data_site_pathfor",
@@ -3274,7 +4336,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/layouts/BlogPost.astro",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "source": "src_layouts_blogpost",
       "target": "src_data_site_pathfor",
@@ -3292,10 +4354,21 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/404.astro",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_pages_404",
+      "target": "src_data_site_pathfor",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/layouts/BlogIndex.astro",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "source": "src_layouts_blogindex",
       "target": "src_layouts_blogindex_paths",
@@ -3307,6 +4380,14 @@
       "source_file": "src/layouts/BlogIndex.astro",
       "source": "src_layouts_blogindex",
       "target": "src_layouts_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogIndex.astro",
+      "source": "src_layouts_blogindex",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_schema",
       "confidence_score": 1.0
     },
     {
@@ -3356,10 +4437,28 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/layouts/Layout.astro",
-      "source_location": "L21",
+      "source_location": "L26",
       "weight": 1.0,
       "source": "src_layouts_layout",
       "target": "src_layouts_layout_abs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_layouts_layout",
+      "target": "src_layouts_layout_serialize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Layout.astro",
+      "source": "src_layouts_layout",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_schema",
       "confidence_score": 1.0
     },
     {
@@ -3376,6 +4475,30 @@
       "source_file": "src/layouts/Layout.astro",
       "source": "src_layouts_layout",
       "target": "users_oussama_alya222_documents_side_optflow_src_styles_global_css",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/404.astro",
+      "source": "src_pages_404",
+      "target": "src_layouts_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/BlogPost.astro",
+      "source": "src_layouts_blogpost",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src/layouts/Home.astro",
+      "source": "src_layouts_home",
+      "target": "users_oussama_alya222_documents_side_optflow_src_data_schema",
       "confidence_score": 1.0
     },
     {
@@ -3645,6 +4768,16 @@
       "weight": 1.0,
       "source": "tsconfig",
       "target": "tsconfig_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_headers",
       "confidence_score": 1.0
     },
     {
@@ -4056,8 +5189,388 @@
       "source": "readme_astro_starter_kit_minimal",
       "target": "readme_want_to_learn_more",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_action_plan",
+      "target": "madedesign_agency_audit_action_plan_action_plan_madedesign_agency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_action_plan_action_plan_madedesign_agency",
+      "target": "madedesign_agency_audit_action_plan_critical_fix_immediately",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_action_plan_action_plan_madedesign_agency",
+      "target": "madedesign_agency_audit_action_plan_high_within_1_week",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_action_plan_action_plan_madedesign_agency",
+      "target": "madedesign_agency_audit_action_plan_low_backlog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_action_plan_action_plan_madedesign_agency",
+      "target": "madedesign_agency_audit_action_plan_medium_within_1_month",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/ACTION-PLAN.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_action_plan_action_plan_madedesign_agency",
+      "target": "madedesign_agency_audit_action_plan_ongoing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize",
+      "target": "madedesign_agency_audit_flow_find_optimize_flow_find_optimize_madedesign_agency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize",
+      "target": "madedesign_agency_audit_flow_find_optimize_stage_1_find",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize",
+      "target": "madedesign_agency_audit_flow_find_optimize_stage_2_optimize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize_stage_1_find",
+      "target": "madedesign_agency_audit_flow_find_optimize_buyer_intent_from_site_copy_assumptions_flagged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize_stage_1_find",
+      "target": "madedesign_agency_audit_flow_find_optimize_candidate_query_set_hypotheses_verify_volume_serp_in_gsc_or_keyword_planner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize_stage_1_find",
+      "target": "madedesign_agency_audit_flow_find_optimize_claims_to_verify_before_publishing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize_stage_1_find",
+      "target": "madedesign_agency_audit_flow_find_optimize_evidence_available_now_vs_gaps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize_stage_1_find",
+      "target": "madedesign_agency_audit_flow_find_optimize_measurement_set_up_before_publishing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize_stage_1_find",
+      "target": "madedesign_agency_audit_flow_find_optimize_prioritized_content_plan_impact_proof_available_effort",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize_stage_2_optimize",
+      "target": "madedesign_agency_audit_flow_find_optimize_1_technical_priority_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize_stage_2_optimize",
+      "target": "madedesign_agency_audit_flow_find_optimize_2_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize_stage_2_optimize",
+      "target": "madedesign_agency_audit_flow_find_optimize_3_ctr_audit_proposed_snippets_draft_test_don_t_treat_as_final",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize_stage_2_optimize",
+      "target": "madedesign_agency_audit_flow_find_optimize_measurement_for_optimize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_flow_find_optimize_stage_2_optimize",
+      "target": "madedesign_agency_audit_flow_find_optimize_verification_checklist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report",
+      "target": "madedesign_agency_audit_full_audit_report_seo_audit_madedesign_agency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report_seo_audit_madedesign_agency",
+      "target": "madedesign_agency_audit_full_audit_report_ai_search_readiness_35",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report_seo_audit_madedesign_agency",
+      "target": "madedesign_agency_audit_full_audit_report_content_quality_68",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report_seo_audit_madedesign_agency",
+      "target": "madedesign_agency_audit_full_audit_report_executive_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report_seo_audit_madedesign_agency",
+      "target": "madedesign_agency_audit_full_audit_report_images_70",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report_seo_audit_madedesign_agency",
+      "target": "madedesign_agency_audit_full_audit_report_limitations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report_seo_audit_madedesign_agency",
+      "target": "madedesign_agency_audit_full_audit_report_on_page_seo_62",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report_seo_audit_madedesign_agency",
+      "target": "madedesign_agency_audit_full_audit_report_performance_not_measured",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report_seo_audit_madedesign_agency",
+      "target": "madedesign_agency_audit_full_audit_report_schema_0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report_seo_audit_madedesign_agency",
+      "target": "madedesign_agency_audit_full_audit_report_technical_seo_55",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report_executive_summary",
+      "target": "madedesign_agency_audit_full_audit_report_top_5_issues",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/FULL-AUDIT-REPORT.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_full_audit_report_executive_summary",
+      "target": "madedesign_agency_audit_full_audit_report_top_5_quick_wins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_schema_report",
+      "target": "madedesign_agency_audit_schema_report_schema_report_madedesign_agency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_schema_report_schema_report_madedesign_agency",
+      "target": "madedesign_agency_audit_schema_report_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_schema_report_schema_report_madedesign_agency",
+      "target": "madedesign_agency_audit_schema_report_gaps_in_the_data_i_can_t_fill_for_you",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_schema_report_schema_report_madedesign_agency",
+      "target": "madedesign_agency_audit_schema_report_implementation_astro",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_schema_report_schema_report_madedesign_agency",
+      "target": "madedesign_agency_audit_schema_report_recommendations_priority_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "madedesign.agency-audit/SCHEMA-REPORT.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "madedesign_agency_audit_schema_report_schema_report_madedesign_agency",
+      "target": "madedesign_agency_audit_schema_report_validation_results",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9625a4902e7960b040d339420829ca8963f95552"
+  "built_at_commit": "b7c45722368e61cdbe00a5fac322b7c877448745"
 }

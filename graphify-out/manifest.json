@@ -145,13 +145,13 @@
     "semantic_hash": ""
   },
   "astro.config.mjs": {
-    "mtime": 1792359525.1694999,
-    "ast_hash": "fe543214a5bef35e1c0961c4abce9315",
+    "mtime": 1793049312.4525008,
+    "ast_hash": "4c5ba0fffb3598c0d99c033e38bb0203",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1792359518.0711427,
-    "ast_hash": "0fda1a28ff35335a504d67dac15f5060",
+    "mtime": 1793049295.181868,
+    "ast_hash": "11648d75af9781a0331519fc27b17e71",
     "semantic_hash": ""
   },
   "src/components/About.astro": {
@@ -230,18 +230,18 @@
     "semantic_hash": ""
   },
   "src/data/site.ts": {
-    "mtime": 1793013572.0182927,
-    "ast_hash": "d9a5893c0521a16ddfee52d4b8c240c1",
+    "mtime": 1793049312.4529765,
+    "ast_hash": "c828805079ef73e7c8080591402928db",
     "semantic_hash": ""
   },
   "src/layouts/Home.astro": {
-    "mtime": 1793012523.33993,
-    "ast_hash": "3fb361a8c6ec33d0c2b2389f561ded92",
+    "mtime": 1793049332.9313562,
+    "ast_hash": "8e65526324bb30c2a288a3c3bbb3fcbc",
     "semantic_hash": ""
   },
   "src/layouts/Layout.astro": {
-    "mtime": 1793012494.0284905,
-    "ast_hash": "d7a7ddaa73f61ef843e0bbf6fb7336c2",
+    "mtime": 1793049332.931034,
+    "ast_hash": "2997c70e620c62fb41f020b506fe3b20",
     "semantic_hash": ""
   },
   "src/pages/api/contact.ts": {
@@ -495,13 +495,13 @@
     "semantic_hash": ""
   },
   "src/layouts/BlogIndex.astro": {
-    "mtime": 1793012540.3417747,
-    "ast_hash": "db53f9cae54285a387651bcfc9cea2cb",
+    "mtime": 1793049332.9316764,
+    "ast_hash": "31f4f5a9f0dcaa04155fa6446a78ad87",
     "semantic_hash": ""
   },
   "src/layouts/BlogPost.astro": {
-    "mtime": 1793013680.1115775,
-    "ast_hash": "cb3083392d8fda75881bf06a7bf86e95",
+    "mtime": 1793049332.9319994,
+    "ast_hash": "7eb339c3f66f978fabeb2240ae983654",
     "semantic_hash": ""
   },
   "src/pages/blog/[slug].astro": {
@@ -542,6 +542,56 @@
   "src/assets/blog/seo.svg": {
     "mtime": 1793013693.3920436,
     "ast_hash": "ad6f8d9c2d6cf98f96640509b5a43a2b",
+    "semantic_hash": ""
+  },
+  "madedesign.agency-audit/audit-data.json": {
+    "mtime": 1793048513.7530859,
+    "ast_hash": "c7028b2642ee4e951aa20cbb737cb814",
+    "semantic_hash": ""
+  },
+  "madedesign.agency-audit/generated-schema.json": {
+    "mtime": 1793049064.6098993,
+    "ast_hash": "985c7a7d8aadad6b9797eb5d1469ad50",
+    "semantic_hash": ""
+  },
+  "src/data/schema.ts": {
+    "mtime": 1793049332.9306889,
+    "ast_hash": "66baa80c609adffb56a845e04070f448",
+    "semantic_hash": ""
+  },
+  "src/pages/404.astro": {
+    "mtime": 1793049332.9357293,
+    "ast_hash": "7b0710085aac450c91a46c873864f5e8",
+    "semantic_hash": ""
+  },
+  "vercel.json": {
+    "mtime": 1793049312.458391,
+    "ast_hash": "5945ef54624e89c6ebef0ae23d4e28e2",
+    "semantic_hash": ""
+  },
+  "madedesign.agency-audit/ACTION-PLAN.md": {
+    "mtime": 1793048513.7017505,
+    "ast_hash": "1cc0d5f86f30cc7449944d9e88785ceb",
+    "semantic_hash": ""
+  },
+  "madedesign.agency-audit/FLOW-FIND-OPTIMIZE.md": {
+    "mtime": 1793049209.6000981,
+    "ast_hash": "db61b1a90f977431c789f302eb1a757b",
+    "semantic_hash": ""
+  },
+  "madedesign.agency-audit/FULL-AUDIT-REPORT.md": {
+    "mtime": 1793048513.6988254,
+    "ast_hash": "78a62302029beb207f25c60340a070f1",
+    "semantic_hash": ""
+  },
+  "madedesign.agency-audit/SCHEMA-REPORT.md": {
+    "mtime": 1793049064.6134605,
+    "ast_hash": "4dd7cdf3b0a58a80ccdb2062a3a8684a",
+    "semantic_hash": ""
+  },
+  "public/robots.txt": {
+    "mtime": 1793049312.456568,
+    "ast_hash": "e0d39841f2696b46bb28470c6b549414",
     "semantic_hash": ""
   }
 }

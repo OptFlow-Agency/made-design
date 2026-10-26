@@ -9,6 +9,10 @@ export const site = {
   // Cal.com booking link, as "username/event-slug" (e.g. "made-design/30min"); a bare username shows all event types.
   // TODO: set it. Empty = the calendar is hidden and only the email shows.
   calLink: "made-design",
+  // Public profiles (LinkedIn, Instagram, ...) and contact email. Used only for structured data;
+  // anything left empty is omitted, so add real values when you have them.
+  sameAs: [] as string[],
+  email: "",
 };
 
 export const locales = ["fr", "en"] as const;

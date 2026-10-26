@@ -1,0 +1,164 @@
+{
+  "_note": "Placeholders marked [TODO-...] must be replaced with real values or the property removed. Nothing here is invented: only facts visible on the site are used.",
+  "homepage_fr_and_en": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://www.madedesign.agency/#organization",
+      "name": "Made Design",
+      "url": "https://www.madedesign.agency/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.madedesign.agency/[TODO-logo-512.png]"
+      },
+      "description": "Studio web au Maroc : sites rapides et structurés pour la recherche, au Maroc et à l'international.",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Maroc"
+        }
+      ],
+      "knowsLanguage": [
+        "fr",
+        "en"
+      ],
+      "serviceType": [
+        "Création de site vitrine",
+        "Création de page d'atterrissage",
+        "Création de site de marque multipage",
+        "SEO"
+      ],
+      "sameAs": [
+        "[TODO-LinkedIn-URL]",
+        "[TODO-Instagram-URL]"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "[TODO-email]",
+        "availableLanguage": [
+          "fr",
+          "en"
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://www.madedesign.agency/#website",
+      "url": "https://www.madedesign.agency/",
+      "name": "Made Design",
+      "inLanguage": [
+        "fr",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://www.madedesign.agency/#organization"
+      }
+    }
+  ],
+  "homepage_fr_optional_ai_only": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "fr",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Combien ça coûte ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cela dépend du format et du contenu. Après l’appel gratuit, nous vous donnons un chiffre clair."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien de temps faut-il ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cela dépend du format et de la rapidité de vos retours. Nous fixons un calendrier précis dès le premier échange."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Que dois-je fournir ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Votre logo, vos textes et vos photos si vous en avez. S’il manque quelque chose, nous vous aidons à le préparer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le site sera-t-il en plusieurs langues ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nous concevons des sites en français et en anglais. Une autre langue ? Dites-le-nous pendant l’appel."
+        }
+      }
+    ]
+  },
+  "blog_post_brand_identity_fr": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "@id": "https://www.madedesign.agency/blog/brand-identity-website/#article",
+      "mainEntityOfPage": "https://www.madedesign.agency/blog/brand-identity-website/",
+      "headline": "Construire un site qui porte l’identité de votre marque",
+      "description": "Un site n’est pas un logo posé sur un modèle. Voici comment traduire votre marque en couleurs, typographie, ton et mise en page cohérents.",
+      "inLanguage": "fr",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-26",
+      "image": "https://www.madedesign.agency/[TODO-og-image-1200x630.png]",
+      "author": {
+        "@id": "https://www.madedesign.agency/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.madedesign.agency/#organization"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.madedesign.agency/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.madedesign.agency/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Construire un site qui porte l’identité de votre marque",
+          "item": "https://www.madedesign.agency/blog/brand-identity-website/"
+        }
+      ]
+    }
+  ],
+  "blog_post_seo_business_impact_fr": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "@id": "https://www.madedesign.agency/blog/seo-business-impact/#article",
+      "mainEntityOfPage": "https://www.madedesign.agency/blog/seo-business-impact/",
+      "headline": "Le SEO et son effet sur votre activité",
+      "description": "Être trouvé quand un client cherche ce que vous vendez : pourquoi le référencement naturel compte, et ce qu’il change concrètement pour une entreprise.",
+      "inLanguage": "fr",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "image": "https://www.madedesign.agency/[TODO-og-image-1200x630.png]",
+      "author": {
+        "@id": "https://www.madedesign.agency/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.madedesign.agency/#organization"
+      }
+    }
+  ],
+  "en_pages": "Mirror the FR blocks on /en/ and /en/blog/* with inLanguage:'en', translated text, and /en/ URLs; keep the same @id for the Organization and WebSite."
+}

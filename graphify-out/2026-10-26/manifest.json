@@ -485,13 +485,13 @@
     "semantic_hash": ""
   },
   "src/components/PostCard.astro": {
-    "mtime": 1793012523.3086338,
-    "ast_hash": "2da13d714b14167b8cf9b0223bb3e217",
+    "mtime": 1793013680.111287,
+    "ast_hash": "f3483a4e2475505c8c4f23811b02bd67",
     "semantic_hash": ""
   },
   "src/data/blog.ts": {
-    "mtime": 1793012473.3610966,
-    "ast_hash": "d8484b596360d2e9ec997402f7dff92f",
+    "mtime": 1793013680.1109986,
+    "ast_hash": "9f26168ea1ccebfe12fb8a8922b9cc6d",
     "semantic_hash": ""
   },
   "src/layouts/BlogIndex.astro": {
@@ -500,8 +500,8 @@
     "semantic_hash": ""
   },
   "src/layouts/BlogPost.astro": {
-    "mtime": 1793012540.3418944,
-    "ast_hash": "bba0537cdf89838ea675a5c40dd8d338",
+    "mtime": 1793013680.1115775,
+    "ast_hash": "cb3083392d8fda75881bf06a7bf86e95",
     "semantic_hash": ""
   },
   "src/pages/blog/[slug].astro": {
@@ -532,6 +532,16 @@
   "src/assets/blog/naming.png": {
     "mtime": 1793012424.234418,
     "ast_hash": "4ff17deb6ee9f89198afab0e7ef21a82",
+    "semantic_hash": ""
+  },
+  "src/assets/blog/brand-identity.svg": {
+    "mtime": 1793013693.3897474,
+    "ast_hash": "549e804f7b710540993aa362a9c5e5c1",
+    "semantic_hash": ""
+  },
+  "src/assets/blog/seo.svg": {
+    "mtime": 1793013693.3920436,
+    "ast_hash": "ad6f8d9c2d6cf98f96640509b5a43a2b",
     "semantic_hash": ""
   }
 }

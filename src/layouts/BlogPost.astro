@@ -1,11 +1,12 @@
 ---
-import { Image } from 'astro:assets'
+import { Image, getImage } from 'astro:assets'
 import Layout from './Layout.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Reveal from '../components/Reveal.astro'
 import { copy } from '../data/copy'
 import { blogIndexHref, formatDate, postHref, type Post } from '../data/blog'
+import { blogPosting, postBreadcrumb } from '../data/schema'
 import { pathFor, type Lang } from '../data/site'
 
 interface Props {
@@ -18,9 +19,13 @@ const paths = { fr: postHref('fr', post.slug), en: postHref('en', post.slug) }
 
 const images = import.meta.glob<{ default: ImageMetadata }>('../assets/blog/*.{png,jpg,jpeg,webp,avif,svg}', { eager: true })
 const cover = images[`../assets/blog/${post.cover}`]?.default
+const coverUrl = cover && Astro.site ? new URL((await getImage({ src: cover, width: 1200 })).src, Astro.site).href : undefined
+const schema = Astro.site
+  ? [blogPosting(post, lang, Astro.site.origin, coverUrl), postBreadcrumb(post, lang, Astro.site.origin)]
+  : []
 ---
 
-<Layout {lang} {paths} type="article" title={`${post.title[lang]} — Made Design`} description={post.excerpt[lang]}>
+<Layout {lang} {paths} type="article" {schema} title={`${post.title[lang]} — Made Design`} description={post.excerpt[lang]}>
   <Header {lang} {paths} base={pathFor(lang)} />
   <main id="main" class="pt-[clamp(40px,6vw,72px)]">
     <article class="wrap">

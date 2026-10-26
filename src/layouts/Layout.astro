@@ -2,7 +2,8 @@
 import '../styles/global.css'
 import Analytics from '@vercel/analytics/astro'
 import { copy } from '../data/copy'
-import { locales, pathFor, type Lang } from '../data/site'
+import { locales, pathFor, site, type Lang } from '../data/site'
+import { organization, website } from '../data/schema'
 
 interface Props {
   lang: Lang
@@ -11,14 +12,22 @@ interface Props {
   /** Path of this page in each language (defaults to the home page). */
   paths?: Record<Lang, string>
   type?: 'website' | 'article'
+  /** Extra JSON-LD blocks for this page (the organization and website are always included). */
+  schema?: Record<string, unknown>[]
+  /** Keep the page out of search results and skip canonical/hreflang (e.g. the 404). */
+  noindex?: boolean
 }
 
-const { lang, type = 'website' } = Astro.props
+const { lang, type = 'website', schema = [], noindex = false } = Astro.props
 const paths = Astro.props.paths ?? { fr: pathFor('fr'), en: pathFor('en') }
 const title = Astro.props.title ?? copy[lang].meta.title
 const description = Astro.props.description ?? copy[lang].meta.description
 // hreflang and canonical need absolute URLs: set `site` in astro.config.mjs.
 const abs = (path: string) => (Astro.site ? new URL(path, Astro.site).href : path)
+const origin = Astro.site?.origin
+const jsonLd = origin ? [organization(origin, lang), website(origin, lang), ...schema] : []
+// '<' is escaped so the JSON can never close the script tag.
+const serialize = (data: unknown) => JSON.stringify(data).replace(/</g, '\\u003c')
 ---
 
 <!doctype html>
@@ -33,9 +42,16 @@ const abs = (path: string) => (Astro.site ? new URL(path, Astro.site).href : pat
     <meta property="og:description" content={description} />
     <meta property="og:type" content={type} />
     <meta property="og:locale" content={lang === 'fr' ? 'fr_MA' : 'en_US'} />
-    <link rel="canonical" href={abs(paths[lang])} />
-    {locales.map((l) => <link rel="alternate" hreflang={l} href={abs(paths[l])} />)}
-    <link rel="alternate" hreflang="x-default" href={abs(paths.fr)} />
+    <meta property="og:site_name" content={site.name} />
+    {noindex && <meta name="robots" content="noindex" />}
+    {!noindex && (
+      <>
+        <meta property="og:url" content={abs(paths[lang])} />
+        <link rel="canonical" href={abs(paths[lang])} />
+        {locales.map((l) => <link rel="alternate" hreflang={l} href={abs(paths[l])} />)}
+        <link rel="alternate" hreflang="x-default" href={abs(paths.fr)} />
+      </>
+    )}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,6 +62,7 @@ const abs = (path: string) => (Astro.site ? new URL(path, Astro.site).href : pat
     <script is:inline>
       document.documentElement.classList.add('js')
     </script>
+    {jsonLd.map((data) => <script type="application/ld+json" set:html={serialize(data)} />)}
     <Analytics />
   </head>
   <body>

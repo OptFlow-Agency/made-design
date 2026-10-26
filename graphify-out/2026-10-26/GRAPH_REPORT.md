@@ -1,7 +1,7 @@
 # Graph Report - optflow  (2026-10-26)
 
 ## Corpus Check
-- 44 files · ~345,152 words
+- 44 files · ~319,290 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary

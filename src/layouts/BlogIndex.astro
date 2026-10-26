@@ -6,6 +6,7 @@ import Reveal from '../components/Reveal.astro'
 import PostCard from '../components/PostCard.astro'
 import { copy } from '../data/copy'
 import { blogIndexHref, posts } from '../data/blog'
+import { blogBreadcrumb } from '../data/schema'
 import { pathFor, type Lang } from '../data/site'
 
 interface Props {
@@ -16,7 +17,7 @@ const c = copy[lang].blog
 const paths = { fr: blogIndexHref('fr'), en: blogIndexHref('en') }
 ---
 
-<Layout {lang} {paths} title={c.metaTitle} description={c.metaDescription}>
+<Layout {lang} {paths} title={c.metaTitle} description={c.metaDescription} schema={Astro.site ? [blogBreadcrumb(lang, Astro.site.origin)] : []}>
   <Header {lang} {paths} base={pathFor(lang)} />
   <main id="main" class="pt-[clamp(48px,8vw,96px)]">
     <div class="wrap">
