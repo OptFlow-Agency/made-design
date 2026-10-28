@@ -14,7 +14,7 @@ const { faq: c } = copy[Astro.props.lang]
     <div class="reveal border-t border-line" style="--i:1">
       {c.items.map(([q, a], i) => (
         <details class="group border-b border-line py-5" open={i === 0}>
-          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-xl font-medium tracking-[-0.01em] [&::-webkit-details-marker]:hidden">
+          <summary class="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 text-xl font-medium tracking-[-0.01em] [&::-webkit-details-marker]:hidden">
             {q}
             <svg class="size-5 flex-none transition-transform duration-300 ease-snap group-open:rotate-45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
           </summary>
