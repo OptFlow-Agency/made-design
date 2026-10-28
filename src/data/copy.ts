@@ -25,10 +25,13 @@ export const copy = {
       cta: 'Réserver un appel gratuit',
       trust: 'Studio basé au Maroc · Clients au Maroc et à l’international',
       visual: {
-        alt: 'Aperçu d’un site de restaurant dans une fenêtre de navigateur, avec un résultat de recherche « Restaurant · Casablanca ».',
+        label: 'Illustration : un site se construit, apparaît dans les résultats de recherche et reçoit une demande.',
         caption: 'Un site pensé pour être trouvé.',
-        chipName: 'Olivia',
-        chipKind: 'Restaurant · Casablanca',
+        query: 'restaurant casablanca',
+        resultTitle: 'Votre entreprise',
+        resultSub: 'Casablanca · votre site',
+        contact: 'Contact',
+        typeSample: 'Aa',
       },
     },
     why: {
@@ -171,10 +174,13 @@ export const copy = {
       cta: 'Book a free call',
       trust: 'Studio based in Morocco · Clients in Morocco and abroad',
       visual: {
-        alt: 'Preview of a restaurant website in a browser window, with a search result reading “Restaurant · Casablanca”.',
+        label: 'Illustration: a website is built, appears in search results and receives an enquiry.',
         caption: 'A site designed to be found.',
-        chipName: 'Olivia',
-        chipKind: 'Restaurant · Casablanca',
+        query: 'restaurant casablanca',
+        resultTitle: 'Your business',
+        resultSub: 'Casablanca · your site',
+        contact: 'Contact',
+        typeSample: 'Aa',
       },
     },
     why: {

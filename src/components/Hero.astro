@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets'
-import preview from '../assets/work/olivia.png'
 import { copy } from '../data/copy'
 import type { Lang } from '../data/site'
 
@@ -9,6 +7,45 @@ interface Props {
 }
 const { hero: c } = copy[Astro.props.lang]
 const v = c.visual
+
+/* Process animation: one 9 s loop. The SVG's own styles are the FINAL frame (reduced motion,
+   no CSS animation); the keyframes below are generated from this timeline and only applied
+   under `prefers-reduced-motion: no-preference`. Only opacity and transform are animated. */
+const LOOP = 9
+const ease = 'cubic-bezier(.2,.8,.2,1)'
+const pct = (t: number) => +((t / LOOP) * 100).toFixed(2)
+const css: string[] = []
+const anim = (cls: string, frames: [number, string][], timing = ease) => {
+  css.push(`@keyframes k-${cls}{${frames.map(([t, st]) => `${pct(t)}%{${st}}`).join('')}}`)
+  css.push(`.hero-art .a-${cls}{animation:k-${cls} ${LOOP}s ${timing} infinite both}`)
+}
+const hidden = (from: string, start: number, dur: number): [number, string][] => [
+  [0, from], ...(start > 0 ? [[start, from] as [number, string]] : []), [start + dur, 'opacity:1;transform:none'],
+]
+const rise = (cls: string, start: number, dur = 0.4) => anim(cls, hidden('opacity:0;transform:translateY(8px)', start, dur))
+const drop = (cls: string, start: number, dur = 0.5) => anim(cls, hidden('opacity:0;transform:translateY(-10px)', start, dur))
+const fade = (cls: string, start: number, dur = 0.6) => anim(cls, hidden('opacity:0', start, dur))
+const pop = (cls: string, start: number, dur = 0.6) => anim(cls, hidden('opacity:0;transform:scale(.9)', start, dur))
+const growX = (cls: string, start: number, dur: number) => anim(cls, hidden('transform:scaleX(0)', start, dur))
+const growY = (cls: string, start: number, dur: number) => anim(cls, hidden('transform:scaleY(0)', start, dur))
+
+anim('scene', [[0, 'opacity:0'], [0.4, 'opacity:1'], [7.5, 'opacity:1'], [LOOP, 'opacity:0']])
+// 0 - 1.5 s: wireframe blocks appear one after another
+;['hdr', 'block', 'head', 'l1', 'l2', 'btn'].forEach((c, i) => rise(c, [0, 0.1, 0.25, 0.35, 0.45, 0.6][i]))
+;['c1', 'c2', 'c3'].forEach((c, i) => rise(c, 0.75 + i * 0.15))
+// 1.5 - 3.5 s: the wireframe gets designed
+fade('dblock', 1.5); fade('dhdr', 1.6); fade('dhead', 1.9); fade('dl', 2.0); fade('dbtn', 2.2, 0.5)
+;['dc1', 'dc2', 'dc3'].forEach((c, i) => fade(c, 2.4 + i * 0.1, 0.5))
+pop('chip', 2.8)
+// 3.5 - 5.5 s: search bar, typewriter, result card
+drop('bar', 3.5)
+anim('type', [[0, 'transform:translateX(0)'], [4.05, 'transform:translateX(0)'], [5, 'transform:translateX(196px)']], 'steps(21,end)')
+anim('caret', [[0, 'opacity:0'], [4.05, 'opacity:1'], [5, 'opacity:1'], [5.1, 'opacity:0']], 'linear')
+rise('res', 5, 0.5)
+// 5.5 - 7.5 s: connector grows to the site, the button pulses once
+growX('s1', 5.5, 0.3); growY('s2', 5.8, 0.5); growX('s3', 6.3, 0.3)
+anim('ring', [[0, 'opacity:0;transform:scale(1)'], [6.7, 'opacity:0;transform:scale(1)'], [6.8, 'opacity:.9;transform:scale(1)'], [7.4, 'opacity:0;transform:scale(1.35)']])
+const styles = `.hero-art *{transform-box:fill-box}.hero-art .s1{transform-origin:right}.hero-art .s2{transform-origin:top}.hero-art .s3{transform-origin:left}.hero-art .cover{transform:translateX(196px)}.hero-art .caret,.hero-art .ring{opacity:0}.hero-art.is-paused *{animation-play-state:paused!important}@media (prefers-reduced-motion:no-preference){${css.join('')}}`
 ---
 
 <section class="relative isolate overflow-hidden bg-surface pt-[clamp(40px,7vw,96px)] pb-[clamp(56px,8vw,112px)]" aria-labelledby="hero-title">
@@ -24,23 +61,69 @@ const v = c.visual
       </div>
       <p class="mt-5 text-[0.9375rem] text-muted">{c.trust}</p>
     </div>
-    <figure class="mx-auto w-full max-w-[520px] md:justify-self-end">
-      <div class="relative rounded-[20px] bg-dark p-[clamp(14px,3vw,28px)] pb-[clamp(52px,7vw,64px)] [background-image:linear-gradient(var(--color-dark-line)_1px,transparent_1px),linear-gradient(90deg,var(--color-dark-line)_1px,transparent_1px)] [background-size:32px_32px]">
-        <div class="overflow-hidden rounded-xl bg-[#1d1b17] ring-1 ring-dark-line">
-          <div class="flex items-center gap-1.5 border-b border-dark-line px-3.5 py-2.5" aria-hidden="true">
-            <span class="size-2.5 rounded-full bg-accent"></span>
-            <span class="size-2.5 rounded-full bg-dark-line"></span>
-            <span class="size-2.5 rounded-full bg-dark-line"></span>
-            <span class="ml-3 h-5 flex-1 rounded-full bg-dark-line/70"></span>
-          </div>
-          <Image src={preview} alt={v.alt} width={720} height={345} widths={[360, 540, 720]} sizes="(min-width: 768px) 460px, 90vw" loading="eager" class="block aspect-[21/10] h-auto w-full object-cover object-top" />
-        </div>
-        <div class="absolute right-[clamp(14px,3vw,28px)] bottom-[clamp(16px,3vw,22px)] left-[clamp(14px,3vw,28px)] flex items-center gap-3 rounded-xl bg-white px-4 py-3 text-ink shadow-lg sm:right-auto sm:min-w-[260px]">
-          <svg class="size-5 flex-none text-accent-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.6-3.6"></path></svg>
-          <p class="leading-tight"><span class="block font-medium">{v.chipName}</span><span class="block text-[0.875rem] text-muted">{v.chipKind}</span></p>
-        </div>
+    <figure class="hero-art mx-auto w-full max-w-[520px] md:justify-self-end">
+      <div class="rounded-[20px] bg-dark p-[clamp(14px,3vw,28px)] [background-image:linear-gradient(var(--color-dark-line)_1px,transparent_1px),linear-gradient(90deg,var(--color-dark-line)_1px,transparent_1px)] [background-size:32px_32px]">
+        <svg viewBox="0 0 480 400" class="block aspect-[6/5] h-auto w-full" role="img" aria-label={v.label} xmlns="http://www.w3.org/2000/svg">
+          <g class="a-scene" aria-hidden="true">
+            <defs><clipPath id="hero-type-clip"><rect x="108" y="18" width="290" height="32"></rect></clipPath></defs>
+            <!-- search bar + typewriter -->
+            <g class="a-bar">
+              <rect x="70" y="14" width="340" height="40" rx="20" class="fill-dark-line"></rect>
+              <circle cx="92" cy="34" r="7" fill="none" stroke-width="2.4" class="stroke-accent"></circle>
+              <path d="m97 39 5 5" stroke-width="2.4" stroke-linecap="round" class="stroke-accent"></path>
+              <text x="112" y="41" font-size="20" textLength="196" lengthAdjust="spacing" class="fill-surface">{v.query}</text>
+              <g clip-path="url(#hero-type-clip)"><g class="a-type cover"><rect x="110" y="18" width="290" height="32" class="fill-dark-line"></rect><rect x="110" y="22" width="2" height="24" class="a-caret caret fill-accent"></rect></g></g>
+            </g>
+            <!-- result card -->
+            <g class="a-res">
+              <rect x="70" y="64" width="340" height="50" rx="10" class="fill-surface"></rect>
+              <rect x="70" y="64" width="6" height="50" rx="3" class="fill-accent"></rect>
+              <text x="92" y="87" font-size="20" font-weight="600" class="fill-ink">{v.resultTitle}</text>
+              <text x="92" y="107" font-size="18" class="fill-muted">{v.resultSub}</text>
+            </g>
+            <!-- connector: result card to the site's button -->
+            <rect x="12" y="88" width="58" height="2" class="a-s1 s1 fill-accent"></rect>
+            <rect x="11" y="88" width="2" height="188" class="a-s2 s2 fill-accent"></rect>
+            <rect x="12" y="274" width="44" height="2" class="a-s3 s3 fill-accent"></rect>
+            <!-- browser window -->
+            <rect x="24" y="122" width="432" height="262" rx="14" stroke-width="1.5" class="fill-dark stroke-dark-line"></rect>
+            <path d="M24 150h432" stroke-width="1.5" class="stroke-dark-line"></path>
+            <circle cx="44" cy="136" r="4" class="fill-accent"></circle><circle cx="60" cy="136" r="4" class="fill-dark-line"></circle><circle cx="76" cy="136" r="4" class="fill-dark-line"></circle>
+            <rect x="96" y="129" width="340" height="14" rx="7" class="fill-dark-line"></rect>
+            <!-- wireframe -->
+            <rect x="40" y="160" width="400" height="22" rx="6" fill="none" stroke-width="1.5" class="a-hdr stroke-dark-muted/50"></rect>
+            <rect x="40" y="192" width="400" height="112" rx="10" fill="none" stroke-width="1.5" class="a-block stroke-dark-muted/50"></rect>
+            <rect x="56" y="206" width="190" height="12" rx="6" class="a-head fill-dark-muted/40"></rect>
+            <rect x="56" y="228" width="250" height="7" rx="3.5" class="a-l1 fill-dark-muted/40"></rect>
+            <rect x="56" y="242" width="210" height="7" rx="3.5" class="a-l2 fill-dark-muted/40"></rect>
+            <rect x="56" y="258" width="100" height="34" rx="9" fill="none" stroke-width="1.5" class="a-btn stroke-dark-muted/50"></rect>
+            <rect x="40" y="316" width="128" height="56" rx="8" fill="none" stroke-width="1.5" class="a-c1 stroke-dark-muted/50"></rect>
+            <rect x="176" y="316" width="128" height="56" rx="8" fill="none" stroke-width="1.5" class="a-c2 stroke-dark-muted/50"></rect>
+            <rect x="312" y="316" width="128" height="56" rx="8" fill="none" stroke-width="1.5" class="a-c3 stroke-dark-muted/50"></rect>
+            <!-- designed -->
+            <g class="a-dhdr"><rect x="40" y="160" width="400" height="22" rx="6" class="fill-dark-line"></rect><rect x="48" y="165" width="12" height="12" rx="3" class="fill-accent"></rect><rect x="360" y="169" width="16" height="4" rx="2" class="fill-dark-muted"></rect><rect x="384" y="169" width="16" height="4" rx="2" class="fill-dark-muted"></rect><rect x="408" y="169" width="16" height="4" rx="2" class="fill-dark-muted"></rect></g>
+            <rect x="40" y="192" width="400" height="112" rx="10" class="a-dblock fill-accent-fill"></rect>
+            <rect x="56" y="206" width="190" height="12" rx="6" class="a-dhead fill-surface"></rect>
+            <g class="a-dl"><rect x="56" y="228" width="250" height="7" rx="3.5" class="fill-surface/70"></rect><rect x="56" y="242" width="210" height="7" rx="3.5" class="fill-surface/70"></rect></g>
+            <g class="a-dbtn"><rect x="56" y="258" width="100" height="34" rx="9" class="fill-surface"></rect><text x="106" y="281" font-size="18" font-weight="600" text-anchor="middle" class="fill-ink">{v.contact}</text></g>
+            <rect x="56" y="258" width="100" height="34" rx="9" fill="none" stroke-width="3" class="a-ring ring stroke-surface"></rect>
+            <g class="a-chip"><rect x="328" y="204" width="100" height="88" rx="12" class="fill-ink"></rect><text x="378" y="244" font-size="32" font-weight="600" text-anchor="middle" class="fill-surface">{v.typeSample}</text><circle cx="352" cy="272" r="7" class="fill-accent"></circle><circle cx="378" cy="272" r="7" class="fill-surface"></circle><circle cx="404" cy="272" r="7" class="fill-dark-muted"></circle></g>
+            <g class="a-dc1"><rect x="40" y="316" width="128" height="56" rx="8" class="fill-dark-line"></rect><rect x="54" y="330" width="28" height="6" rx="3" class="fill-accent"></rect><rect x="54" y="346" width="90" height="6" rx="3" class="fill-dark-muted/60"></rect></g>
+            <g class="a-dc2"><rect x="176" y="316" width="128" height="56" rx="8" class="fill-dark-line"></rect><rect x="190" y="330" width="28" height="6" rx="3" class="fill-accent"></rect><rect x="190" y="346" width="90" height="6" rx="3" class="fill-dark-muted/60"></rect></g>
+            <g class="a-dc3"><rect x="312" y="316" width="128" height="56" rx="8" class="fill-dark-line"></rect><rect x="326" y="330" width="28" height="6" rx="3" class="fill-accent"></rect><rect x="326" y="346" width="90" height="6" rx="3" class="fill-dark-muted/60"></rect></g>
+          </g>
+        </svg>
       </div>
       <figcaption class="mt-4 text-[0.9375rem] text-muted">{v.caption}</figcaption>
     </figure>
   </div>
+  <style is:inline set:html={styles}></style>
 </section>
+
+<script>
+  // Pause the loop while the illustration is off-screen.
+  const art = document.querySelector<HTMLElement>('.hero-art')
+  if (art && 'IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => art.classList.toggle('is-paused', !e.isIntersecting)).observe(art)
+  }
+</script>
