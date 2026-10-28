@@ -3,7 +3,7 @@
 /* Made Design — clean white, bold type, one orange accent.
    Accent #e8480c is for large type and graphics; filled buttons use
    accent-fill (white text on it clears 4.5:1).
-   Type pairing: Outfit carries the message, Geist Mono the interface layer. */
+   Type pairing: Outfit for everything you read, Geist Mono only for small labels and tags. */
 
 @theme {
   --color-accent: #e8480c;
@@ -75,7 +75,7 @@
   }
 
   .btn {
-    @apply inline-flex min-h-[52px] cursor-pointer items-center justify-center gap-2.5 rounded-xl border-2 border-transparent px-[26px] py-3.5 font-mono text-[0.9375rem] leading-none font-medium tracking-[-0.01em] whitespace-nowrap transition-[background-color,border-color,color,transform] duration-200 ease-snap active:translate-y-px disabled:cursor-progress disabled:opacity-60;
+    @apply inline-flex min-h-[52px] cursor-pointer items-center justify-center gap-2.5 rounded-xl border-2 border-transparent px-[26px] py-3.5 text-[1rem] leading-none font-medium tracking-[-0.01em] whitespace-nowrap transition-[background-color,border-color,color,transform] duration-200 ease-snap active:translate-y-px disabled:cursor-progress disabled:opacity-60;
   }
   .btn svg {
     @apply size-5 transition-transform duration-300 ease-snap;
@@ -88,6 +88,9 @@
   }
   .btn-ghost {
     @apply border-ink text-ink hover:bg-ink hover:text-white;
+  }
+  .btn-outline-light {
+    @apply border-white/40 text-white hover:border-white hover:bg-white hover:text-ink;
   }
 
   /* reveal: content is visible by default; only hidden once JS is running */

@@ -29,7 +29,7 @@ const schema = Astro.site
   <Header {lang} {paths} base={pathFor(lang)} />
   <main id="main" class="pt-[clamp(40px,6vw,72px)]">
     <article class="wrap">
-      <a class="inline-flex items-center gap-2 font-mono text-[0.9375rem] font-medium underline-offset-4 hover:underline" href={blogIndexHref(lang)}>
+      <a class="inline-flex items-center gap-2 text-[1rem] font-medium underline-offset-4 hover:underline" href={blogIndexHref(lang)}>
         <svg class="size-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
         {c.back}
       </a>
@@ -72,7 +72,7 @@ const schema = Astro.site
           }
         })}
         {post.source && (
-          <p class="mt-14 border-t border-line pt-6 font-mono text-[0.875rem] text-muted">
+          <p class="mt-14 border-t border-line pt-6 text-[0.9375rem] text-muted">
             {c.source} <a class="underline underline-offset-4 hover:text-ink" href={post.source} target="_blank" rel="noopener">oussamachahidi.me</a>
           </p>
         )}

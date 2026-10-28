@@ -6,6 +6,8 @@ interface Props {
   lang: Lang
 }
 const c = copy[Astro.props.lang].contact
+const waHref = site.whatsappNumber ? `https://wa.me/${site.whatsappNumber.replace(/\D/g, '')}` : ''
+const mailHref = site.email ? `mailto:${site.email}` : ''
 ---
 
 <section class="mt-section bg-dark py-section text-white" id="contact" aria-labelledby="contact-title">
@@ -13,6 +15,13 @@ const c = copy[Astro.props.lang].contact
     <div class="reveal">
       <h2 id="contact-title" class="max-w-[12ch] text-[clamp(2.5rem,7vw,5rem)] lg:max-w-[8ch]">{c.title}</h2>
       <p class="lead mt-6 text-dark-muted">{c.lead}</p>
+      <p class="mt-4 text-[0.9375rem] text-dark-muted">{c.detail}</p>
+      {(waHref || mailHref) && (
+        <div class="mt-8 flex flex-wrap gap-3">
+          {waHref && <a class="btn btn-outline-light max-md:flex-[1_1_100%]" href={waHref} target="_blank" rel="noopener">{c.whatsapp}</a>}
+          {mailHref && <a class="btn btn-outline-light max-md:flex-[1_1_100%]" href={mailHref}>{c.email}</a>}
+        </div>
+      )}
     </div>
     {site.calLink && (
       <div class="reveal min-h-[600px] overflow-hidden rounded-[20px] bg-white" style="--i:1">

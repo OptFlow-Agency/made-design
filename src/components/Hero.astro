@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets'
-import heroImage from '../assets/hero-image.svg'
+import preview from '../assets/work/olivia.png'
 import { copy } from '../data/copy'
 import type { Lang } from '../data/site'
 
@@ -8,22 +8,39 @@ interface Props {
   lang: Lang
 }
 const { hero: c } = copy[Astro.props.lang]
-
+const v = c.visual
 ---
 
 <section class="relative isolate overflow-hidden bg-surface pt-[clamp(40px,7vw,96px)] pb-[clamp(56px,8vw,112px)]" aria-labelledby="hero-title">
   <div class="wrap grid items-center gap-[clamp(32px,5vw,72px)] md:grid-cols-[1.1fr_0.9fr]">
     <div>
       <h1 id="hero-title" class="max-w-[18ch] text-[clamp(2.5rem,6.6vw,4.75rem)]">{c.before}<em class="text-accent not-italic">{c.em}</em>{c.after}</h1>
-      <p class="lead mt-7 font-mono text-[clamp(0.9375rem,1.4vw,1.0625rem)]">{c.lead}</p>
+      <p class="lead mt-7">{c.lead}</p>
       <div class="mt-10 flex flex-wrap items-center gap-3.5">
         <a href="#contact" class="btn btn-primary max-md:flex-[1_1_100%]">
           {c.cta}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
         </a>
       </div>
-      <p class="mt-5 font-mono text-[0.8125rem] tracking-[0.02em] text-muted">{c.trust}</p>
+      <p class="mt-5 text-[0.9375rem] text-muted">{c.trust}</p>
     </div>
-    <Image src={heroImage} alt="" loading="eager" class="mx-auto h-auto w-full max-w-[500px] md:justify-self-end" />
+    <figure class="mx-auto w-full max-w-[520px] md:justify-self-end">
+      <div class="relative rounded-[20px] bg-dark p-[clamp(14px,3vw,28px)] pb-[clamp(52px,7vw,64px)] [background-image:linear-gradient(var(--color-dark-line)_1px,transparent_1px),linear-gradient(90deg,var(--color-dark-line)_1px,transparent_1px)] [background-size:32px_32px]">
+        <div class="overflow-hidden rounded-xl bg-[#1d1b17] ring-1 ring-dark-line">
+          <div class="flex items-center gap-1.5 border-b border-dark-line px-3.5 py-2.5" aria-hidden="true">
+            <span class="size-2.5 rounded-full bg-accent"></span>
+            <span class="size-2.5 rounded-full bg-dark-line"></span>
+            <span class="size-2.5 rounded-full bg-dark-line"></span>
+            <span class="ml-3 h-5 flex-1 rounded-full bg-dark-line/70"></span>
+          </div>
+          <Image src={preview} alt={v.alt} width={720} height={345} widths={[360, 540, 720]} sizes="(min-width: 768px) 460px, 90vw" loading="eager" class="block aspect-[21/10] h-auto w-full object-cover object-top" />
+        </div>
+        <div class="absolute right-[clamp(14px,3vw,28px)] bottom-[clamp(16px,3vw,22px)] left-[clamp(14px,3vw,28px)] flex items-center gap-3 rounded-xl bg-white px-4 py-3 text-ink shadow-lg sm:right-auto sm:min-w-[260px]">
+          <svg class="size-5 flex-none text-accent-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.6-3.6"></path></svg>
+          <p class="leading-tight"><span class="block font-medium">{v.chipName}</span><span class="block text-[0.875rem] text-muted">{v.chipKind}</span></p>
+        </div>
+      </div>
+      <figcaption class="mt-4 text-[0.9375rem] text-muted">{v.caption}</figcaption>
+    </figure>
   </div>
 </section>

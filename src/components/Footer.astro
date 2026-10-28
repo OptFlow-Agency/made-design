@@ -1,5 +1,5 @@
 ---
-import { navHrefs, type Lang } from "../data/site";
+import { footerHrefs, site, type Lang } from "../data/site";
 import { copy } from "../data/copy";
 import Logo from "./Logo.astro";
 
@@ -10,6 +10,19 @@ interface Props {
 }
 const { lang, base = "" } = Astro.props;
 const c = copy[lang];
+
+// Labels follow footerHrefs: the nav items, with the studio section before the blog.
+const footerLabels = [c.nav[0], c.nav[1], c.nav[2], c.navStudio, c.nav[3]];
+
+const icons = {
+  linkedin: '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>',
+  instagram: '<rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><path d="M17.5 6.5h.01"/>',
+  facebook: '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',
+};
+const socialNames = { instagram: "Instagram", linkedin: "LinkedIn", facebook: "Facebook" };
+const socials = (Object.keys(icons) as (keyof typeof icons)[])
+  .filter((k) => site.social[k])
+  .map((k) => [socialNames[k], site.social[k], icons[k]] as const);
 ---
 
 <footer class="pt-[clamp(48px,7vw,80px)] pb-10">
@@ -23,75 +36,40 @@ const c = copy[lang];
         <h3 class="mb-[18px] font-mono text-[0.8125rem] leading-none font-semibold tracking-[0.06em] text-muted uppercase">
           {c.footer.explore}
         </h3>
-        <ul class="grid gap-3 font-mono text-[0.9375rem]">
-          {navHrefs.map((href, i) => (
+        <ul class="grid gap-3 text-[1rem]">
+          {footerHrefs.map((href, i) => (
             <li>
               <a class="underline-offset-4 hover:underline" href={`${base}${href}`}>
-                {c.nav[i]}
+                {footerLabels[i]}
               </a>
             </li>
           ))}
         </ul>
       </div>
-      <div>
-        <h3 class="mb-[18px] font-mono text-[0.8125rem] leading-none font-semibold tracking-[0.06em] text-muted uppercase">
-          {c.footer.follow}
-        </h3>
-        <div class="flex gap-2.5">
-          <a
-            class="grid size-11 place-items-center rounded-full border-[1.5px] border-line transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-white"
-            href="#"
-            aria-label="LinkedIn"
-          >
-            <svg
-              class="size-5 fill-none stroke-current stroke-[1.8]"
-              viewBox="0 0 24 24"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect width="4" height="12" x="2" y="9"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-          </a>
-          <a
-            class="grid size-11 place-items-center rounded-full border-[1.5px] border-line transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-white"
-            href="#"
-            aria-label="X"
-          >
-            <svg
-              class="size-5 fill-none stroke-current stroke-[1.8]"
-              viewBox="0 0 24 24"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M4 4l11.7 16H20L8.3 4z"></path>
-              <path d="M4 20l6.8-6.8m2.5-2.5L20 4"></path>
-            </svg>
-          </a>
-          <a
-            class="grid size-11 place-items-center rounded-full border-[1.5px] border-line transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-white"
-            href="#"
-            aria-label="Instagram"
-          >
-            <svg
-              class="size-5 fill-none stroke-current stroke-[1.8]"
-              viewBox="0 0 24 24"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <rect width="20" height="20" x="2" y="2" rx="5"></rect>
-              <path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"></path>
-              <path d="M17.5 6.5h.01"></path>
-            </svg>
-          </a>
+      {socials.length > 0 && (
+        <div>
+          <h3 class="mb-[18px] font-mono text-[0.8125rem] leading-none font-semibold tracking-[0.06em] text-muted uppercase">
+            {c.footer.follow}
+          </h3>
+          <ul class="flex gap-2.5">
+            {socials.map(([name, href, icon]) => (
+              <li>
+                <a
+                  class="grid size-11 place-items-center rounded-full border-[1.5px] border-line transition-colors duration-200 hover:border-ink hover:bg-ink hover:text-white"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={c.footer.socialLabel(name)}
+                >
+                  <svg class="size-5 fill-none stroke-current stroke-[1.8]" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={icon} />
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
+      )}
     </div>
-    <p class="mt-14 border-t border-line pt-6 font-mono text-[0.8125rem] tracking-[0.01em] text-muted">
+    <p class="mt-14 border-t border-line pt-6 text-[0.875rem] text-muted">
       {c.footer.legal}
     </p>
   </div>
