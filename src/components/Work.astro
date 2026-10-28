@@ -56,6 +56,11 @@ const imageFor = (file?: string) =>
                     {c.soon}
                   </div>
                 )}
+                {w.type === "concept" && (
+                  <span class="absolute top-3 left-3 rounded-full bg-ink/85 px-3 py-1.5 font-mono text-[0.75rem] leading-none font-medium tracking-[0.04em] text-white backdrop-blur-sm">
+                    {c.concept}
+                  </span>
+                )}
                 {w.href && (
                   <span class="absolute right-3 bottom-3 inline-flex items-center gap-2 rounded-full bg-white/90 px-3.5 py-2 font-mono text-[0.8125rem] leading-none font-medium text-ink backdrop-blur-sm">
                     {c.visit}

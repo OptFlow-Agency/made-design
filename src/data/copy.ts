@@ -1,26 +1,38 @@
-import type { Lang } from './site'
+import { payment, priceFrom, timing, type Lang } from './site'
+
+const nb = '\u00a0'
 
 /* French copy is a first draft: have a native speaker review before launch.
-   Empty strings (`timeline`, `price`, `duration`) are facts still to confirm:
+   Prices and timings come from ./site.ts. Empty strings (`duration`) are facts still to confirm:
    the components hide them until they are filled in. */
 export const copy = {
   fr: {
     htmlLang: 'fr',
     meta: {
-      title: 'Made Design — Studio web au Maroc : des sites qu’on trouve sur Google',
+      title: 'Made Design — Studio web au Maroc : des sites pensés pour être trouvés',
       description:
         'Made Design est un studio qui conçoit des sites web rapides et optimisés pour la recherche, au Maroc et à l’international.',
     },
     ui: { skip: 'Aller au contenu', menu: 'Menu', main: 'Navigation principale', home: 'accueil', langLabel: 'Choisir la langue du site' },
     nav: ['Formats', 'Réalisations', 'Démarche', 'Blog'],
+    navStudio: 'Qui sommes-nous',
     navCta: 'Réserver un appel gratuit',
     hero: {
-      before: 'Vos clients vous cherchent en ligne. Faites-vous ',
+      before: 'Vos clients vous cherchent en ligne. Faites\u2011vous ',
       em: 'trouver',
       after: '.',
-      lead: 'Studio web au Maroc. Nous concevons des sites rapides, structurés pour la recherche, qui transforment chaque visite en demande.',
+      lead: 'Studio web au Maroc. Nous concevons des sites rapides, structurés pour la recherche, pensés pour transformer vos visites en demandes.',
       cta: 'Réserver un appel gratuit',
       trust: 'Studio basé au Maroc · Clients au Maroc et à l’international',
+      visual: {
+        label: 'Illustration : un site se construit, apparaît dans les résultats de recherche et reçoit une demande.',
+        caption: 'Un site pensé pour être trouvé.',
+        query: 'restaurant casablanca',
+        resultTitle: 'Votre entreprise',
+        resultSub: 'Casablanca · votre site',
+        contact: 'Contact',
+        typeSample: 'Aa',
+      },
     },
     why: {
       label: 'Pourquoi un site',
@@ -34,11 +46,11 @@ export const copy = {
     benefits: {
       title: 'Ce que vous obtenez.',
       items: [
-        ['Inspirez confiance', 'Votre entreprise présentée avec soin, comme vos clients l’attendent avant de vous appeler.', 'Un restaurant, une clinique ou un cabinet gagne en sérieux dès le premier regard.'],
-        ['Recevez plus de demandes', 'Un chemin clair vers le formulaire ou l’appel, sur chaque page.', 'Le client qui hésite sait exactement où écrire.'],
-        ['Soyez trouvé sur Google', 'Pages rapides et structure pensée pour la recherche, pour être visible quand on cherche votre métier.', 'Quelqu’un tape votre activité et votre ville : vous apparaissez.'],
+        ['Inspirez confiance', 'Votre entreprise présentée avec soin, comme vos clients l’attendent avant de vous appeler.', 'Un restaurant, une clinique ou un cabinet inspire davantage de sérieux dès le premier regard.'],
+        ['Facilitez la prise de contact', 'Un chemin clair vers le formulaire ou l’appel, sur chaque page.', 'Le client qui hésite sait exactement où écrire.'],
+        ['Soyez plus facile à trouver sur Google', 'Pages rapides et structure pensée pour la recherche, pour augmenter vos chances d’être visible quand on cherche votre métier.', 'Un site structuré pour la recherche, pour que les clients de votre ville vous trouvent plus facilement.'],
         ['Ayez une identité à vous', 'Un style et un ton propres, qui vous distinguent d’un simple profil ou d’un modèle.', 'Votre marque reste la même sur le site, les réseaux et vos supports.'],
-        ['Ne perdez aucune demande sur mobile', 'Le site s’affiche et se lit bien sur tous les téléphones, tablettes et ordinateurs.', 'Un client ouvre votre lien depuis son téléphone et peut vous contacter tout de suite.'],
+        ['Soyez facile à contacter sur mobile', 'Le site s’affiche et se lit bien sur tous les téléphones, tablettes et ordinateurs.', 'Un client ouvre votre lien depuis son téléphone et peut vous contacter tout de suite.'],
         ['Donnez une destination à vos pubs', 'Une page conçue pour ce que le client vient de voir, pas votre page d’accueil générique.', 'Une publicité pour une offre mène à la page de cette offre.'],
       ],
     },
@@ -52,25 +64,25 @@ export const copy = {
           name: 'Site vitrine',
           kind: 'Entreprises établies qui veulent un site de référence.',
           points: ['Pages entreprise et services', 'Adapté au mobile, optimisé pour la recherche', 'Contact et formulaire de demande'],
-          outcome: 'Un site crédible qui reçoit des demandes.',
-          timeline: '', // TODO: confirm typical timeline
-          price: '', // TODO: confirm price range or "sur devis"
+          outcome: 'Un site crédible, conçu pour recevoir des demandes.',
+          timeline: timing.vitrine.fr,
+          price: priceFrom('vitrine', 'fr'),
         },
         {
           name: 'Page d’atterrissage',
           kind: 'Un lancement ou une campagne publicitaire.',
           points: ['Une offre, un message', 'Conçue pour le trafic publicitaire', 'Un seul appel à l’action : demande ou réservation'],
-          outcome: 'Vos pubs mènent à une page qui convertit.',
-          timeline: '',
-          price: '',
+          outcome: 'Vos pubs mènent à une page conçue pour convertir.',
+          timeline: timing.landing.fr,
+          price: priceFrom('landing', 'fr'),
         },
         {
           name: 'Site de marque multipage',
           kind: 'Plusieurs offres, produits ou lieux.',
           points: ['Identité commune', 'Une page par offre ou par lieu', 'Demandes liées à chaque page'],
           outcome: 'Une marque cohérente, chaque offre mise en valeur.',
-          timeline: '',
-          price: '',
+          timeline: timing.brand.fr,
+          price: priceFrom('brand', 'fr'),
         },
       ],
     },
@@ -80,14 +92,15 @@ export const copy = {
       items: [
         ['Rapide à lancer', 'Un processus court et un site léger.'],
         ['Le SEO dès la conception', 'Structure, vitesse et contenu pensés pour la recherche dès le premier jour.'],
-        ['Un processus clair', 'Quatre étapes, des livrables définis, pas de surprises.'],
+        ['Un processus clair', 'Quatre étapes et des livrables définis dès le départ.'],
         ['Vous participez à chaque étape', 'Vous validez avant que l’on passe à la suite.'],
         ['Un site qui continue d’évoluer', 'Nous mesurons et améliorons après le lancement.'],
       ],
     },
     work: {
       title: 'Un aperçu de notre travail.',
-      lead: 'Quelques exemples de sites que nous concevons.',
+      lead: 'Une sélection de réalisations et de projets concepts.',
+      concept: 'Projet concept',
       soon: 'Image à venir',
       visit: 'Voir le site',
     },
@@ -100,10 +113,14 @@ export const copy = {
         ['Évoluer', 'Nous mesurons et améliorons le site après le lancement.', ''],
       ],
     },
-    // TODO: add questions on site ownership/hosting and maintenance once the policy is confirmed.
+    studio: {
+      title: 'Un studio à taille humaine.',
+      body: 'Made Design est un petit studio web basé au Maroc. Vous travaillez directement avec la personne qui conçoit votre site, sans intermédiaire et sans jargon. Nous prenons peu de projets à la fois pour rester disponibles et soigner chaque détail.',
+      photoAlt: (name: string) => `Portrait de ${name}`,
+    },
     blog: {
       title: 'Le blog.',
-      lead: 'Design, interfaces et bonnes pratiques, pour des sites qui tiennent dans le temps.',
+      lead: 'Des conseils simples pour les entreprises qui veulent un site qui attire des clients.',
       all: 'Tous les articles',
       read: 'Lire l’article',
       back: 'Retour au blog',
@@ -115,8 +132,10 @@ export const copy = {
     faq: {
       title: 'Questions fréquentes.',
       items: [
-        ['Combien ça coûte ?', 'Cela dépend du format et du contenu. Après l’appel gratuit, nous vous donnons un chiffre clair.'],
-        ['Combien de temps faut-il ?', 'Cela dépend du format et de la rapidité de vos retours. Nous fixons un calendrier précis dès le premier échange.'],
+        ['Combien ça coûte ?', `Un site vitrine démarre ${priceFrom('vitrine', 'fr')}. Le prix exact dépend du nombre de pages et du contenu. Après un appel de 20 minutes, vous recevez un devis précis sous 48${nb}h.`],
+        ['Combien de temps faut-il ?', `Un site vitrine est généralement livré en ${timing.vitrine.fr}, selon la rapidité de vos retours.`],
+        ['Comment se passe le paiement ?', `Un acompte de ${payment.depositPercent}${nb}% au démarrage, le solde à la livraison. Tout est détaillé dans le devis avant de commencer.`],
+        ['Qui s’occupe de l’hébergement et du nom de domaine ?', 'Nous vous conseillons et nous configurons tout. Le nom de domaine et l’hébergement restent à votre nom.'],
         ['Que dois-je fournir ?', 'Votre logo, vos textes et vos photos si vous en avez. S’il manque quelque chose, nous vous aidons à le préparer.'],
         ['Le site sera-t-il en plusieurs langues ?', 'Nous concevons des sites en français et en anglais. Une autre langue ? Dites-le-nous pendant l’appel.'],
       ],
@@ -124,11 +143,15 @@ export const copy = {
     contact: {
       title: 'Parlons de votre projet.',
       lead: 'Choisissez un créneau qui vous convient. Nous parlons de votre activité et de vos objectifs.',
+      detail: '20 minutes, sans engagement',
+      whatsapp: 'Écrire sur WhatsApp',
+      email: 'Envoyer un e-mail',
     },
     footer: {
       tagline: 'Des sites web conçus pour être trouvés.',
       explore: 'Explorer',
       follow: 'Suivre',
+      socialLabel: (name: string) => `${name} (nouvel onglet)`,
       legal: '© 2026 Made Design. Tous droits réservés.',
     },
   },
@@ -141,14 +164,24 @@ export const copy = {
     },
     ui: { skip: 'Skip to content', menu: 'Menu', main: 'Main', home: 'home', langLabel: 'Choose site language' },
     nav: ['Formats', 'Work', 'Process', 'Blog'],
+    navStudio: 'About',
     navCta: 'Book a free call',
     hero: {
       before: 'Your customers are searching. Make sure they ',
       em: 'find',
       after: ' you.',
-      lead: 'A web studio in Morocco. We build fast, search-ready websites that turn every visit into an enquiry.',
+      lead: 'A web studio in Morocco. We build fast, search-ready websites designed to turn visits into enquiries.',
       cta: 'Book a free call',
       trust: 'Studio based in Morocco · Clients in Morocco and abroad',
+      visual: {
+        label: 'Illustration: a website is built, appears in search results and receives an enquiry.',
+        caption: 'A site designed to be found.',
+        query: 'restaurant casablanca',
+        resultTitle: 'Your business',
+        resultSub: 'Casablanca · your site',
+        contact: 'Contact',
+        typeSample: 'Aa',
+      },
     },
     why: {
       label: 'Why a website',
@@ -162,11 +195,11 @@ export const copy = {
     benefits: {
       title: 'What you get.',
       items: [
-        ['Earn trust', 'Your business presented with care, the way customers expect before they call.', 'A restaurant, clinic or firm looks more serious at first glance.'],
-        ['Receive more enquiries', 'A clear path to the form or a call, on every page.', 'A hesitant customer knows exactly where to write.'],
-        ['Get found on Google', 'Fast pages and a structure built for search, so you show up when people look for your trade.', 'Someone searches your service and your city: you appear.'],
+        ['Earn trust', 'Your business presented with care, the way customers expect before they call.', 'A restaurant, clinic or firm comes across as more serious at first glance.'],
+        ['Make it easy to get in touch', 'A clear path to the form or a call, on every page.', 'A hesitant customer knows exactly where to write.'],
+        ['Be easier to find on Google', 'Fast pages and a structure built for search, to improve your chances of being visible when people look for your trade.', 'A site structured for search, so customers in your city can find you more easily.'],
         ['Have an identity of your own', 'A style and voice that set you apart from a plain profile or template.', 'Your brand looks the same on your site, socials and printed material.'],
-        ['Never lose an enquiry on mobile', 'Your site displays and reads well on every phone, tablet and computer.', 'A customer opens your link on their phone and can reach you right away.'],
+        ['Be easy to reach on mobile', 'Your site displays and reads well on every phone, tablet and computer.', 'A customer opens your link on their phone and can reach you right away.'],
         ['Give your ads a destination', 'A page built for what the customer just saw, not a generic homepage.', 'An ad for one offer lands on that offer’s page.'],
       ],
     },
@@ -180,25 +213,25 @@ export const copy = {
           name: 'Business site',
           kind: 'Established businesses that need a main reference site.',
           points: ['Company and services pages', 'Mobile-ready and search-ready', 'Contact and enquiry form'],
-          outcome: 'A credible site that receives enquiries.',
-          timeline: '', // TODO: confirm typical timeline
-          price: '', // TODO: confirm price range or "on quote"
+          outcome: 'A credible site, designed to receive enquiries.',
+          timeline: timing.vitrine.en,
+          price: priceFrom('vitrine', 'en'),
         },
         {
           name: 'Landing page',
           kind: 'A launch or an advertising campaign.',
           points: ['One offer, one message', 'Built for ad traffic', 'One call to action: enquiry or booking'],
-          outcome: 'Your ads lead to a page that converts.',
-          timeline: '',
-          price: '',
+          outcome: 'Your ads lead to a page designed to convert.',
+          timeline: timing.landing.en,
+          price: priceFrom('landing', 'en'),
         },
         {
           name: 'Multi-page brand site',
           kind: 'Several offers, products or locations.',
           points: ['Shared identity', 'One page per offer or location', 'Enquiries tied to each page'],
           outcome: 'A consistent brand, with each offer given its place.',
-          timeline: '',
-          price: '',
+          timeline: timing.brand.en,
+          price: priceFrom('brand', 'en'),
         },
       ],
     },
@@ -208,14 +241,15 @@ export const copy = {
       items: [
         ['Fast to launch', 'A short process and a lightweight site.'],
         ['SEO from day one', 'Structure, speed and content built for search from the start.'],
-        ['A clear process', 'Four steps, defined deliverables, no surprises.'],
+        ['A clear process', 'Four steps and deliverables defined from the start.'],
         ['You’re involved at every step', 'You approve before we move on.'],
         ['A site that keeps improving', 'We measure and refine after launch.'],
       ],
     },
     work: {
       title: 'A look at our work.',
-      lead: 'Some examples of the sites we design.',
+      lead: 'A selection of client work and concept projects.',
+      concept: 'Concept project',
       soon: 'Image coming soon',
       visit: 'Visit site',
     },
@@ -228,10 +262,14 @@ export const copy = {
         ['Evolve', 'We measure and refine the site after launch.', ''],
       ],
     },
-    // TODO: add questions on site ownership/hosting and maintenance once the policy is confirmed.
+    studio: {
+      title: 'A small studio, close to you.',
+      body: 'Made Design is a small web studio based in Morocco. You work directly with the person who designs your site, with no middleman and no jargon. We take on few projects at a time, so we stay available and care about every detail.',
+      photoAlt: (name: string) => `Portrait of ${name}`,
+    },
     blog: {
       title: 'The blog.',
-      lead: 'Design, interfaces and good practice, for sites that last.',
+      lead: 'Simple advice for businesses that want a website that attracts customers.',
       all: 'All articles',
       read: 'Read the article',
       back: 'Back to the blog',
@@ -243,8 +281,10 @@ export const copy = {
     faq: {
       title: 'Frequently asked questions.',
       items: [
-        ['How much does it cost?', 'It depends on the format and content. After the free call, we give you a clear figure.'],
-        ['How long does it take?', 'It depends on the format and how fast you send feedback. We set a precise schedule at the first conversation.'],
+        ['How much does it cost?', `A business site starts ${priceFrom('vitrine', 'en')}. The exact price depends on the number of pages and the content. After a 20-minute call, you receive a precise quote within 48${nb}hours.`],
+        ['How long does it take?', `A business site is usually delivered in ${timing.vitrine.en}, depending on how quickly you send feedback.`],
+        ['How does payment work?', `A ${payment.depositPercent}% deposit at kick-off, with the balance on delivery. Everything is detailed in the quote before we start.`],
+        ['Who takes care of hosting and the domain name?', 'We advise you and set everything up. The domain name and hosting stay in your name.'],
         ['What do I need to provide?', 'Your logo, text and photos if you have them. If something is missing, we help you prepare it.'],
         ['Will the site be multilingual?', 'We build sites in French and English. Another language? Tell us during the call.'],
       ],
@@ -252,11 +292,15 @@ export const copy = {
     contact: {
       title: 'Let’s talk about your project.',
       lead: 'Pick a time that suits you. We talk about your business and your goals.',
+      detail: '20 minutes, no commitment',
+      whatsapp: 'Message on WhatsApp',
+      email: 'Send an email',
     },
     footer: {
       tagline: 'Websites built to be found.',
       explore: 'Explore',
       follow: 'Follow',
+      socialLabel: (name: string) => `${name} (opens in a new tab)`,
       legal: '© 2026 Made Design. All rights reserved.',
     },
   },

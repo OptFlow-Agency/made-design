@@ -20,8 +20,8 @@ const c = copy[lang]
 <header class="group sticky top-0 z-50 border-b border-transparent bg-white/90 backdrop-blur-md transition-colors duration-300 data-scrolled:border-line" id="top">
   <div class="wrap flex min-h-[72px] items-center justify-between gap-4">
     <Logo href={`${base}#top`} label={`${site.name} ${c.ui.home}`} />
-    <nav class="absolute inset-x-0 top-full hidden flex-col border-b border-line bg-white px-gutter pt-2 pb-5 font-mono text-[0.9375rem] tracking-[-0.01em] group-data-open:flex lg:static lg:flex lg:flex-row lg:items-center lg:gap-6 xl:gap-9 lg:border-0 lg:bg-transparent lg:p-0" id="menu" aria-label={c.ui.main}>
-      {navHrefs.map((href, i) => <a href={`${base}${href}`} class="relative lg:whitespace-nowrap border-b border-line py-4 text-xl lg:border-0 lg:py-1.5 lg:text-[0.9375rem] lg:after:absolute lg:after:inset-x-0 lg:after:bottom-0 lg:after:h-0.5 lg:after:origin-left lg:after:scale-x-0 lg:after:bg-ink lg:after:transition-transform lg:after:duration-300 lg:after:ease-snap lg:hover:after:scale-x-100">{c.nav[i]}</a>)}
+    <nav class="absolute inset-x-0 top-full hidden flex-col border-b border-line bg-white px-gutter pt-2 pb-5 text-[1rem] group-data-open:flex lg:static lg:flex lg:flex-row lg:items-center lg:gap-6 xl:gap-9 lg:border-0 lg:bg-transparent lg:p-0" id="menu" aria-label={c.ui.main}>
+      {navHrefs.map((href, i) => <a href={`${base}${href}`} class="relative lg:whitespace-nowrap border-b border-line py-4 text-xl lg:border-0 lg:py-1.5 lg:text-[1rem] lg:after:absolute lg:after:inset-x-0 lg:after:bottom-0 lg:after:h-0.5 lg:after:origin-left lg:after:scale-x-0 lg:after:bg-ink lg:after:transition-transform lg:after:duration-300 lg:after:ease-snap lg:hover:after:scale-x-100">{c.nav[i]}</a>)}
     </nav>
     <div class="flex items-center gap-2.5">
       <div class="inline-flex rounded-full border-2 border-line p-[3px] font-mono text-sm font-medium tracking-[0.02em]" role="group" aria-label={c.ui.langLabel}>
@@ -31,7 +31,7 @@ const c = copy[lang]
             hreflang={l}
             lang={l}
             data-lang-link
-            class="grid min-h-[34px] min-w-10 place-items-center rounded-full px-2.5 text-muted transition-colors duration-200 hover:text-ink aria-[current=true]:bg-ink aria-[current=true]:text-white aria-[current=true]:hover:text-white"
+            class="relative grid min-h-[34px] min-w-10 place-items-center after:absolute after:inset-x-0 after:-inset-y-2 after:content-[''] rounded-full px-2.5 text-muted transition-colors duration-200 hover:text-ink aria-[current=true]:bg-ink aria-[current=true]:text-white aria-[current=true]:hover:text-white"
             aria-current={l === lang ? 'true' : undefined}
           >{l.toUpperCase()}</a>
         ))}
