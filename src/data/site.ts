@@ -92,6 +92,8 @@ export const serviceIcons = [
 export const work: {
   name: string;
   kind: Record<Lang, string>;
+  /** Short description shown under the project name. */
+  desc: Record<Lang, string>;
   /** "client" = delivered for a real client; "concept" = own/demo project. */
   type: "client" | "concept";
   file?: string;
@@ -99,24 +101,47 @@ export const work: {
 }[] = [
   // TODO: add `href` (live site URL) to each project to enable the preview link.
   {
-    name: "VPG",
-    type: "concept",
-    file: "vpg.png",
-    kind: { fr: "Site immobilier", en: "Real estate site" },
-    href: "https://vpg-nu.vercel.app/",
+    name: "Maison Sabra",
+    type: "client",
+    file: "maison-sabra.png",
+    href: "https://www.maisonsabra.ma/",
+    kind: { fr: "Boutique en ligne", en: "Online store" },
+    desc: {
+      fr: "Boutique en ligne de sacs artisanaux inspirés du Maroc, avec livraison partout au Maroc et paiement à la livraison.",
+      en: "Online store for Moroccan-inspired handbags, with delivery across Morocco and cash on delivery.",
+    },
   },
   {
     name: "AZ Global Activities",
     type: "client",
     file: "az-global-activities.png",
     kind: { fr: "Site vitrine", en: "Business site" },
+    desc: {
+      fr: "Site vitrine qui présente l'entreprise, ses activités et ses coordonnées.",
+      en: "Business site presenting the company, its activities and contact details.",
+    },
     href: "https://azglobalactivities.com/",
+  },
+  {
+    name: "VPG",
+    type: "concept",
+    file: "vpg.png",
+    kind: { fr: "Site immobilier", en: "Real estate site" },
+    desc: {
+      fr: "Site immobilier pour présenter des biens et faciliter la prise de contact avec les acheteurs.",
+      en: "Real estate site to showcase properties and make it easy for buyers to get in touch.",
+    },
+    href: "https://vpg-nu.vercel.app/",
   },
   {
     name: "Lumina Studio",
     type: "concept",
     file: "lumina-studio.png",
     kind: { fr: "Site vitrine", en: "Business site" },
+    desc: {
+      fr: "Site vitrine d'un studio créatif, pensé pour mettre ses services et ses réalisations en avant.",
+      en: "Business site for a creative studio, built to highlight its services and work.",
+    },
     href: "https://lumina-studio-vert.vercel.app/",
   },
   {
@@ -124,6 +149,10 @@ export const work: {
     type: "concept",
     file: "strata.png",
     kind: { fr: "Site de réservation", en: "Booking site" },
+    desc: {
+      fr: "Site de réservation en ligne : le client choisit son créneau et réserve en quelques clics.",
+      en: "Online booking site where customers pick a slot and book in a few clicks.",
+    },
     href: "https://strata-pi-ten.vercel.app/",
   },
   {
@@ -131,5 +160,9 @@ export const work: {
     type: "client",
     file: "olivia.png",
     kind: { fr: "Site de restaurant", en: "Restaurant site" },
+    desc: {
+      fr: "Site de restaurant avec menu, ambiance et informations pratiques pour attirer de nouveaux clients.",
+      en: "Restaurant site with menu, atmosphere and practical info to attract new guests.",
+    },
   },
 ];
